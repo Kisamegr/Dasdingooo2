@@ -6,7 +6,7 @@ public class Hook : MonoBehaviour
     //
     public GameObject player;
     //    
-    public float hookForce;
+    public float hookSpeed;
     //
     public float extraForce = 2f;
     //
@@ -15,9 +15,12 @@ public class Hook : MonoBehaviour
     private float hookLength;
 
 	public float hookAngle;
-
     //
     private Vector2 extraForceDirection;
+    //
+    private GameObject connectedRigidbody;
+    //
+    public Vector2 connectedAnchorTransformOffset;
     //
     private bool hit;
     //
@@ -30,6 +33,7 @@ public class Hook : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        //Time.timeScale = 0.2f;
         hit = false;
         hookLength = 0;
         line = (LineRenderer)gameObject.GetComponent<LineRenderer>();
@@ -63,7 +67,7 @@ public class Hook : MonoBehaviour
         else
         {
 
-            hookLength += Time.deltaTime * hookForce;
+            hookLength += Time.deltaTime * hookSpeed;
 
             transform.position = player.transform.position + hookLength * hookVector;
         }
@@ -73,7 +77,8 @@ public class Hook : MonoBehaviour
         //Leptomereies
         if (hit)
         {
-            line.SetPosition(1, hitPoint);
+            transform.position = connectedRigidbody.transform.position + new Vector3(connectedAnchorTransformOffset.x,connectedAnchorTransformOffset.y,0);
+            line.SetPosition(1, transform.position);
         }
         else
         {
@@ -87,23 +92,35 @@ public class Hook : MonoBehaviour
         if (other.tag == "Ceiling" || other.tag == "Platform")
         {
             if (hit) return;
-            hit = true;
+            //transform.rotation = Quaternion.EulerAngles(new Vector3(0, 0, 90));
+          
 
+            hit = true;
+            connectedRigidbody = other.gameObject;
 
             rigidbody2D.velocity = Vector2.zero;
 
             DistanceJoint2D joint = (DistanceJoint2D)player.GetComponent<DistanceJoint2D>();
 
 
-            float xColPoint = (transform.position.x - other.transform.position.x);// / other.renderer.bounds.size.x;
+            float xColPoint = (transform.position.x - other.transform.position.x);
+            float yColPoint = -other.bounds.extents.y + (other.bounds.center.y - other.transform.position.y);
 
-            //To katw shmeio tou ceiling
-			float yColPoint = - other.bounds.extents.y +  (other.bounds.center.y - other.transform.position.y);// -transform.renderer.bounds.max.y;
+
+            connectedAnchorTransformOffset = new Vector2(xColPoint, yColPoint);
+
+
+
+            xColPoint /= other.transform.localScale.x;
+            yColPoint /= other.transform.localScale.y;
+
 
             Vector2 connectedAnchor = new Vector2(xColPoint, yColPoint);
 
-            //Vector2 anchor = Vector2.zero;
 
+            
+            //Vector2 anchor = Vector2.zero;
+            
             joint.enabled = true;
             joint.connectedBody = other.rigidbody2D;
             //joint.anchor = anchor;
@@ -121,7 +138,7 @@ public class Hook : MonoBehaviour
 
 
             player.rigidbody2D.gravityScale = 0;
-
+           
         }
 
     }
