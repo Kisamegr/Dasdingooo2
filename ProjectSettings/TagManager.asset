@@ -6,6 +6,7 @@ TagManager:
   - Ground
   - Ceiling
   - Platform
+  - Bat
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   User Layer 10: Ground
   User Layer 11: Ceiling
   User Layer 12: PlayerPart
-  User Layer 13: 
+  User Layer 13: Bat
   User Layer 14: 
   User Layer 15: 
   User Layer 16: 

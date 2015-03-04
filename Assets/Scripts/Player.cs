@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
 	public float hookAngle;
 	public float stabilizerForce;
 
-    private GameObject hook;
+    public GameObject hook;
     private DistanceJoint2D hookJoint;
 
 	private Animator anim;
@@ -97,7 +97,7 @@ public class Player : MonoBehaviour
 		}
 
 
-		yield return new WaitForSeconds(3);
+		yield return new WaitForSeconds(1);
 
 		Application.LoadLevel(Application.loadedLevel);
 	}
@@ -159,6 +159,10 @@ public class Player : MonoBehaviour
 
 			rigidbody2D.AddTorque(-zeta * stabilizerForce +  angle*2.5f,ForceMode2D.Force);
 
+            if (transform.position.y > hookJoint.connectedBody.transform.position.y + hookJoint.connectedAnchor.y)
+            {
+                cancelHook();
+            }
 
 		}
 	
@@ -175,9 +179,6 @@ public class Player : MonoBehaviour
 			{
 				rigidbody2D.gravityScale = 1;
 			}
-
-
-
 
 		}
 		else {
@@ -196,7 +197,7 @@ public class Player : MonoBehaviour
         }
 
 
-        if (Input.GetAxis("Horizontal") > 0 || !onAir)
+        if (Input.GetAxis("Horizontal") > 0 )
         {
 			running = true;
 			if(!facingRight)
@@ -260,6 +261,7 @@ public class Player : MonoBehaviour
 
 		if(other.collider.tag == "Ground")
 			StartCoroutine(GameOver());
+        
 
 		if(other.collider.tag == "Platform")
 		{
@@ -300,7 +302,7 @@ public class Player : MonoBehaviour
 		}
 	}
 	
-	void cancelHook()
+	public void cancelHook()
 	{
 		if (shotHook || hooked)
 		{
