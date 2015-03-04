@@ -57,8 +57,8 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .49264124, y: .511958003}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 7_gf_set_1
       rect:
@@ -67,8 +67,8 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .496874928, y: .514062524}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 7_gf_set_2
       rect:
@@ -77,8 +77,8 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .494531155, y: .510156274}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 7_gf_set_3
       rect:
@@ -87,8 +87,8 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .512500048, y: .50390625}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 7_gf_set_4
       rect:
@@ -97,8 +97,8 @@ TextureImporter:
         y: 128
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .499218941, y: .525781274}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 7_gf_set_5
       rect:
@@ -107,8 +107,8 @@ TextureImporter:
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .496320635, y: .516557276}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 7_gf_set_6
       rect:
@@ -117,8 +117,8 @@ TextureImporter:
         y: 0
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .497240543, y: .523916066}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

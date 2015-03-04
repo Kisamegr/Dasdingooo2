@@ -75,7 +75,7 @@ public class Player : MonoBehaviour
 		leftGround = false;
 		facingRight = true;
 		
-		spriteRenderer =  GetComponentInChildren<SpriteRenderer>();
+		spriteRenderer =  transform.GetChild(0).GetComponent<SpriteRenderer>();
 
     }
 
@@ -352,6 +352,8 @@ public class Player : MonoBehaviour
         Ghost ghostScript = ghost.GetComponent<Ghost>();
         ghostScript.sprite = spriteRenderer.sprite;
         ghostScript.lifetime = ghostsLifetime;
+		ghostScript.color = spriteRenderer.color;
+		ghost.transform.localScale = transform.localScale;
         
         ghostsLastInitTime = Time.time;
 

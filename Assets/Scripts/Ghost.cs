@@ -16,6 +16,8 @@ public class Ghost : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
 
     public Sprite sprite;
+	
+	public Color color;
 
 	// Use this for initialization
 	void Start () {
@@ -34,7 +36,7 @@ public class Ghost : MonoBehaviour {
         alpha = initialAlpha - width * diff / lifetime;
         
 
-        spriteRenderer.color = new Color(1f, 1f, 1f, alpha);
+        spriteRenderer.color = new Color(color.r, color.g, color.b, alpha);
 
         if (diff > lifetime)
         {

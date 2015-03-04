@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 434822}
   - 198: {fileID: 19834822}
   - 199: {fileID: 19934822}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: th1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 447014}
   - 212: {fileID: 21247014}
   - 114: {fileID: 11447014}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - 4: {fileID: 447016}
   - 198: {fileID: 19847014}
   - 199: {fileID: 19947014}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: th1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - 4: {fileID: 447018}
   - 212: {fileID: 21247016}
   - 114: {fileID: 11447016}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   - 50: {fileID: 5061532}
   - 114: {fileID: 11498378}
   - 60: {fileID: 6098382}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Platform
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 498378}
   - 212: {fileID: 21298378}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: pipes init_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - 4: {fileID: 498380}
   - 212: {fileID: 21298380}
   - 114: {fileID: 11498382}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - 4: {fileID: 498382}
   - 212: {fileID: 21298382}
   - 114: {fileID: 11498380}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

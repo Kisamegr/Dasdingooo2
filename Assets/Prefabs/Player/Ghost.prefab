@@ -44,6 +44,7 @@ MonoBehaviour:
   initialAlpha: .800000012
   finalAlpha: .100000001
   sprite: {fileID: 0}
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!212 &21211174
 SpriteRenderer:
   m_ObjectHideFlags: 1
