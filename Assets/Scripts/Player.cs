@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
 
 	public float moveForce;
 	public float maxSpeed;
+    public float minSpeed;
 	public float jumpForce;
 	public float hookDelay;
 	public float hookAngle;
@@ -265,6 +266,10 @@ public class Player : MonoBehaviour
 
 		if(other.collider.tag == "Platform")
 		{
+            if (shotHook || hooked)
+            {
+                cancelHook();
+            }
 			if(other.contacts[0].point.y > other.transform.position.y) {
 				Debug.Log(other.contacts[0].point);
 				onAir = false;

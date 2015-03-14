@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: e721dcceb1a620e4a86d1eaa168db0c5
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: CoinAdjusted_0
+    21300002: CoinAdjusted_1
+    21300004: CoinAdjusted_2
+    21300006: CoinAdjusted_3
+    21300008: CoinAdjusted_4
+    21300010: CoinAdjusted_5
+    21300012: CoinAdjusted_6
+    21300014: CoinAdjusted_7
+    21300016: CoinAdjusted_8
+    21300018: CoinAdjusted_9
+    21300020: CoinAdjusted_10
+    21300022: CoinAdjusted_11
+    21300024: CoinAdjusted_12
+    21300026: CoinAdjusted_13
+    21300028: CoinAdjusted_14
+    21300030: CoinAdjusted_15
+    21300032: CoinAdjusted_16
+    21300034: CoinAdjusted_17
+    21300036: CoinAdjusted_18
+    21300038: CoinAdjusted_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: CoinAdjusted_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 97
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 98
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 98
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 98
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 98
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_5
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 97
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_6
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 99
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_7
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 99
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_8
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 100
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_9
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 101
+        width: 14
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_10
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 101
+        width: 7
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_11
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 37
+        width: 13
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_12
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 37
+        width: 18
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_13
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 37
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_14
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 38
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_15
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 37
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_16
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 38
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_17
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 38
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_18
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 39
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CoinAdjusted_19
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 38
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

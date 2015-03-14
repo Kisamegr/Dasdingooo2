@@ -12,8 +12,8 @@ public class Game : MonoBehaviour
     public GameObject[] platforms;
     public GameObject batGroupPrefab;
 
-    public float yMax;
-    public float yMin;
+    public float yMax = 18f;
+    public float yMin = -21f;
     public float cameraHeight;
 
     public float platformFreq;
@@ -79,8 +79,6 @@ public class Game : MonoBehaviour
         Vector3 cameraTop = camTrans.camera.ViewportToWorldPoint(new Vector3(0, 1, 0));
         cameraHeight = cameraTop.y - cameraZero.y;
 
-        yMax = cameraTop.y;
-        yMin = yMax - 40;
 
         lastPlatformTime = 0;
         nextPlatformTime = 0;
@@ -130,8 +128,8 @@ public class Game : MonoBehaviour
 
     void Update()
     {
-        float yCamera = Mathf.Clamp(player.position.y, yMin + cameraHeight / 2 - 1, yMax - cameraHeight / 2 + 1);
-        camTrans.position = new Vector3(player.position.x + 7, yCamera, camTrans.position.z);
+        //float yCamera = Mathf.Clamp(player.position.y, yMin + cameraHeight / 2 - 1, yMax - cameraHeight / 2 + 1);
+        //camTrans.position = new Vector3(player.position.x + 14, yCamera, camTrans.position.z);
 
 
         if (Time.time - lastPlatformTime > nextPlatformTime)
@@ -151,6 +149,7 @@ public class Game : MonoBehaviour
 
 
         score = player.position.x - startingPos.x;
+        score /= 10;
         scoreText.text = "" + ((int)score);
 
 
