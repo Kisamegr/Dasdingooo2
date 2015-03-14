@@ -14,7 +14,7 @@ public class ParallaxBackground : MonoBehaviour
 
     private float[] speed;
 
-    public Player player;
+    private Player player;
 
 
     public float width;
@@ -23,7 +23,7 @@ public class ParallaxBackground : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        //player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 
       
         secondLayers = new GameObject[layers.Length];
@@ -59,7 +59,7 @@ public class ParallaxBackground : MonoBehaviour
 
 
 
-        transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
+        transform.position = new Vector3(player.transform.position.x + 5, transform.position.y, transform.position.z);
 
 
         for (int i = 0; i < layers.Length; i++)
@@ -68,6 +68,8 @@ public class ParallaxBackground : MonoBehaviour
             secondLayers[i].transform.Translate(-speed[i] * Time.deltaTime, 0, 0);
 
 
+            //layers[i].renderer.material.SetTextureOffset("_MainTex",layers[i].renderer.material.GetTextureOffset("_MainTex") + new Vector2(-speed[i] , 0));
+             
             if (layers[i].transform.localPosition.x < -width)
             {
                 layers[i].transform.position = secondLayers[i].transform.position + new Vector3(width, 0, 0);

@@ -137,6 +137,13 @@ public class Hook : MonoBehaviour
 			player.GetComponent<Player>().shotHook = false;
 
 
+            float minSpeed = player.GetComponent<Player>().minSpeed;
+            if (player.rigidbody2D.velocity.x < minSpeed)
+            {
+                player.rigidbody2D.velocity = new Vector2(minSpeed, player.rigidbody2D.velocity.y);
+            }
+
+
             player.rigidbody2D.gravityScale = 0;
            
         }

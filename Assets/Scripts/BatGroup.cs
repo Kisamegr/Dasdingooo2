@@ -34,6 +34,9 @@ public class BatGroup : MonoBehaviour {
             GameObject bat = (GameObject)Instantiate(batPrefab,new Vector3(transform.position.x + xOffset,yOffset,transform.position.z), Quaternion.identity);
             bat.transform.parent = transform;
             bat.GetComponent<Bat>().speed = new Vector2(-10, 0);
+            
+            float randomScale = 0.7f + 0.3f * Random.value;
+            bat.transform.localScale = new Vector3(-randomScale, randomScale, 1);
         }
 
 	}
