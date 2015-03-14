@@ -137,12 +137,13 @@ MonoBehaviour:
   startJump: 0
   inCannon: 0
   firedFromCannon: 0
-  moveForce: 10
-  maxSpeed: 50
+  moveForce: 7
+  maxSpeed: 25
   jumpForce: 8
   hookDelay: .300000012
   hookAngle: 55
   stabilizerForce: 5
+  hook: {fileID: 0}
   running: 0
   onAir: 0
   facingRight: 0
@@ -172,7 +173,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 7de16103caf952f43906d8647ccd0938, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!232 &23200000
@@ -184,7 +185,7 @@ DistanceJoint2D:
   m_Enabled: 1
   m_CollideConnected: 1
   m_ConnectedRigidBody: {fileID: 0}
-  m_Anchor: {x: .0951595306, y: .163800716}
+  m_Anchor: {x: .129869461, y: .134430885}
   m_ConnectedAnchor: {x: -1.08000004, y: 7.73000002}
   m_Distance: 23.6200008
   m_MaxDistanceOnly: 1

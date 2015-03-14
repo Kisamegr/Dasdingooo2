@@ -197,7 +197,7 @@ public class Player : MonoBehaviour
         }
 
 
-        if (Input.GetAxis("Horizontal") > 0 )
+        if (Input.GetAxis("Horizontal") > 0 || !onAir )
         {
 			running = true;
 			if(!facingRight)
@@ -266,7 +266,6 @@ public class Player : MonoBehaviour
 		if(other.collider.tag == "Platform")
 		{
 			if(other.contacts[0].point.y > other.transform.position.y) {
-				Debug.Log(other.contacts[0].point);
 				onAir = false;
 				leftGround = false;
 				jumped = false;
@@ -292,13 +291,14 @@ public class Player : MonoBehaviour
 		if (!shotHook && Time.time - lastHookTime > hookDelay && Time.time - ceilingPenaltyStart > ceilingPenaltyDuration)
 		{
 			shotHook = true;
-			hook = (GameObject)GameObject.Instantiate(hookPrefab, transform.position, Quaternion.identity);
+			hook = (GameObject)Instantiate(hookPrefab, transform.position, Quaternion.identity);
 			hook.transform.parent = transform;
 			hook.GetComponent<Hook>().player = gameObject;
 			hook.GetComponent<Hook>().hookAngle = hookAngle;
 
 
 			lastHookTime = Time.time;
+			Debug.Log("ASNASINAANISAISDISININININI");
 		}
 	}
 	

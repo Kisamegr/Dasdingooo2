@@ -28,9 +28,10 @@ GameObject:
   - 212: {fileID: 21255392}
   - 58: {fileID: 5855392}
   - 114: {fileID: 11442066}
+  - 50: {fileID: 5016692}
   m_Layer: 13
   m_Name: yellow-power-object
-  m_TagString: Untagged
+  m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,6 +61,21 @@ Transform:
   - {fileID: 440310}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!50 &5016692
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155392}
+  m_Mass: .00999999978
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!58 &5855392
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -95,6 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 0
+  changeSpeed: 0
   player: {fileID: 0}
 --- !u!212 &21240310
 SpriteRenderer:

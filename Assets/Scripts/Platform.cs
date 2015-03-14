@@ -6,14 +6,13 @@ public class Platform : MonoBehaviour {
 
 	public float forcePower;
 	private Vector2 halfSize;
-	private Vector2 originalPosition;
+	public Vector3 originalPosition;
 
 	private Vector2 pos;
 	private float diff;
 	private float angle;
 
 	void Start () {
-		halfSize = new Vector2(renderer.bounds.extents.x,renderer.bounds.extents.y);
 		originalPosition = transform.position;
 	}
 	
