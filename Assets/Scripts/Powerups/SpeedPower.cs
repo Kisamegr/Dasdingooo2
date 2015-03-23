@@ -16,7 +16,6 @@ public class SpeedPower : Powerup {
 
 		sprite = player.transform.GetChild(0).GetComponent<SpriteRenderer>();
 
-		Debug.Log(speedColor);
 
 	}
 
@@ -47,5 +46,10 @@ public class SpeedPower : Powerup {
 	protected override void PowerEnded ()
 	{
 		state = PowerState.Ended;
+	}
+
+	public override void Refresh ()
+	{
+		startTime = Time.time;
 	}
 }

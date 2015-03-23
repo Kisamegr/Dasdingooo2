@@ -7,6 +7,7 @@ public abstract class Powerup : MonoBehaviour {
 		Started, Running, Ended
 	};
 
+	public int id;
 	public float duration;
 	public float changeSpeed;
 	public GameObject player;
@@ -50,6 +51,8 @@ public abstract class Powerup : MonoBehaviour {
 	protected virtual void AfterPowerEnded() {
 		Destroy(gameObject);
 	}
+
+	public abstract void Refresh();
 
 
 }

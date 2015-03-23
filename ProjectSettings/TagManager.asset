@@ -9,6 +9,7 @@ TagManager:
   - 
   - Bat
   - PowerUp
+  - Enemy
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -25,8 +26,8 @@ TagManager:
   User Layer 12: PlayerPart
   User Layer 13: Shield
   User Layer 14: Platform
-  User Layer 15: 
-  User Layer 16: 
+  User Layer 15: Bat
+  User Layer 16: GodCleaner
   User Layer 17: 
   User Layer 18: 
   User Layer 19: 

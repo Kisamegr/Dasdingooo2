@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -11,13 +11,19 @@ public class Game : MonoBehaviour
     public GameObject ceilingPrefab;
     public GameObject[] platforms;
     public GameObject batGroupPrefab;
+	public GameObject[] powerUps;
+	public GameObject[] enemies;
 
     public float yMax = 18f;
     public float yMin = -21f;
     public float cameraHeight;
 
+	public float enemyFreq;
+	public float enemyVar;
+
     public float platformFreq;
     public float platformVar;
+	public float platMinDist;
     private float lastPlatformTime;
     private float nextPlatformTime;
     private Transform platformSpawner;
@@ -28,10 +34,12 @@ public class Game : MonoBehaviour
     private float nextEnemyTime;
     private Transform enemySpawner;
 
+	 
 
 
 
-    public float batGroupFreq;
+
+   /* public float batGroupFreq;
     public float batGroupVar;
     public float batGroupSpawnYmax;
     public float batGroupSpawnYmin;
@@ -39,7 +47,7 @@ public class Game : MonoBehaviour
     public int batGroupNoBatsMin;
     public int batGroupNoBatsMax;
 
-
+*/
 
 
 
@@ -53,6 +61,7 @@ public class Game : MonoBehaviour
     private float ceilingWidth;
     private Transform lastGround;
     private Transform lastCeiling;
+	private Transform lastPlatform;
 
     public Transform camTrans;
     public Transform player;
@@ -64,8 +73,7 @@ public class Game : MonoBehaviour
 
     void Start()
     {
-
-        nextEnemyTime = 6f;
+		Time.timeScale = 1f;
         groundQueue = new Queue();
         ceilingQueue = new Queue();
         platformQueue = new Queue();
@@ -79,21 +87,24 @@ public class Game : MonoBehaviour
         Vector3 cameraTop = camTrans.camera.ViewportToWorldPoint(new Vector3(0, 1, 0));
         cameraHeight = cameraTop.y - cameraZero.y;
 
+		nextEnemyTime = 6f;
+		lastEnemyTime = 0f;
 
-        lastPlatformTime = 0;
-        nextPlatformTime = 0;
+		nextPlatformTime = Random.Range(-platformVar, platformVar) + platformFreq;
+		lastPlatformTime = Time.time;
 
         //Debug.Log(cameraTop);
 
-        groundWidth = groundPrefab.transform.GetChild(0).renderer.bounds.size.x - 2;
+		groundWidth = groundPrefab.transform.GetChild(0).renderer.bounds.size.x   - 2;
         ceilingWidth = ceilingPrefab.renderer.bounds.size.x;
         //groundWidth = 10;
+		
 
         GameObject ground = null, ceiling = null;
 
         bool reverse = false;
 
-        for (int i = 0; i < 8; i++)
+        for (int i = 0; i < 12; i++)
         {
             Vector3 pos = new Vector3(cameraZero.x + groundWidth * i, yMin, 0);
             ground = (GameObject)GameObject.Instantiate(groundPrefab, pos, Quaternion.identity);
@@ -115,6 +126,7 @@ public class Game : MonoBehaviour
 
         lastGround = ground.transform;
         lastCeiling = ceiling.transform;
+		lastPlatform = null;
 
         startingPos = player.position;
 
@@ -139,13 +151,20 @@ public class Game : MonoBehaviour
 
         if (Time.time - lastEnemyTime > nextEnemyTime)
         {
-            GenerateBatgroup();
+			int r = Random.Range(0,enemies.Length);
+
+			Instantiate(enemies[r],enemySpawner.position,Quaternion.identity);
+
+			nextEnemyTime = enemyFreq + Random.Range(-enemyVar, enemyVar);
+			lastEnemyTime = Time.time;
         }
 
     }
 
     void FixedUpdate()
     {
+		Physics2D.IgnoreLayerCollision (LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Platform"), player.rigidbody2D.velocity.y > 0.05f);
+
 
 
         score = player.position.x - startingPos.x;
@@ -188,23 +207,51 @@ public class Game : MonoBehaviour
     }
 
     public void CreatePlatform()
-    {
+	{
 
-        int index = Random.Range(0, platforms.GetLength(0));
-        Vector3 pos = new Vector3(platformSpawner.position.x, Random.Range(yMin + 5, yMax - 5), 0);
+		if( lastPlatform == null || (platformSpawner.position.x - lastPlatform.position.x > platMinDist)) {
 
-        GameObject plat = (GameObject)Instantiate(platforms[index], pos, Quaternion.identity);
+	        int index = Random.Range(0, platforms.GetLength(0));
+	        Vector3 pos = new Vector3(platformSpawner.position.x, Random.Range(yMin + 5, yMax - 20), 0);
 
-        platformQueue.Enqueue(plat.transform);
+	        GameObject plat = (GameObject)Instantiate(platforms[index], pos, Quaternion.identity);
 
-        nextPlatformTime = Random.Range(-platformVar, platformVar) + platformFreq;
-        lastPlatformTime = Time.time;
 
+			float p = Random.Range(0f,1f);
+
+			if(p>0.01f) {
+				GameObject power;
+				float pp = Random.Range(0f,1f);
+
+				if(pp < 0.25f) 
+					power = (GameObject) Instantiate(powerUps[0]);	
+				else if(pp < 0.5f) 
+					power = (GameObject) Instantiate(powerUps[1]);
+				else if (pp < 0.75f) 
+					power = (GameObject) Instantiate(powerUps[2]);
+				else 
+					power = (GameObject) Instantiate(powerUps[3]);
+				
+
+				power.transform.position = new Vector3(plat.transform.position.x, plat.transform.position.y + 4, 0);
+				power.transform.parent = plat.transform;
+
+			}
+
+
+	        platformQueue.Enqueue(plat.transform);
+
+			lastPlatform = plat.transform;
+	        nextPlatformTime = Random.Range(-platformVar, platformVar) + platformFreq;
+	        lastPlatformTime = Time.time;
+		}
     }
 
+	public void AddNextEnemyTime(float sec) {
+		nextEnemyTime += sec;
+	}
 
-
-    public void GenerateBatgroup()
+  /*  public void GenerateBatgroup()
     {
         GameObject batGroup = (GameObject)Instantiate(batGroupPrefab,enemySpawner.position,Quaternion.identity);
         BatGroup batGroupScript = batGroup.GetComponent<BatGroup>();
@@ -218,9 +265,7 @@ public class Game : MonoBehaviour
 
 
 
-        nextEnemyTime = batGroupFreq + Random.Range(-batGroupVar, batGroupVar) ;
 
-        lastEnemyTime = Time.time;
     }
-
+*/
 }

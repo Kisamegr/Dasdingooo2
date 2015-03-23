@@ -48,7 +48,7 @@ GameObject:
   - 58: {fileID: 5822228}
   m_Layer: 0
   m_Name: yellow-powerup
-  m_TagString: Untagged
+  m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,7 +85,7 @@ Transform:
   m_GameObject: {fileID: 198966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.53999996, y: 5.76999998, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 496932}
   - {fileID: 496930}
@@ -100,7 +100,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Radius: 1.00999999
+  m_Radius: .550000012
   m_Center: {x: 0, y: 0}
 --- !u!95 &9598966
 Animator:

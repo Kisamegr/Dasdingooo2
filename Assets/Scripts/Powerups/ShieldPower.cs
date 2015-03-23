@@ -7,7 +7,8 @@ public class ShieldPower : Powerup {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.tag == "Ground") {
-			player.rigidbody2D.velocity = new Vector2(player.rigidbody2D.velocity.x, -player.rigidbody2D.velocity.y);
+			player.GetComponent<Player>().cancelHook();
+			player.rigidbody2D.velocity = new Vector2(player.rigidbody2D.velocity.x, -player.rigidbody2D.velocity.y*1.2f);
 			Destroy(gameObject);
 		}
 
@@ -19,9 +20,15 @@ public class ShieldPower : Powerup {
 
 	protected override void Power ()
 	{
+		//Do nothing...
 	}
 	
 	protected override void PowerEnded ()
 	{
+		//Do nothing...
+	}
+	public override void Refresh ()
+	{
+		//Do nothing...
 	}
 }

@@ -48,7 +48,7 @@ GameObject:
   - 114: {fileID: 11481376}
   m_Layer: 0
   m_Name: red-powerup
-  m_TagString: Untagged
+  m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,7 +85,7 @@ Transform:
   m_GameObject: {fileID: 173780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.9913616, y: 5.44552088, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 466152}
   - {fileID: 466154}
@@ -100,7 +100,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Radius: .49000001
+  m_Radius: .550000012
   m_Center: {x: 0, y: 0}
 --- !u!95 &9573780
 Animator:
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41efcef2cbeda6e4991640f75e6e527a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerupObject: {fileID: 0}
+  powerupObject: {fileID: 160382, guid: 99a06083269e2664781476abb93ad568, type: 2}
 --- !u!212 &21266152
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -109,7 +109,6 @@ public class Cannon : MonoBehaviour
                 force = 0;
                 forceSpeed = -forceSpeed;
             }
-            Debug.Log(force);
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 fire();

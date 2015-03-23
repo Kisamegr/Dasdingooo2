@@ -80,7 +80,7 @@ public class Player : MonoBehaviour
 
     }
 
-	IEnumerator GameOver() {
+	void GameOver() {
 
 		alive = false;
 		cancelHook();
@@ -89,6 +89,7 @@ public class Player : MonoBehaviour
 		gameObject.collider2D.enabled = false;
 
 		GameObject broken = (GameObject) Instantiate(brokenPrefab,transform.position,Quaternion.identity);
+		broken.transform.rotation = transform.rotation;
 
 		for(int i=0 ;i<broken.transform.childCount ; i++) {
 			Transform child = (Transform) broken.transform.GetChild(i);
@@ -96,10 +97,17 @@ public class Player : MonoBehaviour
 			child.rigidbody2D.velocity = rigidbody2D.velocity;
 
 		}
+		rigidbody2D.velocity = Vector2.zero;
+		rigidbody2D.isKinematic = true;
+		Time.timeScale = 0.25f;
+		StartCoroutine(WaitRestart());
 
 
-		yield return new WaitForSeconds(1);
 
+	}
+
+	IEnumerator WaitRestart() {
+		yield return new WaitForSeconds(0.5f);
 		Application.LoadLevel(Application.loadedLevel);
 	}
 
@@ -260,8 +268,8 @@ public class Player : MonoBehaviour
 
 		
 
-		if(other.collider.tag == "Ground")
-			StartCoroutine(GameOver());
+		if(other.collider.tag == "Ground" || other.collider.tag == "Enemy")
+			GameOver();
         
 
 		if(other.collider.tag == "Platform")
@@ -303,7 +311,6 @@ public class Player : MonoBehaviour
 
 
 			lastHookTime = Time.time;
-			Debug.Log("ASNASINAANISAISDISININININI");
 		}
 	}
 	

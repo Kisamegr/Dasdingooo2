@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BatGroup : MonoBehaviour {
+public class BatGroup : Enemy {
 
 
 
     public GameObject batPrefab;
 
-    public int numberOfBats;
+	public int batsMin;
+	
+	public int batsMax;
 
     public float yMin;
 
@@ -16,6 +18,7 @@ public class BatGroup : MonoBehaviour {
     public float xRange;
 
 
+	private int numberOfBats;
 
     private Player playerScript;
 
@@ -23,14 +26,16 @@ public class BatGroup : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		base.Start();
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         layerMask = 1 << batPrefab.layer;
 
+		numberOfBats = Random.Range(batsMin,batsMax);
 
         for (int i = 0; i < numberOfBats; i++)
         {
-            float yOffset = yMin + (yMax - yMin) * Random.value;
-            float xOffset = Random.value * xRange;
+            float yOffset = transform.position.y + (yMax - yMin) * (Random.value-0.5f);
+            float xOffset = (Random.value-0.5f) * xRange;
             GameObject bat = (GameObject)Instantiate(batPrefab,new Vector3(transform.position.x + xOffset,yOffset,transform.position.z), Quaternion.identity);
             bat.transform.parent = transform;
             bat.GetComponent<Bat>().speed = new Vector2(-10, 0);
@@ -43,6 +48,8 @@ public class BatGroup : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		base.Update();
+		/*
         if (playerScript.hooked || playerScript.shotHook)
         {
             //Xalia tropos ginete kai kalutera pernontas mono to hook angle, prepei na valw kai to position pou ksekinaei to hook apo ton paikth
@@ -53,6 +60,6 @@ public class BatGroup : MonoBehaviour {
             {
                 playerScript.cancelHook();
             }
-        }
+        }*/
 	}
 }
