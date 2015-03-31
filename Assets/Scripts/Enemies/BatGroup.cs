@@ -11,11 +11,15 @@ public class BatGroup : Enemy {
 	
 	public int batsMax;
 
-    public float yMin;
-
-    public float yMax;
+    public float heightVariance;
 
     public float xRange;
+
+    public float batsScaleMin;
+
+    public float batsScaleMax;
+
+    public float batsSpeed;
 
 
 	private int numberOfBats;
@@ -32,15 +36,26 @@ public class BatGroup : Enemy {
 
 		numberOfBats = Random.Range(batsMin,batsMax);
 
+        Game game = GameObject.FindGameObjectWithTag("GameController").GetComponent<Game>();
+        float stageBottom = game.stageBottom;
+        float stageTop = game.stageTop;
+        
+        
+        float spawnHeightBase = playerScript.transform.position.y + Random.Range(heightVariance, 2*heightVariance);
+       
+        spawnHeightBase = Mathf.Clamp(spawnHeightBase, stageBottom + heightVariance, stageTop - heightVariance);
+
+        transform.position.Set(transform.position.x, spawnHeightBase, transform.position.z);
+
         for (int i = 0; i < numberOfBats; i++)
         {
-            float yOffset = transform.position.y + (yMax - yMin) * (Random.value-0.5f);
+            float yOffset = transform.position.y + (2 * Random.value - 1) * heightVariance;
             float xOffset = (Random.value-0.5f) * xRange;
             GameObject bat = (GameObject)Instantiate(batPrefab,new Vector3(transform.position.x + xOffset,yOffset,transform.position.z), Quaternion.identity);
             bat.transform.parent = transform;
-            bat.GetComponent<Bat>().speed = new Vector2(-10, 0);
+            bat.GetComponent<Bat>().speed = new Vector2(-batsSpeed, 0);
             
-            float randomScale = 0.7f + 0.3f * Random.value;
+            float randomScale = Random.Range(batsScaleMin,batsScaleMax);
             bat.transform.localScale = new Vector3(-randomScale, randomScale, 1);
         }
 
@@ -49,7 +64,7 @@ public class BatGroup : Enemy {
 	// Update is called once per frame
 	void Update () {
 		base.Update();
-		/*
+		
         if (playerScript.hooked || playerScript.shotHook)
         {
             //Xalia tropos ginete kai kalutera pernontas mono to hook angle, prepei na valw kai to position pou ksekinaei to hook apo ton paikth
@@ -60,6 +75,6 @@ public class BatGroup : Enemy {
             {
                 playerScript.cancelHook();
             }
-        }*/
+        }
 	}
 }

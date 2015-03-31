@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 425872}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: SwingCog
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -24,7 +24,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 425874}
   - 50: {fileID: 5025872}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Stat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 425876}
   - 212: {fileID: 21225872}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: big bad_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - 4: {fileID: 425878}
   - 212: {fileID: 21225874}
   - 114: {fileID: 11425872}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: big bad_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ GameObject:
   - 120: {fileID: 12025872}
   - 58: {fileID: 5870460}
   - 114: {fileID: 11429384}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Cog
   m_TagString: Enemy
   m_Icon: {fileID: 0}

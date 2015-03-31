@@ -31,6 +31,16 @@ public class Cannon : MonoBehaviour
     public GameObject player;
 
 
+    private Vector3 rotationCenter;
+
+
+    private Transform smokeParticlesTrans;
+
+    private float shootTime;
+
+    private float shootDelay = 0.15f;
+
+    private bool playerFired = false;
     
 
     // Use this for initialization
@@ -59,11 +69,28 @@ public class Cannon : MonoBehaviour
         rotationPhase = true;
         forcePhase = false;
         force = 0;
+
+        rotationCenter = transform.FindChild("RotationCenter").transform.position;
+
+        smokeParticlesTrans = transform.parent.FindChild("SmokeParticles");
+        smokeParticlesTrans.GetComponent<ParticleSystem>().Pause();
+
+        shootTime = Time.time;
+        playerFired = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        //An exei ginei fire, perimene mexri to delay
+        if (!forcePhase && !rotationPhase)
+        {
+            if(Time.time - shootTime >= shootDelay && !playerFired){
+                firePlayer();
+            }
+        }
+
         
 
         if (rotationPhase)
@@ -84,7 +111,8 @@ public class Cannon : MonoBehaviour
                 rotationSpeed = -rotationSpeed;
             }
 
-            transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
+            transform.RotateAround(rotationCenter, Vector3.forward, rotationSpeed * Time.deltaTime);
+            //transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
 
             if(Input.GetKeyDown(KeyCode.Space)){
                 rotationPhase = false;
@@ -113,6 +141,7 @@ public class Cannon : MonoBehaviour
             {
                 fire();
                 forcePhase = false;
+                rotationPhase = false;
             }
             
 
@@ -122,18 +151,37 @@ public class Cannon : MonoBehaviour
 
     private void fire()
     {
-        Vector2 cannonForceDir = new Vector2(Mathf.Cos(transform.rotation.eulerAngles.z * Mathf.Deg2Rad) ,Mathf.Sin(transform.rotation.eulerAngles.z * Mathf.Deg2Rad));
+        //Play smoke particles
+        smokeParticlesTrans.position = transform.FindChild("SmokePosition").position;
+
+        smokeParticlesTrans.GetComponent<ParticleSystem>().Play();
+
+        //play sound
+        GetComponent<AudioSource>().Play();
+
+        shootTime = Time.time;
+        //fire player after delay
+        //Invoke("firePlayer", 0.15f);
+        firePlayer();
+    
+    }
+
+
+    private void firePlayer()
+    {
+        Vector2 cannonForceDir = new Vector2(Mathf.Cos(transform.rotation.eulerAngles.z * Mathf.Deg2Rad), Mathf.Sin(transform.rotation.eulerAngles.z * Mathf.Deg2Rad));
 
         float finalForce = minForce + force * (maxForce - minForce);
 
         player.GetComponent<Player>().fireFromCannon(cannonForceDir * finalForce);
-        
+
+        playerFired = true ;
     }
 
 
     public void OnDrawGizmosSelected()
     {
-        float length = transform.FindChild("Cannon1_sprite").renderer.bounds.size.x;
+        float length = transform.FindChild("Cannon1").renderer.bounds.size.x;
 
 
         Vector3 point1 = transform.position + new Vector3(Mathf.Cos(startAngle * Mathf.Deg2Rad),Mathf.Sin(startAngle * Mathf.Deg2Rad),0)*length;

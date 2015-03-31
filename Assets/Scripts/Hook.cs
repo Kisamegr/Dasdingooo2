@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Hook : MonoBehaviour
 {
+
+    private int collisionLayermask;
     //
     public GameObject player;
     //    
@@ -46,10 +48,10 @@ public class Hook : MonoBehaviour
 
         float forceAngle = hookAngle - 90;
         forceAngle *= Mathf.Deg2Rad;
-
         extraForceDirection = new Vector2(Mathf.Cos(forceAngle), Mathf.Sin(forceAngle));
         extraForceDirection.Normalize();
-
+        collisionLayermask = 1 << LayerMask.NameToLayer("Platform") | 1 << LayerMask.NameToLayer("Ceiling");
+        
 	}
 
     // Update is called once per frame
@@ -66,10 +68,25 @@ public class Hook : MonoBehaviour
         }
         else
         {
-
+            float distance = hookLength;
             hookLength += Time.deltaTime * hookSpeed;
 
-            transform.position = player.transform.position + hookLength * hookVector;
+            distance = hookLength - distance;
+            
+            //Raycast before moving the hook 
+
+            RaycastHit2D hookHit = Physics2D.Raycast(transform.position, hookVector, distance, collisionLayermask);
+            //If the ray hit a platform or the ceiling, move the hook to the collision point and call the OnTriggerEnter2D function
+            if (hookHit.collider != null) {
+                 transform.position = new Vector3(hookHit.point.x,hookHit.point.y,transform.position.z);
+                 function(hookHit.collider);
+            }
+            //else move the hook normally
+            else{
+                transform.position = player.transform.position + hookLength * hookVector;
+            }
+
+            //transform.position = player.transform.position + hookLength * hookVector;
         }
 
         line.SetPosition(0,  player.transform.position + lineStart);
@@ -86,8 +103,76 @@ public class Hook : MonoBehaviour
         }
     }
 
+
+
+    void function(Collider2D other)
+    {
+        if (other.tag == "Ceiling" || other.tag == "Platform")
+        {
+            if (hit) return;
+            //transform.rotation = Quaternion.EulerAngles(new Vector3(0, 0, 90));
+
+
+            hit = true;
+            connectedRigidbody = other.gameObject;
+
+            rigidbody2D.velocity = Vector2.zero;
+
+            DistanceJoint2D joint = (DistanceJoint2D)player.GetComponent<DistanceJoint2D>();
+
+
+            float xColPoint = (transform.position.x - other.transform.position.x);
+            float yColPoint = -other.bounds.extents.y + (other.bounds.center.y - other.transform.position.y);
+
+
+            connectedAnchorTransformOffset = new Vector2(xColPoint, yColPoint);
+
+
+
+            xColPoint /= other.transform.localScale.x;
+            yColPoint /= other.transform.localScale.y;
+
+
+            Vector2 connectedAnchor = new Vector2(xColPoint, yColPoint);
+
+
+
+            //Vector2 anchor = Vector2.zero;
+
+            joint.enabled = true;
+            joint.connectedBody = other.rigidbody2D;
+            //joint.anchor = anchor;
+            joint.connectedAnchor = connectedAnchor;
+            //joint.maxDistanceOnly = false;
+            joint.distance = Vector2.Distance(player.transform.position, transform.position);
+
+
+
+            hitPoint = new Vector3(other.transform.position.x + xColPoint, other.transform.position.y + yColPoint, 0);
+
+            player.rigidbody2D.AddForce(extraForceDirection * extraForce, ForceMode2D.Impulse);
+            player.GetComponent<Player>().hooked = true;
+            player.GetComponent<Player>().shotHook = false;
+
+
+            float minSpeed = player.GetComponent<Player>().minSpeed;
+            if (player.rigidbody2D.velocity.x < minSpeed)
+            {
+                player.rigidbody2D.velocity = new Vector2(minSpeed, player.rigidbody2D.velocity.y);
+            }
+
+
+            player.rigidbody2D.gravityScale = 0;
+
+        }
+    }
+
+
+
     void OnTriggerEnter2D(Collider2D other)
     {
+
+        return;
         if (other.tag == "Ceiling" || other.tag == "Platform")
         {
             if (hit) return;

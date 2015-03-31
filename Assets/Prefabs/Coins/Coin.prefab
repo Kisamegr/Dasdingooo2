@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 480520}
   - 198: {fileID: 19880520}
   - 199: {fileID: 19980520}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 95: {fileID: 9596890}
   - 61: {fileID: 6102826}
   - 114: {fileID: 11480520}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPoints: 50
   maxPoints: 100
+  pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
 --- !u!198 &19880520
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -59,7 +59,7 @@ public class ParallaxBackground : MonoBehaviour
 
 
 
-        transform.position = new Vector3(player.transform.position.x + 5, transform.position.y, transform.position.z);
+        transform.position = new Vector3(player.transform.position.x + 10, transform.position.y, transform.position.z);
 
 
         for (int i = 0; i < layers.Length; i++)

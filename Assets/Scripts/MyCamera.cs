@@ -33,8 +33,8 @@ public class MyCamera : MonoBehaviour
 
         Game game = GameObject.Find("_GAME").GetComponent<Game>();
 
-        yMin = game.yMin;
-        yMax = game.yMax;
+        yMin = game.stageBottom;
+        yMax = game.stageTop;
 
     }
 
@@ -82,6 +82,9 @@ public class MyCamera : MonoBehaviour
       
         float yCamera = Mathf.Clamp(playerGO.transform.position.y, yMin + cameraHeight / 2 + 2f, yMax - cameraHeight / 2 + 1);
         float xCamera = playerGO.transform.position.x + (0.5f - playerRelPosX) * cameraWidth;
+
+
+
 
 
         camera.transform.position = new Vector3(xCamera, yCamera, camera.transform.position.z);

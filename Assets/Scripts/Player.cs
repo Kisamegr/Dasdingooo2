@@ -123,9 +123,15 @@ public class Player : MonoBehaviour
         //An exei petaxtei apo to kanoni tote perimene mexri na arxisei na katevainei. Ka8ws anevainei min kaneis tpt
         if (firedFromCannon)
         {
+            if (rigidbody2D.velocity.x > maxSpeed)
+            {
+                rigidbody2D.velocity = new Vector2(maxSpeed, rigidbody2D.velocity.y);
+            }
+
+
             if (rigidbody2D.velocity.y > -0.1)
             {
-				anim.SetBool("jump",false);
+			    anim.SetBool("jump",false);
                 return;
             }
             else
@@ -133,7 +139,6 @@ public class Player : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, 0, 0);
                 firedFromCannon = false;
 				rigidbody2D.fixedAngle = false;
-
             }
         }
 
@@ -348,7 +353,6 @@ public class Player : MonoBehaviour
     public void fireFromCannon(Vector2 cannonForce)
     {
         transform.parent = null;
-        //startJump = true;
         anim.SetBool("jump", true);
         rigidbody2D.AddForce(cannonForce, ForceMode2D.Impulse);
         if (rigidbody2D.velocity.y > 0)
