@@ -45,8 +45,7 @@ public class PlatformGenerator : MonoBehaviour {
         platformQueue = new Queue();
 
 
-        nextPlatformTime = Random.Range(-platformVar, platformVar) + platformFreq;
-        lastPlatformTime = Time.time;
+        lastPlatformTime = -1;
         lastPlatform = null;
 
 
@@ -68,7 +67,7 @@ public class PlatformGenerator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Time.time - lastPlatformTime > nextPlatformTime)
+        if( lastPlatformTime > 0 && Time.time - lastPlatformTime > nextPlatformTime)
         {
             bool result = CreatePlatform();
             if(!result){
@@ -159,4 +158,10 @@ public class PlatformGenerator : MonoBehaviour {
         }
         return false;
     }
+
+	public void StartGenerating() {
+		lastPlatformTime = Time.time;
+		nextPlatformTime = Random.Range(-platformVar, platformVar) + platformFreq;
+
+	}
 }

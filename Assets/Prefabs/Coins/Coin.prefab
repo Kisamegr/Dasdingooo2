@@ -29,9 +29,10 @@ GameObject:
   - 95: {fileID: 9596890}
   - 61: {fileID: 6102826}
   - 114: {fileID: 11480520}
+  - 50: {fileID: 5025560}
   m_Layer: 18
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,6 +62,21 @@ Transform:
   - {fileID: 480520}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!50 &5025560
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196890}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!61 &6102826
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -101,6 +117,8 @@ MonoBehaviour:
   minPoints: 50
   maxPoints: 100
   pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
+  player: {fileID: 0}
+  game: {fileID: 0}
 --- !u!198 &19880520
 ParticleSystem:
   m_ObjectHideFlags: 1

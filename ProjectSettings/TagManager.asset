@@ -10,6 +10,8 @@ TagManager:
   - Bat
   - PowerUp
   - Enemy
+  - Menu
+  - Coin
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -30,7 +32,7 @@ TagManager:
   User Layer 16: GodCleaner
   User Layer 17: Cog
   User Layer 18: Coin
-  User Layer 19: 
+  User Layer 19: Menu
   User Layer 20: 
   User Layer 21: 
   User Layer 22: 

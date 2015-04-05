@@ -94,7 +94,7 @@ public class Player : MonoBehaviour
 		for(int i=0 ;i<broken.transform.childCount ; i++) {
 			Transform child = (Transform) broken.transform.GetChild(i);
 
-			child.rigidbody2D.velocity = rigidbody2D.velocity;
+			child.rigidbody2D.velocity = rigidbody2D.velocity/2;
 
 		}
 		rigidbody2D.velocity = Vector2.zero;
@@ -361,6 +361,8 @@ public class Player : MonoBehaviour
         }
         inCannon = false;
         firedFromCannon = true;
+
+
     }
 	
 	

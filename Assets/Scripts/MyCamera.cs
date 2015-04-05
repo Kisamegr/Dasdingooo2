@@ -23,6 +23,7 @@ public class MyCamera : MonoBehaviour
 
     public float playerRelPosX;
 
+	private Game gameScript;
 
     // Use this for initialization
     void Start()
@@ -31,17 +32,18 @@ public class MyCamera : MonoBehaviour
         playerScript = playerGO.GetComponent<Player>();
         mainCamera = Camera.main;
 
-        Game game = GameObject.Find("_GAME").GetComponent<Game>();
+		gameScript = GameObject.Find("_GAME").GetComponent<Game>();
 
-        yMin = game.stageBottom;
-        yMax = game.stageTop;
+		yMin = gameScript.stageBottom;
+		yMax = gameScript.stageTop;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+		if(!gameScript.gameRunning) 
+			return;
 
         //Handle camera size
         float temp;

@@ -48,7 +48,7 @@ public class CoinsGenerator : MonoBehaviour
 
         stageTop = game.stageTop;
 
-        lastCoinTime = Time.time;
+        lastCoinTime = -1;
 
         platformsLayermask = 1 << LayerMask.NameToLayer("Platform");
     }
@@ -56,13 +56,13 @@ public class CoinsGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time - lastCoinTime > nextCoinTime)
+        if (lastCoinTime > 0 && Time.time - lastCoinTime > nextCoinTime)
         {
             //An uparxei platform trigurw, ksanaelegkse se 0.5 secs
             Vector2 pointA = new Vector2(transform.position.x - platformCheckWidth/2, stageBottom);
             Vector2 pointB = new Vector2(transform.position.x + platformCheckWidth,stageTop);
             if(Physics2D.OverlapArea(pointA, pointB, platformsLayermask) != null){
-                   Debug.Log("There is a platform");
+//                   Debug.Log("There is a platform");
                    nextCoinTime += 1f;
             }else
             {
@@ -114,7 +114,7 @@ public class CoinsGenerator : MonoBehaviour
             float zigzagBottom = yMin - zigzagHeight / 2;
             float zigzagTop = yMin + zigzagHeight / 2;
             generateCoinsZigZag(noCoins, transform.position.x, zigzagBottom, zigzagTop);
-            Debug.Log("ZigZag");
+//            Debug.Log("ZigZag");
         }
         else
         {
@@ -123,7 +123,7 @@ public class CoinsGenerator : MonoBehaviour
                 yMin += yIncrease * noCoins/2;
             }
             generateCoinsRow(noCoins, transform.position.x, yMin, yIncrease);
-            Debug.Log("Row");
+//            Debug.Log("Row");
         }
     }
 
@@ -320,6 +320,11 @@ public class CoinsGenerator : MonoBehaviour
             }
         }
     }
+
+	public void StartGenerating() {
+		lastCoinTime = Time.time;
+		nextCoinTime = Random.Range(coinsMinTime, coinsMaxTime);
+	}
 
 
     void OnDrawGizmosSelected()

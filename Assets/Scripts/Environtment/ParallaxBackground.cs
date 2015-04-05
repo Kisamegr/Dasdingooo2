@@ -33,6 +33,8 @@ public class ParallaxBackground : MonoBehaviour
             secondLayers[i].transform.parent = transform;
         }
         speed = new float[layers.Length];
+
+
     }
 
     // Update is called once per frame
@@ -40,26 +42,28 @@ public class ParallaxBackground : MonoBehaviour
     {
 
 
-        float playerNormalizedSpeed;
+        float playerNormalizedSpeed = 0.5f;
 
-        if (player.inCannon)
-        {
-            playerNormalizedSpeed = 0;
-        }
-        else
-        {
-            playerNormalizedSpeed =  player.rigidbody2D.velocity.x / player.maxSpeed;
-        }
-
-
-        for (int i = 0; i < speed.Length; i++)
-        {
-            speed[i] = constantSpeed[i] + maxSpeed[i] * playerNormalizedSpeed;
-        }
+		if(player != null) {
+	        if (player.inCannon)
+	        {
+	            playerNormalizedSpeed = 0;
+	        }
+	        else
+	        {
+	            playerNormalizedSpeed =  player.rigidbody2D.velocity.x / player.maxSpeed;
+				transform.position = new Vector3(player.transform.position.x + 10, transform.position.y, transform.position.z);
+	        }
 
 
+	        for (int i = 0; i < speed.Length; i++)
+	        {
+	            speed[i] = constantSpeed[i] + maxSpeed[i] * playerNormalizedSpeed;
+	        }
 
-        transform.position = new Vector3(player.transform.position.x + 10, transform.position.y, transform.position.z);
+		}
+
+
 
 
         for (int i = 0; i < layers.Length; i++)

@@ -28,7 +28,7 @@ public class Hook : MonoBehaviour
     //
     private Vector3 hitPoint;
     //
-    LineRenderer line;
+    private LineRenderer line;
 
 	private Vector3 lineStart;
 

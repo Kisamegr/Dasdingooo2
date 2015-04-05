@@ -4,6 +4,21 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: main menu_0
     21300002: main menu_1
+    21300004: main menu_2
+    21300006: main menu_3
+    21300008: main menu_4
+    21300010: main menu_5
+    21300012: main menu_6
+    21300014: main menu_7
+    21300016: main menu_8
+    21300018: main menu_9
+    21300020: main menu_10
+    21300022: main menu_11
+    21300024: main menu_12
+    21300026: main menu_13
+    21300028: main menu_14
+    21300030: main menu_15
+    21300032: main menu_16
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,20 +63,170 @@ TextureImporter:
     - name: main menu_0
       rect:
         serializedVersion: 2
-        x: 365
-        y: 288
-        width: 273
-        height: 85
+        x: 14
+        y: 469
+        width: 270
+        height: 83
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: main menu_1
       rect:
         serializedVersion: 2
-        x: 359
-        y: 185
-        width: 273
-        height: 85
+        x: 9
+        y: 372
+        width: 270
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_2
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 284
+        width: 270
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_3
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 187
+        width: 270
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 101
+        width: 270
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_5
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 4
+        width: 270
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_6
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 455
+        width: 22
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_7
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 501
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_8
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 158
+        width: 394
+        height: 395
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_9
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 76
+        width: 165
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_10
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 16
+        width: 191
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_11
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 72
+        width: 238
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_12
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 367
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_13
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 294
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_14
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 568
+        width: 205
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_15
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 564
+        width: 205
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_16
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 43
+        width: 169
+        height: 11
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

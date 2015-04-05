@@ -154,7 +154,7 @@ MonoBehaviour:
   ghostPrefab: {fileID: 111174, guid: 5729d41cd9fa33549ac0622eee39dcea, type: 2}
   ghostsSpeedThreshold: .850000024
   ghostsInitFrequency: .0199999996
-  ghostsLifetime: .159999996
+  ghostsLifetime: .180000007
 --- !u!212 &21273522
 SpriteRenderer:
   m_ObjectHideFlags: 1

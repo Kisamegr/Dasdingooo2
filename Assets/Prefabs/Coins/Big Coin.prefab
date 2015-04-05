@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11457534}
   m_Layer: 18
   m_Name: Big Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,6 +101,8 @@ MonoBehaviour:
   minPoints: 450
   maxPoints: 900
   pickupSound: {fileID: 8300000, guid: 0b5de865586844050b285d4a3fd6b033, type: 3}
+  player: {fileID: 0}
+  game: {fileID: 0}
 --- !u!198 &19857534
 ParticleSystem:
   m_ObjectHideFlags: 1

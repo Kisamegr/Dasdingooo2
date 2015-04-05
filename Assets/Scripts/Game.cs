@@ -7,27 +7,17 @@ public class Game : MonoBehaviour
 
     public GameObject groundPrefab;
     public GameObject ceilingPrefab;
-    public GameObject[] platforms;
-    public GameObject batGroupPrefab;
-	public GameObject[] powerUps;
-	public GameObject[] enemies;
+
 
     public float stageTop = 18f;
     public float stageBottom = -21f;
     public float cameraHeight;
-
-	public float enemyFreq;
-	public float enemyVar;
-
-    private float lastEnemyTime;
-    private float nextEnemyTime;
-    private Transform enemySpawner;
-
 	 
 
 
     public float score;
     public Text scoreText;
+	public int coinsCollected;
 
     private Vector3 startingPos;
 
@@ -44,12 +34,19 @@ public class Game : MonoBehaviour
     private Queue groundQueue;
     private Queue ceilingQueue;
 
+	public bool gameRunning;
 
-    public int coinsCollected;
+	private PlatformGenerator platformGenerator;
+	private EnemyGenerator enemyGenerator;
+	private CoinsGenerator coinsGenerator;
+
+
 
     void Start()
     {
 		Time.timeScale = 1f;
+		gameRunning = false;
+
         groundQueue = new Queue();
         ceilingQueue = new Queue();
 
@@ -61,8 +58,7 @@ public class Game : MonoBehaviour
         Vector3 cameraTop = camTrans.camera.ViewportToWorldPoint(new Vector3(0, 1, 0));
         cameraHeight = cameraTop.y - cameraZero.y;
 
-		nextEnemyTime = 6f;
-		lastEnemyTime = Time.time;
+
 
 
         //Debug.Log(cameraTop);
@@ -101,11 +97,22 @@ public class Game : MonoBehaviour
 
         startingPos = player.position;
 
+		platformGenerator = camTrans.FindChild("PlatformSpawner").GetComponent<PlatformGenerator>();
+		enemyGenerator = camTrans.FindChild("EnemySpawner").GetComponent<EnemyGenerator>();
+		coinsGenerator = camTrans.FindChild("CoinsSpawner").GetComponent<CoinsGenerator>();
 
 
-        enemySpawner = camTrans.FindChild("EnemySpawner");
 
     }
+
+	public void StartGame() {
+
+		gameRunning = true;
+
+		platformGenerator.StartGenerating();
+		enemyGenerator.StartGenerating();
+		coinsGenerator.StartGenerating();
+	}
 
 
 
@@ -113,21 +120,17 @@ public class Game : MonoBehaviour
     {
         //float yCamera = Mathf.Clamp(player.position.y, yMin + cameraHeight / 2 - 1, yMax - cameraHeight / 2 + 1);
         //camTrans.position = new Vector3(player.position.x + 14, yCamera, camTrans.position.z);
+		if(!gameRunning)
+			return;
 
-        if (Time.time - lastEnemyTime > nextEnemyTime)
-        {
-			int r = Random.Range(0,enemies.Length);
-
-			Instantiate(enemies[r],enemySpawner.position,Quaternion.identity);
-
-			nextEnemyTime = enemyFreq + Random.Range(-enemyVar, enemyVar);
-			lastEnemyTime = Time.time;
-        }
+        
 
     }
 
     void FixedUpdate()
     {
+		if(!gameRunning) 
+			return;
 
         score = player.position.x - startingPos.x;
         score /= 10;
@@ -162,7 +165,11 @@ public class Game : MonoBehaviour
 
 
 	public void AddNextEnemyTime(float sec) {
-		nextEnemyTime += sec;
+		enemyGenerator.AddNextEnemyTime(sec);
+	}
+
+	void OnLevelWasLoaded(int level) {
+		Debug.Log("LEVEEVEVEL  " + level);
 	}
 
  

@@ -1,10 +1,8 @@
 fileFormatVersion: 2
-guid: 268d5b7bd17339b4ab484c6b1eaa08d2
+guid: 2e4b45c44424f7e4f9fd456eb766ffa6
 TextureImporter:
   fileIDToRecycleName:
-    21300000: platform new_0
-    21300002: platform new_1
-    21300004: platform new_3
+    21300000: ui_game_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -46,35 +44,15 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: platform new_0
+    - name: ui_game_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 370
-        width: 1506
-        height: 126
+        x: 18
+        y: 750
+        width: 500
+        height: 260
       alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: platform new_1
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 241
-        width: 1429
-        height: 107
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: platform new_3
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 10
-        width: 1236
-        height: 226
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
