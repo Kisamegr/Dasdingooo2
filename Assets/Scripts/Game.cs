@@ -7,23 +7,13 @@ public class Game : MonoBehaviour
 
     public GameObject groundPrefab;
     public GameObject ceilingPrefab;
-    public GameObject[] platforms;
-    public GameObject batGroupPrefab;
-	public GameObject[] powerUps;
-	public GameObject[] enemies;
+
 
     public float stageTop = 18f;
     public float stageBottom = -21f;
     public float cameraHeight;
 
-	public float enemyFreq;
-	public float enemyVar;
 
-    private float lastEnemyTime;
-    private float nextEnemyTime;
-    private Transform enemySpawner;
-
-	 
 
 
     public float score;
@@ -47,9 +37,16 @@ public class Game : MonoBehaviour
 
     public int coinsCollected;
 
+
+    private CoinsGenerator coinsGenerator;
+    private EnemiesGenerator enemiesGenerator;
+    private PlatformsGenerator platformsGenerator;
+
+
+
     void Start()
     {
-		Time.timeScale = 1f;
+        Time.timeScale = 1f;
         groundQueue = new Queue();
         ceilingQueue = new Queue();
 
@@ -61,16 +58,13 @@ public class Game : MonoBehaviour
         Vector3 cameraTop = camTrans.camera.ViewportToWorldPoint(new Vector3(0, 1, 0));
         cameraHeight = cameraTop.y - cameraZero.y;
 
-		nextEnemyTime = 6f;
-		lastEnemyTime = Time.time;
-
 
         //Debug.Log(cameraTop);
 
-		groundWidth = groundPrefab.transform.GetChild(0).renderer.bounds.size.x   - 2;
+        groundWidth = groundPrefab.transform.GetChild(0).renderer.bounds.size.x - 2;
         ceilingWidth = ceilingPrefab.renderer.bounds.size.x;
         //groundWidth = 10;
-		
+
 
         GameObject ground = null, ceiling = null;
 
@@ -100,10 +94,10 @@ public class Game : MonoBehaviour
         lastCeiling = ceiling.transform;
 
         startingPos = player.position;
+        coinsGenerator = camTrans.FindChild("CoinsSpawner").GetComponent<CoinsGenerator>();
+        enemiesGenerator = camTrans.FindChild("EnemiesSpawner").GetComponent<EnemiesGenerator>();
+        platformsGenerator = camTrans.FindChild("PlatformsSpawner").GetComponent<PlatformsGenerator>();
 
-
-
-        enemySpawner = camTrans.FindChild("EnemySpawner");
 
     }
 
@@ -114,15 +108,7 @@ public class Game : MonoBehaviour
         //float yCamera = Mathf.Clamp(player.position.y, yMin + cameraHeight / 2 - 1, yMax - cameraHeight / 2 + 1);
         //camTrans.position = new Vector3(player.position.x + 14, yCamera, camTrans.position.z);
 
-        if (Time.time - lastEnemyTime > nextEnemyTime)
-        {
-			int r = Random.Range(0,enemies.Length);
 
-			Instantiate(enemies[r],enemySpawner.position,Quaternion.identity);
-
-			nextEnemyTime = enemyFreq + Random.Range(-enemyVar, enemyVar);
-			lastEnemyTime = Time.time;
-        }
 
     }
 
@@ -161,18 +147,34 @@ public class Game : MonoBehaviour
     }
 
 
-	public void AddNextEnemyTime(float sec) {
-		nextEnemyTime += sec;
-	}
+    public void AddNextEnemyTime(float enemyPenalty)
+    {
+        enemiesGenerator.AddNextEnemyTime(enemyPenalty);
+    }
 
- 
+
+    public void activateSpawners()
+    {
+        coinsGenerator.activate();
+        enemiesGenerator.activate();
+        platformsGenerator.activate();
+    }
+
+    public void deactivateSpawners()
+    {
+        coinsGenerator.deactivate();
+        enemiesGenerator.deactivate();
+        platformsGenerator.deactivate();
+    }
+
+
     void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
-        Gizmos.DrawLine(new Vector3(-100,stageTop,0),new Vector3(100,stageTop,0));
-        
+        Gizmos.DrawLine(new Vector3(-100, stageTop, 0), new Vector3(100, stageTop, 0));
+
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(new Vector3(-100,stageBottom,0),new Vector3(100,stageBottom,0));
+        Gizmos.DrawLine(new Vector3(-100, stageBottom, 0), new Vector3(100, stageBottom, 0));
     }
 
 }

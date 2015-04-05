@@ -21,7 +21,7 @@ public class SwingCog : Enemy {
 		joint = cog.GetComponent<DistanceJoint2D>();
 		line = cog.GetComponent<LineRenderer>();
 
-		radius = Mathf.Clamp( gameScript.stageTop - gameScript.player.position.y - 4, minRadius, maxRadius) ;
+		radius = Mathf.Clamp( gameScript.stageTop - gameScript.player.position.y - 5, minRadius, maxRadius) ;
 
 		stat.position = new Vector3(transform.position.x,gameScript.stageTop,0);
 		cog.position = new Vector3(transform.position.x + radius * Mathf.Sin(angle * Mathf.Deg2Rad), gameScript.stageTop -  Mathf.Cos(angle*Mathf.Deg2Rad)*radius,0);

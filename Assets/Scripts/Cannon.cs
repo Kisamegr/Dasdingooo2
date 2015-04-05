@@ -38,7 +38,7 @@ public class Cannon : MonoBehaviour
 
     private float shootTime;
 
-    private float shootDelay = 0.15f;
+    private float shootDelay = 0.1f;
 
     private bool playerFired = false;
     
@@ -77,6 +77,8 @@ public class Cannon : MonoBehaviour
 
         shootTime = Time.time;
         playerFired = false;
+
+        GameObject.Find("_GAME").GetComponent<Game>().deactivateSpawners();
     }
 
     // Update is called once per frame
@@ -88,6 +90,8 @@ public class Cannon : MonoBehaviour
         {
             if(Time.time - shootTime >= shootDelay && !playerFired){
                 firePlayer();
+
+                GameObject.Find("_GAME").GetComponent<Game>().activateSpawners();
             }
         }
 
@@ -162,7 +166,7 @@ public class Cannon : MonoBehaviour
         shootTime = Time.time;
         //fire player after delay
         //Invoke("firePlayer", 0.15f);
-        firePlayer();
+        //firePlayer();
     
     }
 

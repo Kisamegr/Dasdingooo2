@@ -9,14 +9,21 @@ public class Coin : MonoBehaviour {
 
     public AudioClip pickupSound;
 
-    public Player player;
+    public Player player = null;
 
-    public Game game;
+    public Game game = null;
 
 
 	// Use this for initialization
 	void Start () {
-	
+        if (game == null)
+        {
+            game = GameObject.FindGameObjectWithTag("GameController").GetComponent<Game>();
+        }
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        }
 	}
 	
 	// Update is called once per frame
