@@ -232,7 +232,13 @@ public class Player : MonoBehaviour
 		
 		if(Input.GetKeyDown(KeyCode.Z) && !jumped && !hooked) {
 			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x,0);
-			rigidbody2D.AddForce(Vector3.up*jumpForce , ForceMode2D.Impulse);
+
+            /* Vector2 jumpForceDir = new Vector2(-0.1f, 1f);
+             * jumpForceDir.Normalize();
+             * rigidbody2D.AddForce(jumpForceDir*jumpForce,ForceMode2D.Impulse);
+             */
+
+            rigidbody2D.AddForce(Vector2.up*jumpForce , ForceMode2D.Impulse);
 			jumped = true;
 			startJump = true;
 		}
@@ -271,8 +277,6 @@ public class Player : MonoBehaviour
         if (other.collider.tag == "Ceiling")
 			HitHead ();
 
-		
-
 		if(other.collider.tag == "Ground" || other.collider.tag == "Enemy")
 			GameOver();
         
@@ -291,8 +295,34 @@ public class Player : MonoBehaviour
 			//else
 			//	HitHead();
 		}
-        
+
     }
+
+
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Crate")
+        {
+            Crate crate = other.GetComponent<Crate>();
+            if (crate.isDestroyed())
+            {
+                return;
+            }
+
+            Vector2 velocity = rigidbody2D.velocity;
+            velocity.x = (1 - crate.slowdownPercent) * velocity.x;
+
+            rigidbody2D.velocity = velocity;
+
+            //Maybe change animation;
+
+            crate.Destroy();
+        }        
+    }
+
+
+
 
 	void OnCollisionExit2D(Collision2D coll) {
 		if(coll.collider.tag == "Platform")

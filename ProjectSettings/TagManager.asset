@@ -10,8 +10,12 @@ TagManager:
   - Bat
   - PowerUp
   - Enemy
+<<<<<<< HEAD
   - Menu
   - Coin
+=======
+  - Crate
+>>>>>>> origin/master
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -32,7 +36,11 @@ TagManager:
   User Layer 16: GodCleaner
   User Layer 17: Cog
   User Layer 18: Coin
+<<<<<<< HEAD
   User Layer 19: Menu
+=======
+  User Layer 19: Crate
+>>>>>>> origin/master
   User Layer 20: 
   User Layer 21: 
   User Layer 22: 

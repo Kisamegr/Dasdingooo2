@@ -17,7 +17,7 @@ public class CoinsGenerator : MonoBehaviour
 
     public float playerPositionVar;
 
-   
+
 
     private float lastCoinTime;
 
@@ -36,6 +36,18 @@ public class CoinsGenerator : MonoBehaviour
     public float platformCheckWidth;
 
 
+    public GameObject thanosCoinsPrefab;
+
+    public GameObject stratosCoinsPrefab;
+
+    private bool thanosCoinsSpawned;
+
+    private bool stratosCoinsSpawned;
+
+
+
+
+    private bool activeGenerator;
 
     // Use this for initialization
     void Start()
@@ -51,11 +63,17 @@ public class CoinsGenerator : MonoBehaviour
         lastCoinTime = -1;
 
         platformsLayermask = 1 << LayerMask.NameToLayer("Platform");
+
+
+        thanosCoinsSpawned = false;
+
+        stratosCoinsSpawned = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD:Assets/Scripts/Environtment/CoinsGenerator.cs
         if (lastCoinTime > 0 && Time.time - lastCoinTime > nextCoinTime)
         {
             //An uparxei platform trigurw, ksanaelegkse se 0.5 secs
@@ -65,10 +83,37 @@ public class CoinsGenerator : MonoBehaviour
 //                   Debug.Log("There is a platform");
                    nextCoinTime += 1f;
             }else
+=======
+        if (!activeGenerator) return;
+
+
+        if (Time.time - lastCoinTime > nextCoinTime)
+        {
+            //An uparxei platform trigurw, ksanaelegkse se 0.5 secs
+            Vector2 pointA = new Vector2(transform.position.x - platformCheckWidth / 2, stageBottom);
+            Vector2 pointB = new Vector2(transform.position.x + platformCheckWidth, stageTop);
+            if (Physics2D.OverlapArea(pointA, pointB, platformsLayermask) != null)
+>>>>>>> origin/master:Assets/Scripts/CoinsGenerator.cs
             {
+                Debug.Log("There is a platform");
+                nextCoinTime += 1f;
+            }
+            else
+            {
+                
                 int noCoins = Random.Range(minCoins, maxCoins);
 
-                generateCoins(noCoins);
+                //Generate Thanos Or Stratos 
+                if (generateCoinsName(noCoins))
+                {
+                    nextCoinTime = Random.Range(coinsMinTime, coinsMaxTime);
+
+                    lastCoinTime = Time.time;
+                    return;
+                }
+
+
+                generateCoinsOnAir(noCoins);
 
                 nextCoinTime = Random.Range(coinsMinTime, coinsMaxTime);
 
@@ -79,8 +124,66 @@ public class CoinsGenerator : MonoBehaviour
     }
 
 
+    public bool generateCoinsName(int noCoins)
+    {
+       
+        if (noCoins != maxCoins)
+        {
+            return false;
+        }
+        if (thanosCoinsSpawned && stratosCoinsSpawned)
+        {
+            return false;
+        }
 
-    public void generateCoins(int noCoins)
+        float r = Random.value;
+
+        //0.4 chance to spawn coins name when noCoins == maxCoins
+        if (r < 0.4)
+        {
+
+            float y = playerTrans.position.y + Random.Range(-playerPositionVar, playerPositionVar);
+            Vector3 coinsPos = new Vector3(transform.position.x, y, 0);
+
+            // if no name has spawned yet, choose one at random
+            if (!thanosCoinsSpawned && !stratosCoinsSpawned)
+            {
+                GameObject coinsName;
+                if (r < 0.2)
+                {
+                    coinsName = (GameObject)Instantiate(thanosCoinsPrefab, coinsPos, Quaternion.identity);
+                    thanosCoinsSpawned = true;
+                }
+                else
+                {
+                    coinsName = (GameObject)Instantiate(stratosCoinsPrefab, coinsPos, Quaternion.identity);
+                    stratosCoinsSpawned = true;
+                }
+
+                return true;
+            }
+
+            // if stratos hasn't spawned yet (thanos has already spawned)
+            if (!stratosCoinsSpawned)
+            {
+                GameObject coinsName = (GameObject)Instantiate(stratosCoinsPrefab, coinsPos, Quaternion.identity);
+                stratosCoinsSpawned = true;
+            }
+            else
+            {
+                GameObject coinsName = (GameObject)Instantiate(thanosCoinsPrefab, coinsPos, Quaternion.identity);
+                thanosCoinsSpawned = true;
+            }
+
+            return true;
+        }
+
+        return false;
+    }
+
+
+
+    public void generateCoinsOnAir(int noCoins)
     {
         Vector2 coinSize = new Vector2(coinPrefab.renderer.bounds.size.x, coinPrefab.renderer.bounds.size.y);
 
@@ -103,7 +206,7 @@ public class CoinsGenerator : MonoBehaviour
 
         yMin = Mathf.Clamp(yMin, stageBottom + 10, stageTop - 10);
 
-        
+
 
 
         //An einai gia zigzag (meta mporw na valw pi8anothtes)
@@ -120,7 +223,7 @@ public class CoinsGenerator : MonoBehaviour
         {
             if (yIncrease < 0)
             {
-                yMin += yIncrease * noCoins/2;
+                yMin += yIncrease * noCoins / 2;
             }
             generateCoinsRow(noCoins, transform.position.x, yMin, yIncrease);
 //            Debug.Log("Row");
@@ -234,7 +337,7 @@ public class CoinsGenerator : MonoBehaviour
             }
 
 
-           
+
 
             //Generate auth th sthlh apo coins
             for (int row = 0; row < noRows; row++)
@@ -275,7 +378,7 @@ public class CoinsGenerator : MonoBehaviour
         Vector2 platformCenterTop = new Vector2(platform.collider2D.bounds.center.x, platform.collider2D.bounds.max.y);
 
         float xMin = platformCenterTop.x;
-        float yMin = platformCenterTop.y + coinSize.y/2;
+        float yMin = platformCenterTop.y + coinSize.y / 2;
         float yIncrease = 0;
 
         //Generate 4 to 2 rows of coins
@@ -292,11 +395,10 @@ public class CoinsGenerator : MonoBehaviour
 
                 int noColumns = noCoins / noRows;
 
-                if(noColumns % 2 == 0){
-                    xMin = platformCenterTop.x - noColumns * coinSize.x / 2 - (noColumns / 2 - 0.5f) * gapWidth;
-                }else{
-                    xMin = platformCenterTop.x - noColumns * coinSize.x / 2 - (noColumns - 1) * gapWidth / 2;
-                }
+                float totalWidth = noColumns * coinSize.x + (noColumns - 1) * gapWidth;
+
+
+                xMin = platformCenterTop.x - totalWidth / 2 + coinSize.x / 2;
 
 
                 for (int row = 0; row < noRows; row++)
@@ -327,18 +429,31 @@ public class CoinsGenerator : MonoBehaviour
 	}
 
 
+    public void deactivate()
+    {
+        activeGenerator = false;
+    }
+
+    public void activate()
+    {
+        Debug.Log("Activation Coin");
+        lastCoinTime = Time.time;
+        activeGenerator = true;
+    }
+
+
     void OnDrawGizmosSelected()
     {
 
 
-        Vector3 topLeft = new Vector3(transform.position.x - platformCheckWidth/2, 40, 0);
-     
-        Vector3 topRight = new Vector3(transform.position.x + platformCheckWidth,40,0);
+        Vector3 topLeft = new Vector3(transform.position.x - platformCheckWidth / 2, 40, 0);
 
-        Vector3 bottomLeft = new Vector3(transform.position.x - platformCheckWidth/2, -40, 0);
-     
-        Vector3 bottomRight = new Vector3(transform.position.x + platformCheckWidth,-40,0);
-     
+        Vector3 topRight = new Vector3(transform.position.x + platformCheckWidth, 40, 0);
+
+        Vector3 bottomLeft = new Vector3(transform.position.x - platformCheckWidth / 2, -40, 0);
+
+        Vector3 bottomRight = new Vector3(transform.position.x + platformCheckWidth, -40, 0);
+
         Gizmos.color = Color.green;
 
         Gizmos.DrawLine(topRight, bottomRight);
