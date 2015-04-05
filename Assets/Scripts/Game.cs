@@ -12,17 +12,12 @@ public class Game : MonoBehaviour
     public float stageTop = 18f;
     public float stageBottom = -21f;
     public float cameraHeight;
-<<<<<<< HEAD
-	 
-=======
 
 
->>>>>>> origin/master
 
 
     public float score;
     public Text scoreText;
-	public int coinsCollected;
 
     private Vector3 startingPos;
 
@@ -39,30 +34,19 @@ public class Game : MonoBehaviour
     private Queue groundQueue;
     private Queue ceilingQueue;
 
-	public bool gameRunning;
 
-	private PlatformGenerator platformGenerator;
-	private EnemyGenerator enemyGenerator;
-	private CoinsGenerator coinsGenerator;
-
-
+    public int coinsCollected;
 
 
     private CoinsGenerator coinsGenerator;
     private EnemiesGenerator enemiesGenerator;
     private PlatformsGenerator platformsGenerator;
 
-
+	public bool gameRunning;
 
     void Start()
     {
-<<<<<<< HEAD
-		Time.timeScale = 1f;
-		gameRunning = false;
-
-=======
         Time.timeScale = 1f;
->>>>>>> origin/master
         groundQueue = new Queue();
         ceilingQueue = new Queue();
 
@@ -74,11 +58,6 @@ public class Game : MonoBehaviour
         Vector3 cameraTop = camTrans.camera.ViewportToWorldPoint(new Vector3(0, 1, 0));
         cameraHeight = cameraTop.y - cameraZero.y;
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> origin/master
 
         //Debug.Log(cameraTop);
 
@@ -119,25 +98,8 @@ public class Game : MonoBehaviour
         enemiesGenerator = camTrans.FindChild("EnemiesSpawner").GetComponent<EnemiesGenerator>();
         platformsGenerator = camTrans.FindChild("PlatformsSpawner").GetComponent<PlatformsGenerator>();
 
-		platformGenerator = camTrans.FindChild("PlatformSpawner").GetComponent<PlatformGenerator>();
-		enemyGenerator = camTrans.FindChild("EnemySpawner").GetComponent<EnemyGenerator>();
-		coinsGenerator = camTrans.FindChild("CoinsSpawner").GetComponent<CoinsGenerator>();
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> origin/master
     }
-
-	public void StartGame() {
-
-		gameRunning = true;
-
-		platformGenerator.StartGenerating();
-		enemyGenerator.StartGenerating();
-		coinsGenerator.StartGenerating();
-	}
 
 
 
@@ -145,21 +107,13 @@ public class Game : MonoBehaviour
     {
         //float yCamera = Mathf.Clamp(player.position.y, yMin + cameraHeight / 2 - 1, yMax - cameraHeight / 2 + 1);
         //camTrans.position = new Vector3(player.position.x + 14, yCamera, camTrans.position.z);
-		if(!gameRunning)
-			return;
 
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> origin/master
 
     }
 
     void FixedUpdate()
     {
-		if(!gameRunning) 
-			return;
 
         score = player.position.x - startingPos.x;
         score /= 10;
@@ -193,15 +147,6 @@ public class Game : MonoBehaviour
     }
 
 
-<<<<<<< HEAD
-	public void AddNextEnemyTime(float sec) {
-		enemyGenerator.AddNextEnemyTime(sec);
-	}
-
-	void OnLevelWasLoaded(int level) {
-		Debug.Log("LEVEEVEVEL  " + level);
-	}
-=======
     public void AddNextEnemyTime(float enemyPenalty)
     {
         enemiesGenerator.AddNextEnemyTime(enemyPenalty);
@@ -222,7 +167,6 @@ public class Game : MonoBehaviour
         platformsGenerator.deactivate();
     }
 
->>>>>>> origin/master
 
     void OnDrawGizmos()
     {
