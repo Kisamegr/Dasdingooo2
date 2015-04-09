@@ -65,7 +65,11 @@ public abstract class Enemy : MonoBehaviour {
 		}
 	}
 
-	public void Kill() {
+	public abstract void Death();
+
+	protected IEnumerator Kill(float delay) {
+
+		yield return new WaitForSeconds(delay);
 
 		if(warningRect!=null)
 			Destroy(warningRect.gameObject);

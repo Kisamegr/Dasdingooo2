@@ -69,7 +69,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 196890}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1.90999997
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -114,8 +114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f677cbd0a74952f4c8d0ab32557edbe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minPoints: 50
-  maxPoints: 100
+  minPoints: 5
+  maxPoints: 10
+  followSpeed: 200
   pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
   player: {fileID: 0}
   game: {fileID: 0}

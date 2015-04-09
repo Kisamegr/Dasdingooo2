@@ -54,6 +54,8 @@ public class PlatformsGenerator : MonoBehaviour
 
     private int coinsLayermask;
 
+	public int startPowerupNumber;
+	public float powerupDist;
 
 
     private float stageBottom;
@@ -98,6 +100,8 @@ public class PlatformsGenerator : MonoBehaviour
         spawnPowerupChance = spawnPowerupChance / spawnChancesSum;
 
         spawnCratesChance = spawnCratesChance / spawnChancesSum;
+
+		SpawnStartingPowerUps();
     }
 
     // Update is called once per frame
@@ -195,16 +199,9 @@ public class PlatformsGenerator : MonoBehaviour
     private void spawnPowerup(GameObject platform)
     {
         GameObject power;
-        float pp = Random.Range(0f, 1f);
-
-        if (pp < 0.25f)
-            power = (GameObject)Instantiate(powerUps[0]);
-        else if (pp < 0.5f)
-            power = (GameObject)Instantiate(powerUps[1]);
-        else if (pp < 0.75f)
-            power = (GameObject)Instantiate(powerUps[2]);
-        else
-            power = (GameObject)Instantiate(powerUps[3]);
+        int index = Random.Range(0, powerUps.Length);
+		
+		power = (GameObject)Instantiate(powerUps[index]);
 
 
         power.transform.position = new Vector3(platform.transform.position.x, platform.transform.position.y + 4, 0);
@@ -247,6 +244,19 @@ public class PlatformsGenerator : MonoBehaviour
     }
 
 
+	void SpawnStartingPowerUps() {
+		Transform origin = GameObject.Find("Starting Powerups").transform;
+
+		float y;
+		for(int i=0 ; i<startPowerupNumber ; i++) {
+			y = origin.position.y + (i-(startPowerupNumber-1)/2f) * powerupDist/2;
+
+			Instantiate(powerUps[Random.Range(0,powerUps.Length)],new Vector3(origin.position.x, y, origin.position.z),Quaternion.identity);
+
+		}
+
+	}
+
 
     public void deactivate()
     {
@@ -256,7 +266,6 @@ public class PlatformsGenerator : MonoBehaviour
     public void activate()
     {
 
-        Debug.Log("Activation Plat");
         activeGenerator = true;
         lastPlatformTime = Time.time;
     }

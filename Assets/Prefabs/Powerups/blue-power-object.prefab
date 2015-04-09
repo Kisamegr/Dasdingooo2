@@ -39,11 +39,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7b9c67719e2d184681b217f0c52d32a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 5
+  id: 0
+  duration: 10
   changeSpeed: .100000001
   player: {fileID: 0}
-  forcePower: 4
-  speedColor: {r: .256920427, g: .64574641, b: .970588207, a: 1}
+  sliderPrefab: {fileID: 163860, guid: b4069bcddb7930e4aa067a3cdea81417, type: 2}
+  forcePower: 6
+  speedColor: {r: .256920427, g: .64574641, b: .970588207, a: .850980401}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

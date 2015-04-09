@@ -11,9 +11,5 @@ public class Bat : MonoBehaviour {
 	void Start () {
         rigidbody2D.velocity = speed; 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        //Elegkse gia destroy
-	}
+
 }

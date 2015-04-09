@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public abstract class Powerup : MonoBehaviour {
@@ -11,21 +12,40 @@ public abstract class Powerup : MonoBehaviour {
 	public float duration;
 	public float changeSpeed;
 	public GameObject player;
+	public GameObject sliderPrefab;
 
 	protected float startTime;
 	protected PowerState state;
-	protected bool simul=false;
+	protected bool simul=false; // True for overlapping the BeforePower and Power methods
 
-
+	protected Slider slider;
 	// Use this for initialization
 	protected virtual void Start () {
 		startTime = Time.time;
 		state = PowerState.Started;
+
+		if(sliderPrefab != null)  {
+			GameObject sl = (GameObject) Instantiate(sliderPrefab);
+			sl.transform.SetParent(GameObject.Find("Canvas").transform.FindChild("PowerSliderPos").transform,false);
+
+			slider = sl.GetComponent<Slider>();
+
+			Debug.Log("aheehehehhe");
+		}
+	}
+
+	protected virtual void Update() {	
+		if(slider != null ) {
+			slider.value = 1 - (Time.time - startTime)/( duration);
+
+			if(Time.time - startTime > duration) {
+				Destroy(slider.gameObject);
+			}
+
+		}
 	}
 
 	protected virtual void FixedUpdate() {
-
-
 
 		if(state == PowerState.Started)
 			BeforePower();	
@@ -49,6 +69,7 @@ public abstract class Powerup : MonoBehaviour {
 	}
 
 	protected virtual void AfterPowerEnded() {
+
 		Destroy(gameObject);
 	}
 

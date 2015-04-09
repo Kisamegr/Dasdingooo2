@@ -43,6 +43,7 @@ MonoBehaviour:
   duration: 6
   changeSpeed: .150000006
   player: {fileID: 0}
+  sliderPrefab: {fileID: 163860, guid: b4069bcddb7930e4aa067a3cdea81417, type: 2}
   scaleFactor: .5
   scaleColor: {r: .683823526, g: 1, b: .777586222, a: 1}
 --- !u!1001 &100100000

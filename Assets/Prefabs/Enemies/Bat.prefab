@@ -13,7 +13,7 @@ GameObject:
   - 61: {fileID: 6103724}
   - 50: {fileID: 5003724}
   - 114: {fileID: 11440528}
-  m_Layer: 15
+  m_Layer: 21
   m_Name: Bat
   m_TagString: Bat
   m_Icon: {fileID: 0}

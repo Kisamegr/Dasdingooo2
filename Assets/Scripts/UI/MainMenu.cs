@@ -6,12 +6,20 @@ public class MainMenu : MonoBehaviour {
 
 	public Animator menuAnimator;
 	public Animator settingsAnimator;
-	public Button[] buttons;
+	public Button[] menuButtons;
 	public Collider2D menuCollider;
+
+	public Toggle musicToggle;
+	public Toggle soundsToggle;
+
+	public Save save;
 
 	// Use this for initialization
 	void Start () {
-	
+		save = GameObject.Find("_SAVE").GetComponent<Save>();
+
+		musicToggle.isOn = save.isMusicOn();
+		soundsToggle.isOn = save.isSoundOn();
 	}
 	
 	// Update is called once per frame
@@ -23,7 +31,7 @@ public class MainMenu : MonoBehaviour {
 		menuAnimator.SetTrigger("play");
 		menuCollider.enabled = false;
 
-		foreach(Button b in buttons) {
+		foreach(Button b in menuButtons) {
 			b.interactable = false;
 		}
 
@@ -47,6 +55,13 @@ public class MainMenu : MonoBehaviour {
 		menuCollider.enabled = true;
 	}
 
+	public void ToggleMusic() {
+		save.SetMusic(musicToggle.isOn);
+	}
+
+	public void ToggleSounds() {
+		save.SetSounds(soundsToggle.isOn);
+	}
 
 	IEnumerator LoadGameLevel(float delay) {
 		yield return new WaitForSeconds(delay);

@@ -7,12 +7,17 @@ public class Coin : MonoBehaviour {
 
     public int maxPoints;
 
+	public float followSpeed = 200;
+
     public AudioClip pickupSound;
 
     public Player player = null;
 
     public Game game = null;
 
+	private bool follow;
+
+	private Vector3 followForce;
 
 	// Use this for initialization
 	void Start () {
@@ -24,11 +29,17 @@ public class Coin : MonoBehaviour {
         {
             player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         }
+
+		follow = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
+		if(follow) {
+			followForce = player.transform.position - transform.position;
+			rigidbody2D.AddForce(followForce.normalized * followSpeed);
+		}
 	}
 
 
@@ -40,11 +51,17 @@ public class Coin : MonoBehaviour {
             float points = minPoints + (maxPoints - minPoints) * player.rigidbody2D.velocity.x/player.maxSpeed;
 
             game.coinsCollected++;
-                
+			game.score.AddCoin();
+			game.score.AddCoinScore(points);
 
             AudioSource.PlayClipAtPoint(pickupSound, transform.position);
             Destroy(gameObject);
         }
 
     }
+
+	public void FollowPlayer() {
+		follow = true;
+		rigidbody2D.isKinematic = false;
+	}
 }

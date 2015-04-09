@@ -25,7 +25,7 @@ public class EnemiesPower : Powerup {
 
                 if (en != null)
                 {
-                    en.Kill();
+                    en.Death();
                 }
 
             }

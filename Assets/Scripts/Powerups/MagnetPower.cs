@@ -3,26 +3,28 @@ using System.Collections;
 
 public class MagnetPower : Powerup {
 
-	void OnTriggerStay(Collider other) {
-		Debug.Log("HALILOYA");
+	void OnTriggerEnter2D(Collider2D other) {
 		
 		if(other.tag == "Coin") {
-			other.rigidbody2D.isKinematic = false;
-			other.rigidbody2D.AddForce(transform.position - other.transform.position);
+			other.GetComponent<Coin>().FollowPlayer();
 		}
 	}
-	
+
+	void Start() {
+		base.Start();
+	}
+
 	protected override void Power ()
 	{
-		//Do nothing...
+
 	}
 	
 	protected override void PowerEnded ()
 	{
-		//Do nothing...
+		state = PowerState.Ended;
 	}
 	public override void Refresh ()
 	{
-		//Do nothing...
+		startTime = Time.time;
 	}
 }

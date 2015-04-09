@@ -13,7 +13,7 @@ public class ShieldPower : Powerup {
 		}
 
 		if(other.tag == "Enemy") {
-			Destroy(other.gameObject);
+			other.GetComponent<Enemy>().Death();
 			Destroy(gameObject);
 		}
 	}

@@ -43,6 +43,7 @@ MonoBehaviour:
   duration: 1
   changeSpeed: 0
   player: {fileID: 0}
+  sliderPrefab: {fileID: 0}
   enemyPenalty: 5
 --- !u!1001 &100100000
 Prefab:

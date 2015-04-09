@@ -42,4 +42,14 @@ public class SwingCog : Enemy {
 		line.SetPosition(0,cog.position);
 		line.SetPosition(1,stat.position);
 	}
+
+
+	public override void Death ()
+	{
+		line.enabled = false;
+		joint.enabled = false;
+		collider2D.enabled = false;
+
+		StartCoroutine(Kill(8));
+	} 
 }

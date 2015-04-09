@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Game : MonoBehaviour
 {
-
+	public Game_UI uiScript;
     public GameObject groundPrefab;
     public GameObject ceilingPrefab;
 
@@ -15,11 +15,10 @@ public class Game : MonoBehaviour
 
 
 
-
-    public float score;
-    public Text scoreText;
+	   
 
     private Vector3 startingPos;
+	private Vector3 lastPosition;
 
 
     private float groundWidth;
@@ -42,13 +41,32 @@ public class Game : MonoBehaviour
     private EnemiesGenerator enemiesGenerator;
     private PlatformsGenerator platformsGenerator;
 
+
 	public bool gameRunning;
+
+	public Score score;
+	public Save save;
+
+
+
 
     void Start()
     {
         Time.timeScale = 1f;
         groundQueue = new Queue();
         ceilingQueue = new Queue();
+
+		score = new Score();
+
+
+		GameObject s =  GameObject.Find("_SAVE");
+
+		if(s == null) {
+			s = new GameObject("_SAVE");
+			s.AddComponent<Save>();
+		}
+	
+		save = s.GetComponent<Save>();
 
         //camTrans =  GameObject.FindGameObjectWithTag("MainCamera").transform;
         //player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -94,9 +112,13 @@ public class Game : MonoBehaviour
         lastCeiling = ceiling.transform;
 
         startingPos = player.position;
+		lastPosition = player.position;
         coinsGenerator = camTrans.FindChild("CoinsSpawner").GetComponent<CoinsGenerator>();
         enemiesGenerator = camTrans.FindChild("EnemiesSpawner").GetComponent<EnemiesGenerator>();
         platformsGenerator = camTrans.FindChild("PlatformsSpawner").GetComponent<PlatformsGenerator>();
+
+
+
 
 
     }
@@ -110,15 +132,16 @@ public class Game : MonoBehaviour
 
 
 
+
     }
+
+
 
     void FixedUpdate()
     {
 
-        score = player.position.x - startingPos.x;
-        score /= 10;
-        scoreText.text = "" + ((int)score);
-
+		
+		UpdateDistanceScore();
 
 
         if (((Transform)groundQueue.Peek()).position.x < cleaner.position.x)
@@ -144,7 +167,27 @@ public class Game : MonoBehaviour
         }
 
 
+
     }
+
+	public void GameOver() {
+		platformsGenerator.deactivate();
+		enemiesGenerator.deactivate();
+		coinsGenerator.deactivate();
+
+		StartCoroutine(uiScript.GameOverScreen());
+	}
+
+
+
+
+
+	public IEnumerator WaitAndRestart(float sec) {
+		yield return new WaitForSeconds(sec);
+		Application.LoadLevel(Application.loadedLevel);
+	}
+
+
 
 
     public void AddNextEnemyTime(float enemyPenalty)
@@ -166,6 +209,15 @@ public class Game : MonoBehaviour
         enemiesGenerator.deactivate();
         platformsGenerator.deactivate();
     }
+
+
+
+	private void UpdateDistanceScore() {
+		float sc = (player.position.x - startingPos.x) / 2;
+		score.SetDistanceScore(sc);
+	}
+
+
 
 
     void OnDrawGizmos()

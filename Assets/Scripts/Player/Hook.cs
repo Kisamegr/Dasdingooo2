@@ -107,7 +107,7 @@ public class Hook : MonoBehaviour
 
     void function(Collider2D other)
     {
-        if (other.tag == "Ceiling" || other.tag == "Platform")
+		if (other.tag == "Ceiling" || other.tag == "Platform")
         {
             if (hit) return;
             //transform.rotation = Quaternion.EulerAngles(new Vector3(0, 0, 90));
@@ -173,7 +173,7 @@ public class Hook : MonoBehaviour
     {
 
         return;
-        if (other.tag == "Ceiling" || other.tag == "Platform")
+        if (other.tag == "Ceiling" || other.tag == "Platform" || other.gameObject.layer == LayerMask.NameToLayer("Balloon"))
         {
             if (hit) return;
             //transform.rotation = Quaternion.EulerAngles(new Vector3(0, 0, 90));

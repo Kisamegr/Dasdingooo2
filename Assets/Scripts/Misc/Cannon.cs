@@ -43,7 +43,7 @@ public class Cannon : MonoBehaviour
     private bool playerFired = false;
 
 	private Game gameScript;
-    
+	private Game_UI ui;
 
     // Use this for initialization
     void Start()
@@ -80,6 +80,7 @@ public class Cannon : MonoBehaviour
         shootTime = Time.time;
         playerFired = false;
 
+		ui = GameObject.Find("_GAME").GetComponent<Game_UI>();
         gameScript =  GameObject.Find("_GAME").GetComponent<Game>();
 		gameScript.deactivateSpawners();
     }
@@ -151,6 +152,8 @@ public class Cannon : MonoBehaviour
                 forcePhase = false;
                 rotationPhase = false;
             }
+
+			ui.cannonSlider.value = ui.cannonSlider.minValue + (ui.cannonSlider.maxValue - ui.cannonSlider.minValue) * force;
             
 
         }
@@ -171,6 +174,8 @@ public class Cannon : MonoBehaviour
         //fire player after delay
         //Invoke("firePlayer", 0.15f);
         //firePlayer();
+
+		ui.uiAnimator.SetTrigger("cannon");
     
     }
 

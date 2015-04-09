@@ -15,7 +15,7 @@ public class SpeedPower : Powerup {
 		simul = true;
 
 		sprite = player.transform.GetChild(0).GetComponent<SpriteRenderer>();
-
+		Physics2D.IgnoreLayerCollision(21,9,true);
 
 	}
 
@@ -23,6 +23,7 @@ public class SpeedPower : Powerup {
 
 	protected override void BeforePower() {
 		sprite.color = Color.Lerp(sprite.color,speedColor,changeSpeed);
+
 		
 		if(sprite.color == speedColor)
 			state = PowerState.Running;
@@ -33,7 +34,9 @@ public class SpeedPower : Powerup {
 		sprite.color = Color.Lerp(sprite.color,Color.white,changeSpeed);
 		
 		if(sprite.color == Color.white) 
-			Destroy(gameObject);
+			base.AfterPowerEnded();
+
+
 
 	}
 
@@ -46,6 +49,7 @@ public class SpeedPower : Powerup {
 	protected override void PowerEnded ()
 	{
 		state = PowerState.Ended;
+		Physics2D.IgnoreLayerCollision(21,9,false);
 	}
 
 	public override void Refresh ()

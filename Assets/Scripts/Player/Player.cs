@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class Player : MonoBehaviour
 {
@@ -56,17 +57,24 @@ public class Player : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
+	private bool touchStart;
+	private bool touchEnd;
+
+	private bool jumpButton;
+
 
     // Use this for initialization
     void Start()
     {
+		Input.simulateMouseWithTouches = true;
+
 		alive = true;
         shotHook = false;
 		jumped = false;
         hookJoint = (DistanceJoint2D)gameObject.GetComponent<DistanceJoint2D>();
         hookJoint.enabled = false;
 		anim = transform.GetChild(0).GetComponent<Animator>();
-
+		jumpButton = false;
 
 		//rigidbody2D.centerOfMass = new Vector2(0,-renderer.bounds.extents.y);
 
@@ -80,7 +88,7 @@ public class Player : MonoBehaviour
 
     }
 
-	void GameOver() {
+	void Death() {
 
 		alive = false;
 		cancelHook();
@@ -99,17 +107,14 @@ public class Player : MonoBehaviour
 		}
 		rigidbody2D.velocity = Vector2.zero;
 		rigidbody2D.isKinematic = true;
-		Time.timeScale = 0.25f;
-		StartCoroutine(WaitRestart());
+		//Time.timeScale = 0.25f;
+
+		GameObject.Find("_GAME").GetComponent<Game>().GameOver();
 
 
 
 	}
 
-	IEnumerator WaitRestart() {
-		yield return new WaitForSeconds(0.5f);
-		Application.LoadLevel(Application.loadedLevel);
-	}
 
     // Update is called once per frame
     void Update()
@@ -150,6 +155,10 @@ public class Player : MonoBehaviour
 
 		if(zeta > 180)
 			zeta = zeta - 360;
+
+		touchStart = false;
+		touchEnd = false;
+
 
 		//Debug.Log(zeta);
 
@@ -199,13 +208,32 @@ public class Player : MonoBehaviour
 			jumped = false;
 		}
 
+		//if (Application.platform == RuntimePlatform.Android ||  Application.platform == RuntimePlatform.WP8Player || Application.platform == RuntimePlatform) {
+			//Debug.Log("INSEROTOOO");
+			Touch t = new Touch ();
+			try {
+				t = Input.GetTouch (0);
+				
+				if (t.phase == TouchPhase.Began) {
 
-        if (Input.GetKeyDown(KeyCode.X))
+					shootHook();
+				}
+				else if (t.phase == TouchPhase.Ended) {
+					cancelHook();
+				}
+
+			}
+			 catch (Exception e) {
+				//Debug.Log (e);
+			}
+		//}
+
+        if (Input.GetKeyDown(KeyCode.X) || touchStart)
         {
 			shootHook ();
         }
 
-        else if (Input.GetKeyUp(KeyCode.X))
+		else if (Input.GetKeyUp(KeyCode.X) || touchEnd)
         {
 			cancelHook();
         }
@@ -230,17 +258,14 @@ public class Player : MonoBehaviour
 
 
 		
-		if(Input.GetKeyDown(KeyCode.Z) && !jumped && !hooked) {
+		if((Input.GetKeyDown(KeyCode.Z) || jumpButton) && !jumped && !hooked) {
 			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x,0);
 
-            /* Vector2 jumpForceDir = new Vector2(-0.1f, 1f);
-             * jumpForceDir.Normalize();
-             * rigidbody2D.AddForce(jumpForceDir*jumpForce,ForceMode2D.Impulse);
-             */
 
             rigidbody2D.AddForce(Vector2.up*jumpForce , ForceMode2D.Impulse);
 			jumped = true;
 			startJump = true;
+			jumpButton = false;
 		}
 
 
@@ -271,14 +296,17 @@ public class Player : MonoBehaviour
 		hitHead = false;
     }
 
+	void FixedUpdate() {
+		//Physics2D.IgnoreLayerCollision(LayerMask.GetMask("Enemy"),LayerMask.GetMask("Player"),true);
+	}
 
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.tag == "Ceiling")
 			HitHead ();
 
-		if(other.collider.tag == "Ground" || other.collider.tag == "Enemy")
-			GameOver();
+		if(other.collider.tag == "Ground" || other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+			Death();
         
 
 		if(other.collider.tag == "Platform")
@@ -332,9 +360,14 @@ public class Player : MonoBehaviour
 		}
 	}
 
+	public void ButtonJump() {
+		if(!jumped)
+			jumpButton = true;
+	}
 
 
-	void shootHook()
+
+	public void shootHook()
 	{
 		if (!shotHook && Time.time - lastHookTime > hookDelay && Time.time - ceilingPenaltyStart > ceilingPenaltyDuration)
 		{

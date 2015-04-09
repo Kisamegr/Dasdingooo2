@@ -53,7 +53,6 @@ public class EnemiesGenerator : MonoBehaviour {
     public void activate()
     {
 
-        Debug.Log("Activation Enem");
         activeGenerator = true;
         lastEnemyTime = Time.time;
     }

@@ -28,6 +28,10 @@ public class BatGroup : Enemy {
 
     private int layerMask;
 
+	private Bat[] bats;
+
+	private bool running;
+
 	// Use this for initialization
 	void Start () {
 		base.Start();
@@ -47,23 +51,32 @@ public class BatGroup : Enemy {
 
         transform.position.Set(transform.position.x, spawnHeightBase, transform.position.z);
 
+		bats = new Bat[numberOfBats];
+
         for (int i = 0; i < numberOfBats; i++)
         {
             float yOffset = transform.position.y + (2 * Random.value - 1) * heightVariance;
             float xOffset = (Random.value-0.5f) * xRange;
             GameObject bat = (GameObject)Instantiate(batPrefab,new Vector3(transform.position.x + xOffset,yOffset,transform.position.z), Quaternion.identity);
             bat.transform.parent = transform;
-            bat.GetComponent<Bat>().speed = new Vector2(-batsSpeed, 0);
+			bats[i] =  bat.GetComponent<Bat>();
+            bats[i].speed = new Vector2(-batsSpeed, 0);
             
             float randomScale = Random.Range(batsScaleMin,batsScaleMax);
-            bat.transform.localScale = new Vector3(-randomScale, randomScale, 1);
+			bats[i].transform.localScale = new Vector3(-randomScale, randomScale, 1);
+
         }
+
+		running = true;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		base.Update();
+
+		if(!running)
+			return;
 		
         if (playerScript.hooked || playerScript.shotHook)
         {
@@ -76,5 +89,18 @@ public class BatGroup : Enemy {
                 playerScript.cancelHook();
             }
         }
+	}
+
+	public override void Death ()
+	{
+		running = false;
+
+		foreach(Bat bat in bats) {
+			bat.rigidbody2D.gravityScale = 1;
+			bat.rigidbody2D.fixedAngle = false;
+			bat.rigidbody2D.AddTorque(Random.Range(-30,30));
+		}
+
+		StartCoroutine(Kill(8));
 	}
 }
