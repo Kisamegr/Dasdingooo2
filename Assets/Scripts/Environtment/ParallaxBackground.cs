@@ -3,7 +3,6 @@ using System.Collections;
 
 public class ParallaxBackground : MonoBehaviour
 {
-
     public GameObject[] layers;
 
     private GameObject[] secondLayers;
@@ -16,6 +15,7 @@ public class ParallaxBackground : MonoBehaviour
 
     private Player player;
 
+	private Save save;
 
     public float width;
     public float height;
@@ -34,13 +34,21 @@ public class ParallaxBackground : MonoBehaviour
         }
         speed = new float[layers.Length];
 
+		save = GameObject.Find("_SAVE").GetComponent<Save>();
+
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+		if(save.isMusicOn()) {
+			if(!audio.isPlaying)
+				audio.Play();
+		} else
+			if(audio.isPlaying)
+				audio.Stop();
 
         float playerNormalizedSpeed = 0.5f;
 

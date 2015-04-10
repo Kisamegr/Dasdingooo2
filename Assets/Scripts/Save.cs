@@ -7,9 +7,9 @@ public class Save : MonoBehaviour {
 	private bool soundsOn;
 	private int highScore;
 
-	void Awake() {
-		DontDestroyOnLoad(transform.gameObject);
-	}
+	/*void Awake() {
+		//DontDestroyOnLoad(transform.gameObject);
+	}*/
 
 	void Start() {
 		Debug.Log("asdadasdsadsa");

@@ -13,6 +13,7 @@ public class Game_UI : MonoBehaviour {
 	public Text highScore;
 	public Text newHighScore;
 	public Button pauseButton;
+	public Button playAgainButton;
 	public Text coinCountText;
 	public Slider cannonSlider;
 
@@ -44,7 +45,8 @@ public class Game_UI : MonoBehaviour {
 		coinCountText.text = gameScript.score.GetCoins().ToString();
 		
 		if(countScore) {
-			if(!audio.isPlaying) {
+
+			if(gameScript.save.isSoundOn() && !audio.isPlaying) {
 				audio.clip = scoreAudio;
 				audio.Play();
 
@@ -64,10 +66,10 @@ public class Game_UI : MonoBehaviour {
 
 
 				
-				if(s > gameScript.save.GetHighscore())
+				if(s > gameScript.save.GetHighscore()) 
 					ShowNewHighscore();
 				else
-					coinScore.transform.parent.FindChild("PlayAgainButton").GetComponent<Button>().interactable = true;
+					playAgainButton.interactable = true;
 			}
 		}
 
@@ -77,7 +79,7 @@ public class Game_UI : MonoBehaviour {
 				audio.Stop();
 				tapHighscore = false;
 			
-				coinScore.transform.parent.FindChild("PlayAgainButton").GetComponent<Button>().interactable = true;
+				playAgainButton.interactable = true;
 				highScore.text = ((int)gameScript.score.GetTotalScore()).ToString();
 			}
 
@@ -105,17 +107,24 @@ public class Game_UI : MonoBehaviour {
 		yield return new WaitForSeconds(1.5f);
 		
 		scoreSpeed = gameScript.score.GetTotalScore() / scoreTime;
+
+		playAgainButton.interactable = true;
 		
 		countScore = true;
 	}
 
 	void ShowNewHighscore() {
-		
+
+		playAgainButton.interactable = false;
+
 		newHighScore.text = ((int)gameScript.score.GetTotalScore()).ToString();
 
 		uiAnimator.SetBool("highscore",true);
-		audio.clip = hooray;
-		audio.Play();
+
+		if(gameScript.save.isSoundOn()) {
+			audio.clip = hooray;
+			audio.Play();
+		}
 
 		gameScript.save.SetHighscore((int)gameScript.score.GetTotalScore());
 
@@ -123,6 +132,11 @@ public class Game_UI : MonoBehaviour {
 	}
 
 	public void ButtonRestart() {
+
+		if(countScore) {
+			scoreCounter = (int)gameScript.score.GetTotalScore();
+			return;
+		}
 		uiAnimator.SetTrigger("restart");
 		StartCoroutine(gameScript.WaitAndRestart(1f));
 	}
@@ -143,6 +157,7 @@ public class Game_UI : MonoBehaviour {
 	}
 
 	public void ButtonMenu() {
+		Time.timeScale = 1;
 		Application.LoadLevel(0);
 	}
 

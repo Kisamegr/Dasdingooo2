@@ -83,6 +83,8 @@ public class Cannon : MonoBehaviour
 		ui = GameObject.Find("_GAME").GetComponent<Game_UI>();
         gameScript =  GameObject.Find("_GAME").GetComponent<Game>();
 		gameScript.deactivateSpawners();
+
+		ui.uiAnimator.SetBool("cannon",true);
     }
 
     // Update is called once per frame
@@ -168,14 +170,19 @@ public class Cannon : MonoBehaviour
         smokeParticlesTrans.GetComponent<ParticleSystem>().Play();
 
         //play sound
-        GetComponent<AudioSource>().Play();
+		if(gameScript.save.isSoundOn())
+        	audio.Play();
 
         shootTime = Time.time;
         //fire player after delay
         //Invoke("firePlayer", 0.15f);
         //firePlayer();
 
-		ui.uiAnimator.SetTrigger("cannon");
+		ui.uiAnimator.SetTrigger("hideCannon");
+		ui.uiAnimator.SetBool("cannon", false);
+
+		if(gameScript.save.isMusicOn())
+			player.audio.PlayDelayed(1);
     
     }
 

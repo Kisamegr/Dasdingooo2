@@ -33,9 +33,9 @@ public abstract class Enemy : MonoBehaviour {
 			originalScale = warningRect.localScale.x;
 
 			warningRect.position = new Vector3( Screen.width - 50, Mathf.Clamp(cam.WorldToScreenPoint(transform.position).y,5, Screen.height - 5),0); 
-			warningImage.color = Color.white;
-			minDist=500;
+			minDist=600;
 			xOffset = Screen.width /15;
+
 		}
 	}
 	
@@ -48,6 +48,7 @@ public abstract class Enemy : MonoBehaviour {
 			float xDist = enemyPos.x - warningRect.position.x;
 			warningRect.position = new Vector3( Screen.width - xOffset, Mathf.Clamp(enemyPos.y,5, Screen.height - 5),0); 
 
+			warningImage.color = Color.white;
 
 			if(xDist < minDist) {
 

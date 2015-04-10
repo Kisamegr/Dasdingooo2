@@ -54,7 +54,9 @@ public class Coin : MonoBehaviour {
 			game.score.AddCoin();
 			game.score.AddCoinScore(points);
 
-            AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+			if(game.save.isSoundOn())
+            	AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+
             Destroy(gameObject);
         }
 

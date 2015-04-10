@@ -4,7 +4,7 @@ using System;
 
 public class Player : MonoBehaviour
 {
-
+	public Game gameScript;
     public GameObject hookPrefab;
 	public GameObject brokenPrefab;
 
@@ -62,6 +62,8 @@ public class Player : MonoBehaviour
 
 	private bool jumpButton;
 
+	public AudioClip[] deathSounds;
+
 
     // Use this for initialization
     void Start()
@@ -92,6 +94,12 @@ public class Player : MonoBehaviour
 
 		alive = false;
 		cancelHook();
+
+		if(gameScript.save.isSoundOn())
+			AudioSource.PlayClipAtPoint(deathSounds[UnityEngine.Random.Range(0,deathSounds.Length)],transform.position,0.85f);
+
+		if(audio.isPlaying)
+			audio.Stop();
 
 		transform.GetChild(0).renderer.enabled = false;
 		gameObject.collider2D.enabled = false;

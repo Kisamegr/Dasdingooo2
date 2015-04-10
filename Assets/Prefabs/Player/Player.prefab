@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 232: {fileID: 23200000}
   - 61: {fileID: 6196324}
+  - 82: {fileID: 8200042}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -43,7 +44,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.5900002, y: 6.80000019, z: 0}
+  m_LocalPosition: {x: -7.38000011, y: 6.80000019, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 473522}
@@ -87,6 +88,64 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .819999993, y: 1.77999997}
   m_Center: {x: 0, y: -.180000007}
+--- !u!82 &8200042
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: ae7bed48550ee8c409f610f572ead5aa, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9539734
 Animator:
   serializedVersion: 3
@@ -128,6 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fd1e8d14ffacb24793ce1c4d3b93007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameScript: {fileID: 0}
   hookPrefab: {fileID: 100000, guid: 78f9a5bbf443d374e947f2b20a18aa91, type: 2}
   brokenPrefab: {fileID: 169310, guid: f3ddaa6e02af6bc43b99ee6fe0e171c0, type: 2}
   alive: 0
@@ -155,6 +215,12 @@ MonoBehaviour:
   ghostsSpeedThreshold: .850000024
   ghostsInitFrequency: .0199999996
   ghostsLifetime: .180000007
+  deathSounds:
+  - {fileID: 8300000, guid: d65d9b9078c4e9e4a92de3425aedc157, type: 3}
+  - {fileID: 8300000, guid: fa7f43b9a3957fd40b8f5badca659851, type: 3}
+  - {fileID: 8300000, guid: f3b88e9963341f34f853743fbc457d04, type: 3}
+  - {fileID: 8300000, guid: 6af5b7f70746d0641b2f43222209b115, type: 3}
+  - {fileID: 8300000, guid: 4bc0cb76f08af654886f3fd6a8326962, type: 3}
 --- !u!212 &21273522
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -174,7 +240,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7de16103caf952f43906d8647ccd0938, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!232 &23200000
