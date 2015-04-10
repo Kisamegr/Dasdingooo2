@@ -41,6 +41,7 @@ public class Game_UI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		scoreText.text =((int)gameScript.score.GetTotalScore()).ToString();
 		coinCountText.text = gameScript.score.GetCoins().ToString();
 		
@@ -138,7 +139,7 @@ public class Game_UI : MonoBehaviour {
 			return;
 		}
 		uiAnimator.SetTrigger("restart");
-		StartCoroutine(gameScript.WaitAndRestart(1f));
+		StartCoroutine(gameScript.WaitAndRestart(1.2f));
 	}
 
 	public void ButtonPause() {
@@ -168,6 +169,8 @@ public class Game_UI : MonoBehaviour {
 	void OnLevelWasLoaded(int level) {
 		uiAnimator.SetTrigger("start");
 	}
+
+
 
 	IEnumerator Resume() {
 		yield return new WaitForSeconds(1f);

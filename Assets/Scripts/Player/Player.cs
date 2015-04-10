@@ -216,66 +216,10 @@ public class Player : MonoBehaviour
 			jumped = false;
 		}
 
-		//if (Application.platform == RuntimePlatform.Android ||  Application.platform == RuntimePlatform.WP8Player || Application.platform == RuntimePlatform) {
-			//Debug.Log("INSEROTOOO");
-			Touch t = new Touch ();
-			try {
-				t = Input.GetTouch (0);
-				
-				if (t.phase == TouchPhase.Began) {
-
-					shootHook();
-				}
-				else if (t.phase == TouchPhase.Ended) {
-					cancelHook();
-				}
-
-			}
-			 catch (Exception e) {
-				//Debug.Log (e);
-			}
-		//}
-
-        if (Input.GetKeyDown(KeyCode.X) || touchStart)
-        {
-			shootHook ();
-        }
-
-		else if (Input.GetKeyUp(KeyCode.X) || touchEnd)
-        {
-			cancelHook();
-        }
+		GetUserInput();
 
 
-        if (Input.GetAxis("Horizontal") > 0 || !onAir )
-        {
-			running = true;
-			if(!facingRight)
-				Flip();
-            transform.rigidbody2D.AddForce(Vector2.right * moveForce, ForceMode2D.Force);
-            //transform.position = new Vector3(transform.position.x + 0.2f, transform.position.y,0);
-        }
-        if (Input.GetAxis("Horizontal") < 0 )
-        {
-			running = true;
-			if(facingRight)
-				Flip();
-            transform.rigidbody2D.AddForce(-Vector2.right * moveForce, ForceMode2D.Force);
-            //transform.position = new Vector3(transform.position.x - 0.2f, transform.position.y,0);
-        }
-
-
-		
-		if((Input.GetKeyDown(KeyCode.Z) || jumpButton) && !jumped && !hooked) {
-			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x,0);
-
-
-            rigidbody2D.AddForce(Vector2.up*jumpForce , ForceMode2D.Impulse);
-			jumped = true;
-			startJump = true;
-			jumpButton = false;
-		}
-
+       
 
 
         if (rigidbody2D.velocity.x > maxSpeed)
@@ -303,6 +247,86 @@ public class Player : MonoBehaviour
 
 		hitHead = false;
     }
+
+	void GetUserInput() {
+
+		if(Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsWebPlayer) {
+
+			bool mouseDown = Input.GetMouseButtonDown(0);
+			bool mouseUp = Input.GetMouseButtonUp(0);
+
+			bool swing=false;
+
+			if(mouseDown || mouseUp) {
+
+
+				Vector3 mousePos = Input.mousePosition;
+
+				if(mousePos.x > Screen.width/2)
+					swing = true;
+			}
+
+			if (Input.GetKeyDown(KeyCode.X) || (mouseDown && swing))
+			{
+				shootHook ();
+			}
+			
+			else if (Input.GetKeyUp(KeyCode.X) || (mouseUp && swing))
+			{
+				cancelHook();
+			}
+			
+		
+			if((Input.GetKeyDown(KeyCode.Z) || jumpButton || (mouseDown && !swing)) && !jumped && !hooked) {
+				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x,0);
+				
+				
+				rigidbody2D.AddForce(Vector2.up*jumpForce , ForceMode2D.Impulse);
+				jumped = true;
+				startJump = true;
+				jumpButton = false;
+			}
+
+		}
+		
+		if (Application.platform == RuntimePlatform.Android) {
+			//Debug.Log("INSEROTOOO");
+			Touch t = new Touch ();
+			try {
+				t = Input.GetTouch (0);
+				
+				if (t.phase == TouchPhase.Began) {
+					
+					shootHook();
+				}
+				else if (t.phase == TouchPhase.Ended) {
+					cancelHook();
+				}
+				
+			}
+			catch (Exception e) {
+				//Debug.Log (e);
+			}
+		}
+
+		//if (Input.GetAxis("Horizontal") > 0 || !onAir )
+		if(!onAir)
+		{
+			running = true;
+			//if(!facingRight)
+			//	Flip();
+			transform.rigidbody2D.AddForce(Vector2.right * moveForce, ForceMode2D.Force);
+			//transform.position = new Vector3(transform.position.x + 0.2f, transform.position.y,0);
+		}
+		/*if (Input.GetAxis("Horizontal") < 0 )
+		{
+			running = true;
+			if(facingRight)
+				Flip();
+			transform.rigidbody2D.AddForce(-Vector2.right * moveForce, ForceMode2D.Force);
+			//transform.position = new Vector3(transform.position.x - 0.2f, transform.position.y,0);
+		}*/
+	}
 
 	void FixedUpdate() {
 		//Physics2D.IgnoreLayerCollision(LayerMask.GetMask("Enemy"),LayerMask.GetMask("Player"),true);

@@ -23,7 +23,12 @@ public class ParallaxBackground : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+		GameObject p = GameObject.FindGameObjectWithTag("Player");
+
+		if(p!=null)
+        	player = p.GetComponent<Player>();
+		else 
+			player = null;
 
       
         secondLayers = new GameObject[layers.Length];

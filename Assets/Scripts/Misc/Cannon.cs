@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class Cannon : MonoBehaviour
 {
@@ -91,7 +92,9 @@ public class Cannon : MonoBehaviour
     void Update()
     {
 
-        //An exei ginei fire, perimene mexri to delay
+
+		
+		//An exei ginei fire, perimene mexri to delay
         if (!forcePhase && !rotationPhase)
         {
             if(Time.time - shootTime >= shootDelay && !playerFired){
@@ -125,7 +128,7 @@ public class Cannon : MonoBehaviour
             transform.RotateAround(rotationCenter, Vector3.forward, rotationSpeed * Time.deltaTime);
             //transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
 
-            if(Input.GetKeyDown(KeyCode.Space)){
+            if(UserClicked ()){
                 rotationPhase = false;
                 forcePhase = true;
                 return;
@@ -148,8 +151,8 @@ public class Cannon : MonoBehaviour
                 force = 0;
                 forceSpeed = -forceSpeed;
             }
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
+			if (UserClicked())
+			{
                 fire();
                 forcePhase = false;
                 rotationPhase = false;
@@ -217,6 +220,35 @@ public class Cannon : MonoBehaviour
     
     }
 
+	private bool UserClicked() {
+
+		if(Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsWebPlayer) {
+
+			if(Input.GetKeyDown(KeyCode.Space))
+			   return true;
+
+
+			if(Input.GetMouseButtonDown(0))
+				return true;
+
+		}
+
+		if(Application.platform == RuntimePlatform.Android) {
+			Touch t = new Touch ();
+			try {
+				t = Input.GetTouch (0);
+				if (t.phase == TouchPhase.Began) {
+					return true;
+				}
+				
+			}
+			catch (Exception e) {
+				
+			}
+		
+		}
+		return false;
+	}
 
 
 

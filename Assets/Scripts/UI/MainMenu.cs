@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System;
 
 public class MainMenu : MonoBehaviour {
 
 	public Animator menuAnimator;
 	public Animator settingsAnimator;
+	public Animator howToAnimator;
 	public Button[] menuButtons;
 	public Collider2D menuCollider;
 
@@ -20,6 +22,8 @@ public class MainMenu : MonoBehaviour {
 
 	private Queue guyQueue;
 
+	bool howTo;
+
 	// Use this for initialization
 	void Start () {
 		save = GameObject.Find("_SAVE").GetComponent<Save>();
@@ -33,6 +37,8 @@ public class MainMenu : MonoBehaviour {
 		guyQueue = new Queue();
 
 		guyQueue.Enqueue(Instantiate(swingGuy));
+
+		howTo = false;
 	
 	}
 	
@@ -45,6 +51,15 @@ public class MainMenu : MonoBehaviour {
 				Destroy((GameObject) guyQueue.Dequeue());
 
 			guyQueue.Enqueue(Instantiate(swingGuy));
+
+		}
+
+		if(howTo) {
+			if(UserClicked()) {
+				menuAnimator.SetBool("change",false);
+				howToAnimator.SetBool("show",false);
+				howTo = false;
+			}
 
 		}
 	}
@@ -63,17 +78,21 @@ public class MainMenu : MonoBehaviour {
 
 	public void ButtonSettings() {
 		settingsAnimator.SetTrigger("enter");
-		menuAnimator.SetBool("settings",true);
+		menuAnimator.SetBool("change",true);
 		menuCollider.enabled = false;
 	}
 
 	public void ButtonHowTo() {
+		howToAnimator.SetBool("show",true);
+		menuAnimator.SetBool("change",true);
+		menuCollider.enabled = false;
 
+		howTo = true;
 	}
 
 	public void ButtonBackSettings() {
 		settingsAnimator.SetTrigger("leave");
-		menuAnimator.SetBool("settings",false);
+		menuAnimator.SetBool("change",false);
 		menuCollider.enabled = true;
 	}
 
@@ -89,5 +108,35 @@ public class MainMenu : MonoBehaviour {
 		yield return new WaitForSeconds(delay);
 		Application.LoadLevel("Main");
 
+	}
+
+	private bool UserClicked() {
+		
+		if(Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsWebPlayer) {
+			
+			if(Input.GetKeyDown(KeyCode.Space))
+				return true;
+			
+			
+			if(Input.GetMouseButtonDown(0))
+				return true;
+			
+		}
+		
+		if(Application.platform == RuntimePlatform.Android) {
+			Touch t = new Touch ();
+			try {
+				t = Input.GetTouch (0);
+				if (t.phase == TouchPhase.Began) {
+					return true;
+				}
+				
+			}
+			catch (Exception e) {
+				
+			}
+			
+		}
+		return false;
 	}
 }
