@@ -250,7 +250,9 @@ public class Player : MonoBehaviour
 
 	void GetUserInput() {
 
-		if(Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsWebPlayer) {
+		if(Application.platform == RuntimePlatform.WindowsPlayer 
+            || Application.platform == RuntimePlatform.WindowsEditor 
+            || Application.platform == RuntimePlatform.WindowsWebPlayer) {
 
 			bool mouseDown = Input.GetMouseButtonDown(0);
 			bool mouseUp = Input.GetMouseButtonUp(0);
@@ -296,8 +298,23 @@ public class Player : MonoBehaviour
 				t = Input.GetTouch (0);
 				
 				if (t.phase == TouchPhase.Began) {
-					
-					shootHook();
+                    if (t.position.x >= Screen.width / 2)
+                    {
+                        shootHook();
+                    }
+                    else
+                    {
+                        if ( jumpButton  && !jumped && !hooked)
+                        {
+                            rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 0);
+
+
+                            rigidbody2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                            jumped = true;
+                            startJump = true;
+                            jumpButton = false;
+                        }
+                    }
 				}
 				else if (t.phase == TouchPhase.Ended) {
 					cancelHook();

@@ -1,0 +1,132 @@
+Initialize engine version: 4.6.2p2 (dd892804f688)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 7550M/7650M Graphics (ID=0x6841)
+    Vendor:   ATI
+    VRAM:     2031 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Θανάσης\Desktop\Dasdingooo2\swingoff_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Θανάσης\Desktop\Dasdingooo2\swingoff_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Θανάσης\Desktop\Dasdingooo2\swingoff_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Θανάσης\Desktop\Dasdingooo2\swingoff_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Θανάσης\Desktop\Dasdingooo2\swingoff_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Θανάσης\Desktop\Dasdingooo2\swingoff_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Θανάσης\Desktop\Dasdingooo2\swingoff_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Θανάσης\Desktop\Dasdingooo2\swingoff_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.053 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Θανάσης\Desktop\Dasdingooo2\swingoff_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Θανάσης\Desktop\Dasdingooo2\swingoff_Data\Managed\System.dll (this message is harmless)
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Camera/Camera.cpp Line: 2491)
+
+HDR RenderTexture format is not supported on this platform. This camera will render without HDR buffers.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Camera/Camera.cpp Line: 2493)
+
+asdadasdsadsa
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Save:Start() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Save.cs:15)
+ 
+(Filename: C:/Users/Θανάσης/Desktop/Dasdingooo2/Assets/Scripts/Save.cs Line: 15)
+
+True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Save:Start() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Save.cs:51)
+ 
+(Filename: C:/Users/Θανάσης/Desktop/Dasdingooo2/Assets/Scripts/Save.cs Line: 51)
+
+MUSCIO: True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MainMenu:Start() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\UI\MainMenu.cs:31)
+ 
+(Filename: C:/Users/Θανάσης/Desktop/Dasdingooo2/Assets/Scripts/UI/MainMenu.cs Line: 31)
+
+SUONDO: True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MainMenu:Start() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\UI\MainMenu.cs:32)
+ 
+(Filename: C:/Users/Θανάσης/Desktop/Dasdingooo2/Assets/Scripts/UI/MainMenu.cs Line: 32)
+
+UnloadTime: 12.595821 ms
+System memory in use before: 31.9 MB.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 29.8 MB.
+
+Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 2736.
+Total: 2.128227 ms (FindLiveObjects: 0.088170 ms CreateObjectMapping: 0.033122 ms MarkObjects: 0.823393 ms  DeleteObjects: 0.473043 ms)
+
+asdadasdsadsa
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Save:Start() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Save.cs:15)
+ 
+(Filename: C:/Users/Θανάσης/Desktop/Dasdingooo2/Assets/Scripts/Save.cs Line: 15)
+
+True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Save:Start() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Save.cs:51)
+ 
+(Filename: C:/Users/Θανάσης/Desktop/Dasdingooo2/Assets/Scripts/Save.cs Line: 51)
+
+ADSDASDASDSA
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemiesPower:Power() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Powerups\EnemiesPower.cs:11)
+Powerup:FixedUpdate() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Powerups\Powerup.cs:55)
+ 
+(Filename: C:/Users/Θανάσης/Desktop/Dasdingooo2/Assets/Scripts/Powerups/EnemiesPower.cs Line: 11)
+
+0  SwingCog(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemiesPower:Power() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Powerups\EnemiesPower.cs:18)
+Powerup:FixedUpdate() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Powerups\Powerup.cs:55)
+ 
+(Filename: C:/Users/Θανάσης/Desktop/Dasdingooo2/Assets/Scripts/Powerups/EnemiesPower.cs Line: 18)
+
+1  Cog
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemiesPower:Power() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Powerups\EnemiesPower.cs:18)
+Powerup:FixedUpdate() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Powerups\Powerup.cs:55)
+ 
+(Filename: C:/Users/Θανάσης/Desktop/Dasdingooo2/Assets/Scripts/Powerups/EnemiesPower.cs Line: 18)
+
+2  BatGroup(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemiesPower:Power() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Powerups\EnemiesPower.cs:18)
+Powerup:FixedUpdate() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Powerups\Powerup.cs:55)
+ 
+(Filename: C:/Users/Θανάσης/Desktop/Dasdingooo2/Assets/Scripts/Powerups/EnemiesPower.cs Line: 18)
+
+aheehehehhe
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Powerup:Start() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Powerups\Powerup.cs:33)
+SpeedPower:Start() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Powerups\SpeedPower.cs:13)
+ 
+(Filename: C:/Users/Θανάσης/Desktop/Dasdingooo2/Assets/Scripts/Powerups/Powerup.cs Line: 33)
+
+TOTAL: 1231.148
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GameOverScreen>c__Iterator2:MoveNext() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Game_UI.cs:97)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:62)
+Game:GameOver() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Game.cs:178)
+Player:Death() (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Player\Player.cs:120)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Θανάσης\Desktop\Dasdingooo2\Assets\Scripts\Player\Player.cs:341)
+ 
+(Filename: C:/Users/Θανάσης/Desktop/Dasdingooo2/Assets/Scripts/Game_UI.cs Line: 97)
+

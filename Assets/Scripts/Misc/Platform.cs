@@ -11,10 +11,26 @@ public class Platform : MonoBehaviour {
 	private Vector2 pos;
 	private float diff;
 	private float angle;
+    private Collider2D playerCollider;
+    private Collider2D platformCollider;
 
 	void Start () {
 		originalPosition = transform.position;
+        playerCollider = GameObject.Find("Player").collider2D;
+        platformCollider = collider2D;
 	}
+
+    void Update()
+    {/*
+        if (platformCollider.bounds.max.y - 0.01f < playerCollider.bounds.min.y)
+        {
+            platformCollider.enabled = true;
+        }
+        else
+        {
+            platformCollider.enabled = false;
+        }*/
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
