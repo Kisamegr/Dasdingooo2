@@ -7,17 +7,36 @@ public class CoinsGenerator : MonoBehaviour
 
     public GameObject coinPrefab;
 
-    public float coinsMinTime;
+    private float coinsMinTime;
 
-    public float coinsMaxTime;
+    private float coinsMaxTime;
 
-    public int minCoins;
+    private int minCoins;
 
-    public int maxCoins;
+    private int maxCoins;
+
+
+    public float initialCoinsMinTime;
+
+    public float initialCoinsMaxTime;
+
+    public int initialMinCoins;
+
+    public int initialMaxCoins;
+
+
+    public float finalCoinsMinTime;
+
+    public float finalCoinsMaxTime;
+
+    public int finalMinCoins;
+
+    public int finalMaxCoins;
+
+
+
 
     public float playerPositionVar;
-
-
 
     private float lastCoinTime;
 
@@ -29,9 +48,7 @@ public class CoinsGenerator : MonoBehaviour
 
     private int platformsLayermask;
 
-    private float stageTop;
 
-    private float stageBottom;
 
     public float platformCheckWidth;
 
@@ -56,9 +73,6 @@ public class CoinsGenerator : MonoBehaviour
 
         game = GameObject.FindGameObjectWithTag("GameController").GetComponent<Game>();
 
-        stageBottom = game.stageBottom;
-
-        stageTop = game.stageTop;
 
         lastCoinTime = Time.time;
 
@@ -68,6 +82,14 @@ public class CoinsGenerator : MonoBehaviour
         thanosCoinsSpawned = false;
 
         stratosCoinsSpawned = false;
+
+        coinsMinTime = initialCoinsMinTime;
+
+        coinsMaxTime = initialCoinsMaxTime;
+
+        minCoins = initialMinCoins;
+
+        maxCoins = initialMaxCoins;
     }
 
     // Update is called once per frame
@@ -76,19 +98,31 @@ public class CoinsGenerator : MonoBehaviour
         if (!activeGenerator) return;
 
 
+        if (game.NormalizedDiffuclty < 1)
+        {
+            coinsMinTime = initialCoinsMinTime + game.NormalizedDiffuclty * (finalCoinsMinTime - finalCoinsMinTime);
+
+            coinsMaxTime = initialCoinsMaxTime+ game.NormalizedDiffuclty * (finalCoinsMaxTime - initialCoinsMaxTime);
+
+            minCoins = initialMinCoins + (int)(game.NormalizedDiffuclty * (finalMinCoins - initialMinCoins));
+
+            maxCoins = initialMaxCoins + (int)(game.NormalizedDiffuclty * (finalMaxCoins - initialMaxCoins));
+        }
+
+
         if (Time.time - lastCoinTime > nextCoinTime)
         {
             //An uparxei platform trigurw, ksanaelegkse se 0.5 secs
-            Vector2 pointA = new Vector2(transform.position.x - platformCheckWidth / 2, stageBottom);
-            Vector2 pointB = new Vector2(transform.position.x + platformCheckWidth, stageTop);
+            Vector2 pointA = new Vector2(transform.position.x - platformCheckWidth / 2, game.stageBottom);
+            Vector2 pointB = new Vector2(transform.position.x + platformCheckWidth, game.stageTop);
             if (Physics2D.OverlapArea(pointA, pointB, platformsLayermask) != null)
             {
                 nextCoinTime += 1f;
             }
             else
             {
-                
-                int noCoins = Random.Range(minCoins, maxCoins);
+
+                int noCoins = Random.Range(minCoins, maxCoins + 1);
 
                 //Generate Thanos Or Stratos 
                 if (generateCoinsName(noCoins))
@@ -113,7 +147,7 @@ public class CoinsGenerator : MonoBehaviour
 
     public bool generateCoinsName(int noCoins)
     {
-       
+
         if (noCoins != maxCoins)
         {
             return false;
@@ -125,8 +159,10 @@ public class CoinsGenerator : MonoBehaviour
 
         float r = Random.value;
 
+        float nameChance = 0.8f;
+
         //0.4 chance to spawn coins name when noCoins == maxCoins
-        if (r < 0.4)
+        if (r < nameChance)
         {
 
             float y = playerTrans.position.y + Random.Range(-playerPositionVar, playerPositionVar);
@@ -136,7 +172,7 @@ public class CoinsGenerator : MonoBehaviour
             if (!thanosCoinsSpawned && !stratosCoinsSpawned)
             {
                 GameObject coinsName;
-                if (r < 0.2)
+                if (r < nameChance / 2)
                 {
                     coinsName = (GameObject)Instantiate(thanosCoinsPrefab, coinsPos, Quaternion.identity);
                     thanosCoinsSpawned = true;
@@ -191,7 +227,7 @@ public class CoinsGenerator : MonoBehaviour
 
         float yMin = playerTrans.position.y + Random.Range(-playerPositionVar, playerPositionVar);
 
-        yMin = Mathf.Clamp(yMin, stageBottom + 10, stageTop - 10);
+        yMin = Mathf.Clamp(yMin, game.stageBottom + 10, game.stageTop - 10);
 
 
 
@@ -416,8 +452,9 @@ public class CoinsGenerator : MonoBehaviour
 
     public void activate()
     {
-        lastCoinTime = Time.time;
         activeGenerator = true;
+        lastCoinTime = Time.time;
+        nextCoinTime = Random.Range(coinsMinTime, coinsMaxTime);
     }
 
 

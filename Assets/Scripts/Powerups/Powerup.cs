@@ -14,6 +14,10 @@ public abstract class Powerup : MonoBehaviour {
 	public GameObject player;
 	public GameObject sliderPrefab;
 
+
+    public AudioClip pickupSound;
+    public AudioClip sound;
+
 	protected float startTime;
 	protected PowerState state;
 	protected bool simul=false; // True for overlapping the BeforePower and Power methods
@@ -30,7 +34,6 @@ public abstract class Powerup : MonoBehaviour {
 
 			slider = sl.GetComponent<Slider>();
 
-			Debug.Log("aheehehehhe");
 		}
 	}
 

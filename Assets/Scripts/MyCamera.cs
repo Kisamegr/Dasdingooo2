@@ -17,13 +17,9 @@ public class MyCamera : MonoBehaviour
 
     public float sizeChangeSpeed;
 
-    private float yMin;
-
-    private float yMax;
-
     public float playerRelPosX;
 
-	private Game gameScript;
+	private Game game;
 
     // Use this for initialization
     void Start()
@@ -32,17 +28,16 @@ public class MyCamera : MonoBehaviour
         playerScript = playerGO.GetComponent<Player>();
         mainCamera = Camera.main;
 
-		gameScript = GameObject.Find("_GAME").GetComponent<Game>();
+		game = GameObject.Find("_GAME").GetComponent<Game>();
 
-		yMin = gameScript.stageBottom;
-		yMax = gameScript.stageTop;
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-		if(!gameScript.gameRunning) 
+		if(!game.gameRunning) 
 			return;
 
         //Handle camera size
@@ -53,7 +48,7 @@ public class MyCamera : MonoBehaviour
         }
         else
         {
-            temp = (playerGO.rigidbody2D.velocity.x - playerScript.minSpeed) / (playerScript.maxSpeed - playerScript.minSpeed);
+            temp = (playerGO.rigidbody2D.velocity.x ) / (playerScript.finalMaxSpeed );
 
         }
         float targetSize = minSize + temp * (maxSize - minSize);
@@ -82,7 +77,7 @@ public class MyCamera : MonoBehaviour
         float cameraWidth = cameraHeight * camera.aspect;
 
       
-        float yCamera = Mathf.Clamp(playerGO.transform.position.y, yMin + cameraHeight / 2 + 2f, yMax - cameraHeight / 2 + 1);
+        float yCamera = Mathf.Clamp(playerGO.transform.position.y, game.stageBottom + cameraHeight / 2 + 2f, game.stageTop - cameraHeight / 2 + 1);
         float xCamera = playerGO.transform.position.x + (0.5f - playerRelPosX) * cameraWidth;
 
 

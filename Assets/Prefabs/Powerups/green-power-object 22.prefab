@@ -101,6 +101,8 @@ MonoBehaviour:
   changeSpeed: 0
   player: {fileID: 0}
   sliderPrefab: {fileID: 106956, guid: c9e9724fc4383fb42b682af613694df3, type: 2}
+  pickupSound: {fileID: 8300000, guid: fc28225342df0407aae453af7703eca9, type: 3}
+  sound: {fileID: 0}
 --- !u!212 &21215182
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -29,9 +29,10 @@ GameObject:
   - 95: {fileID: 9529218}
   - 61: {fileID: 6129218}
   - 114: {fileID: 11429218}
+  - 50: {fileID: 5032922}
   m_Layer: 18
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,9 +66,10 @@ GameObject:
   - 95: {fileID: 9529220}
   - 61: {fileID: 6129220}
   - 114: {fileID: 11429220}
+  - 50: {fileID: 5032920}
   m_Layer: 18
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,9 +103,10 @@ GameObject:
   - 95: {fileID: 9529222}
   - 61: {fileID: 6129222}
   - 114: {fileID: 11429222}
+  - 50: {fileID: 5032918}
   m_Layer: 18
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,9 +140,10 @@ GameObject:
   - 95: {fileID: 9529224}
   - 61: {fileID: 6129224}
   - 114: {fileID: 11429224}
+  - 50: {fileID: 5032916}
   m_Layer: 18
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,9 +177,10 @@ GameObject:
   - 95: {fileID: 9529226}
   - 61: {fileID: 6129226}
   - 114: {fileID: 11429226}
+  - 50: {fileID: 5032914}
   m_Layer: 18
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,9 +229,10 @@ GameObject:
   - 95: {fileID: 9529228}
   - 61: {fileID: 6129228}
   - 114: {fileID: 11429228}
+  - 50: {fileID: 5032912}
   m_Layer: 18
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -260,9 +266,10 @@ GameObject:
   - 95: {fileID: 9529230}
   - 61: {fileID: 6129230}
   - 114: {fileID: 11429230}
+  - 50: {fileID: 5032910}
   m_Layer: 18
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -296,9 +303,10 @@ GameObject:
   - 95: {fileID: 9529232}
   - 61: {fileID: 6129232}
   - 114: {fileID: 11429232}
+  - 50: {fileID: 5032908}
   m_Layer: 18
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -332,9 +340,10 @@ GameObject:
   - 95: {fileID: 9529234}
   - 61: {fileID: 6129234}
   - 114: {fileID: 11429234}
+  - 50: {fileID: 5032906}
   m_Layer: 18
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -368,9 +377,10 @@ GameObject:
   - 95: {fileID: 9529236}
   - 61: {fileID: 6129236}
   - 114: {fileID: 11429236}
+  - 50: {fileID: 5032904}
   m_Layer: 18
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -387,9 +397,10 @@ GameObject:
   - 95: {fileID: 9529238}
   - 61: {fileID: 6129238}
   - 114: {fileID: 11429238}
+  - 50: {fileID: 5032902}
   m_Layer: 18
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -423,9 +434,10 @@ GameObject:
   - 95: {fileID: 9529240}
   - 61: {fileID: 6129240}
   - 114: {fileID: 11429240}
+  - 50: {fileID: 5032900}
   m_Layer: 18
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -579,7 +591,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.7299995, y: 3.11999989, z: 0}
+  m_LocalPosition: {x: 45.0972672, y: 2.47232223, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 429264}
@@ -771,6 +783,186 @@ Transform:
   m_Children: []
   m_Father: {fileID: 429264}
   m_RootOrder: 0
+--- !u!50 &5032900
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129264}
+  m_Mass: 1
+  m_LinearDrag: 1.90999997
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5032902
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129260}
+  m_Mass: 1
+  m_LinearDrag: 1.90999997
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5032904
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129258}
+  m_Mass: 1
+  m_LinearDrag: 1.90999997
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5032906
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129254}
+  m_Mass: 1
+  m_LinearDrag: 1.90999997
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5032908
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129250}
+  m_Mass: 1
+  m_LinearDrag: 1.90999997
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5032910
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129246}
+  m_Mass: 1
+  m_LinearDrag: 1.90999997
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5032912
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129242}
+  m_Mass: 1
+  m_LinearDrag: 1.90999997
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5032914
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129236}
+  m_Mass: 1
+  m_LinearDrag: 1.90999997
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5032916
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129232}
+  m_Mass: 1
+  m_LinearDrag: 1.90999997
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5032918
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129228}
+  m_Mass: 1
+  m_LinearDrag: 1.90999997
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5032920
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129224}
+  m_Mass: 1
+  m_LinearDrag: 1.90999997
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5032922
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129220}
+  m_Mass: 1
+  m_LinearDrag: 1.90999997
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!61 &6129218
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -1096,6 +1288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPoints: 50
   maxPoints: 100
+  followSpeed: 200
   pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
   player: {fileID: 0}
   game: {fileID: 0}
@@ -1112,6 +1305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPoints: 50
   maxPoints: 100
+  followSpeed: 200
   pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
   player: {fileID: 0}
   game: {fileID: 0}
@@ -1128,6 +1322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPoints: 50
   maxPoints: 100
+  followSpeed: 200
   pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
   player: {fileID: 0}
   game: {fileID: 0}
@@ -1144,6 +1339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPoints: 50
   maxPoints: 100
+  followSpeed: 200
   pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
   player: {fileID: 0}
   game: {fileID: 0}
@@ -1160,6 +1356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPoints: 50
   maxPoints: 100
+  followSpeed: 200
   pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
   player: {fileID: 0}
   game: {fileID: 0}
@@ -1176,6 +1373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPoints: 50
   maxPoints: 100
+  followSpeed: 200
   pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
   player: {fileID: 0}
   game: {fileID: 0}
@@ -1192,6 +1390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPoints: 50
   maxPoints: 100
+  followSpeed: 200
   pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
   player: {fileID: 0}
   game: {fileID: 0}
@@ -1208,6 +1407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPoints: 50
   maxPoints: 100
+  followSpeed: 200
   pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
   player: {fileID: 0}
   game: {fileID: 0}
@@ -1224,6 +1424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPoints: 50
   maxPoints: 100
+  followSpeed: 200
   pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
   player: {fileID: 0}
   game: {fileID: 0}
@@ -1240,6 +1441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPoints: 50
   maxPoints: 100
+  followSpeed: 200
   pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
   player: {fileID: 0}
   game: {fileID: 0}
@@ -1256,6 +1458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPoints: 50
   maxPoints: 100
+  followSpeed: 200
   pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
   player: {fileID: 0}
   game: {fileID: 0}
@@ -1272,6 +1475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minPoints: 50
   maxPoints: 100
+  followSpeed: 200
   pickupSound: {fileID: 8300000, guid: 7e154b08d67ba4bfab784907698276ac, type: 3}
   player: {fileID: 0}
   game: {fileID: 0}

@@ -86,10 +86,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  hookSpeed: 75
-  extraForce: 3
+  initialHookSpeed: 75
+  finalHookSpeed: 85
+  initialExtraForce: 3
+  finalExtraForce: 5
   hookAngle: 55
   connectedAnchorTransformOffset: {x: 0, y: 0}
+  hookShootSound: {fileID: 8300000, guid: aeb22e361ed376a4d989f0f6fea07ab6, type: 3}
+  hookHitSound: {fileID: 8300000, guid: 9c1b74c584909ac4cbfc8e93c6ecbf86, type: 3}
 --- !u!120 &12000000
 LineRenderer:
   m_ObjectHideFlags: 1

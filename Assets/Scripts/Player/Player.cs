@@ -19,7 +19,10 @@ public class Player : MonoBehaviour
     public bool firedFromCannon;
 
 	public float moveForce;
-	public float maxSpeed;
+	private float maxSpeed;
+    public float initialMaxSpeed;
+    public float finalMaxSpeed;
+
     public float minSpeed;
 	public float jumpForce;
 	public float hookDelay;
@@ -64,6 +67,11 @@ public class Player : MonoBehaviour
 
 	public AudioClip[] deathSounds;
 
+    public AudioClip headHitSound;
+
+    private float lastDownwardJumpTime;
+    private bool jumpedDownwards;
+    private bool jumpedUpwards;
 
     // Use this for initialization
     void Start()
@@ -85,43 +93,11 @@ public class Player : MonoBehaviour
 		onAir = true;
 		leftGround = false;
 		facingRight = true;
-		
+
+        maxSpeed = initialMaxSpeed;
 		spriteRenderer =  transform.GetChild(0).GetComponent<SpriteRenderer>();
 
     }
-
-	void Death() {
-
-		alive = false;
-		cancelHook();
-
-		if(gameScript.save.isSoundOn())
-			AudioSource.PlayClipAtPoint(deathSounds[UnityEngine.Random.Range(0,deathSounds.Length)],transform.position,0.85f);
-
-		if(audio.isPlaying)
-			audio.Stop();
-
-		transform.GetChild(0).renderer.enabled = false;
-		gameObject.collider2D.enabled = false;
-
-		GameObject broken = (GameObject) Instantiate(brokenPrefab,transform.position,Quaternion.identity);
-		broken.transform.rotation = transform.rotation;
-
-		for(int i=0 ;i<broken.transform.childCount ; i++) {
-			Transform child = (Transform) broken.transform.GetChild(i);
-
-			child.rigidbody2D.velocity = rigidbody2D.velocity;
-
-		}
-		rigidbody2D.velocity = Vector2.zero;
-		rigidbody2D.isKinematic = true;
-		//Time.timeScale = 0.25f;
-
-		GameObject.Find("_GAME").GetComponent<Game>().GameOver();
-
-
-
-	}
 
 
     // Update is called once per frame
@@ -131,6 +107,15 @@ public class Player : MonoBehaviour
         //An einai mesa sto kanoni min kaneis tpt
         if (inCannon || !alive)
             return;
+
+
+        Debug.Log(rigidbody2D.velocity.x);
+
+        //Update max speed 
+        if (gameScript.NormalizedDiffuclty < 1)
+        {
+            maxSpeed = initialMaxSpeed + gameScript.NormalizedDiffuclty * (finalMaxSpeed - initialMaxSpeed);
+        }
         
 
         //An exei petaxtei apo to kanoni tote perimene mexri na arxisei na katevainei. Ka8ws anevainei min kaneis tpt
@@ -168,9 +153,7 @@ public class Player : MonoBehaviour
 		touchEnd = false;
 
 
-		//Debug.Log(zeta);
-
-		// Stabilizer
+		//Stabilizer
 		if(!shotHook && !hooked && !onAir) 
 			rigidbody2D.AddTorque(-zeta * stabilizerForce,ForceMode2D.Force);
 
@@ -190,16 +173,18 @@ public class Player : MonoBehaviour
 
 			rigidbody2D.AddTorque(-zeta * stabilizerForce +  angle*2.5f,ForceMode2D.Force);
 
+            //If the player is above the hook then cancel the hook
             if (transform.position.y > hookJoint.connectedBody.transform.position.y + hookJoint.connectedAnchor.y)
             {
                 cancelHook();
             }
-
 		}
 	
 
 
-		//Debug.Log(rigidbody2D.velocity.y);
+
+
+        //Change the gravity when the player is moving upwards
 		if (!hooked)
 		{
 			if (rigidbody2D.velocity.y > 0 && rigidbody2D.gravityScale != 2)
@@ -212,16 +197,26 @@ public class Player : MonoBehaviour
 			}
 
 		}
+        //reset jumps when hooked
 		else {
 			jumped = false;
 		}
 
+
+        //Stop downward jump
+        if (jumpedDownwards && Time.time > lastDownwardJumpTime + 0.3f )
+        {
+            rigidbody2D.velocity =  new Vector2(rigidbody2D.velocity.x,-6);
+            jumpedDownwards = false;
+        }
+
+
+
+        //
 		GetUserInput();
 
 
-       
-
-
+        //Apply speed threshold
         if (rigidbody2D.velocity.x > maxSpeed)
         {
             rigidbody2D.velocity = new Vector2(maxSpeed, rigidbody2D.velocity.y);
@@ -237,6 +232,7 @@ public class Player : MonoBehaviour
         }
 
 
+        //Set Animation
 		anim.SetBool("running",running);
 		anim.SetBool("jump",startJump);
 		anim.SetFloat("ySpeed",rigidbody2D.velocity.y);
@@ -247,6 +243,12 @@ public class Player : MonoBehaviour
 
 		hitHead = false;
     }
+
+
+
+
+
+
 
 	void GetUserInput() {
 
@@ -268,31 +270,57 @@ public class Player : MonoBehaviour
 					swing = true;
 			}
 
-			if (Input.GetKeyDown(KeyCode.X) || (mouseDown && swing))
+			if (Input.GetKeyDown(KeyCode.Space) || (mouseDown && swing))
 			{
 				shootHook ();
 			}
-			
-			else if (Input.GetKeyUp(KeyCode.X) || (mouseUp && swing))
+			else if (Input.GetKeyUp(KeyCode.Space) || (mouseUp && swing))
 			{
 				cancelHook();
 			}
-			
-		
-			if((Input.GetKeyDown(KeyCode.Z) || jumpButton || (mouseDown && !swing)) && !jumped && !hooked) {
+
+            bool upwardJump = false;
+
+            if (mouseDown)
+            {
+                if (Input.mousePosition.y > Screen.height / 2)
+                {
+                    upwardJump = true;
+                }
+            }
+            
+		    //Upward Jump
+			if((Input.GetKeyDown(KeyCode.UpArrow) || jumpButton || (mouseDown && !swing && upwardJump)) && !jumped && !hooked) {
 				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x,0);
-				
-				
 				rigidbody2D.AddForce(Vector2.up*jumpForce , ForceMode2D.Impulse);
+
 				jumped = true;
 				startJump = true;
 				jumpButton = false;
+                jumpedDownwards = false;
 			}
+
+            //Downward Jump
+            if ((Input.GetKeyDown(KeyCode.DownArrow)  || jumpButton || (mouseDown && !swing && !upwardJump)) && !jumpedDownwards && !hooked && onAir)
+            {
+                rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x * 0.8f, 0);
+                rigidbody2D.AddForce(-Vector2.up * jumpForce * 0.8f, ForceMode2D.Impulse);
+
+                jumped = true;
+                startJump = true;
+                jumpButton = false;
+                lastDownwardJumpTime = Time.time;
+                jumpedDownwards = true;
+            }
 
 		}
 		
+
+
+
+        //Android Controls
+
 		if (Application.platform == RuntimePlatform.Android) {
-			//Debug.Log("INSEROTOOO");
 			Touch t = new Touch ();
 			try {
 				t = Input.GetTouch (0);
@@ -335,6 +363,8 @@ public class Player : MonoBehaviour
 			transform.rigidbody2D.AddForce(Vector2.right * moveForce, ForceMode2D.Force);
 			//transform.position = new Vector3(transform.position.x + 0.2f, transform.position.y,0);
 		}
+
+
 		/*if (Input.GetAxis("Horizontal") < 0 )
 		{
 			running = true;
@@ -344,6 +374,48 @@ public class Player : MonoBehaviour
 			//transform.position = new Vector3(transform.position.x - 0.2f, transform.position.y,0);
 		}*/
 	}
+
+
+
+
+    void Death()
+    {
+
+        alive = false;
+        cancelHook();
+
+        if (gameScript.save.isSoundOn())
+            AudioSource.PlayClipAtPoint(deathSounds[UnityEngine.Random.Range(0, deathSounds.Length)], transform.position, 0.85f);
+
+        if (audio.isPlaying)
+            audio.Stop();
+
+        transform.GetChild(0).renderer.enabled = false;
+        gameObject.collider2D.enabled = false;
+
+        GameObject broken = (GameObject)Instantiate(brokenPrefab, transform.position, Quaternion.identity);
+        broken.transform.rotation = transform.rotation;
+
+        for (int i = 0; i < broken.transform.childCount; i++)
+        {
+            Transform child = (Transform)broken.transform.GetChild(i);
+
+            child.rigidbody2D.velocity = rigidbody2D.velocity;
+
+        }
+        rigidbody2D.velocity = Vector2.zero;
+        rigidbody2D.isKinematic = true;
+        //Time.timeScale = 0.25f;
+
+        GameObject.Find("_GAME").GetComponent<Game>().GameOver();
+
+
+
+    }
+
+
+
+
 
 	void FixedUpdate() {
 		//Physics2D.IgnoreLayerCollision(LayerMask.GetMask("Enemy"),LayerMask.GetMask("Player"),true);
@@ -374,6 +446,8 @@ public class Player : MonoBehaviour
 		}
 
     }
+
+
 
 
 
@@ -444,6 +518,8 @@ public class Player : MonoBehaviour
 	}
 
 	void HitHead() {
+        if (gameScript.save.isSoundOn())
+            AudioSource.PlayClipAtPoint(headHitSound, transform.position, 2f);
 		hitHead = true;
 		ceilingPenaltyStart = Time.time;
 		cancelHook();

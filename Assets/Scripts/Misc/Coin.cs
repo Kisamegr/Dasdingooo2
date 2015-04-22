@@ -48,7 +48,7 @@ public class Coin : MonoBehaviour {
         if (other.tag == "Player")
         {
 
-            float points = minPoints + (maxPoints - minPoints) * player.rigidbody2D.velocity.x/player.maxSpeed;
+            float points = minPoints + (maxPoints - minPoints) * player.rigidbody2D.velocity.x/player.finalMaxSpeed;
 
             game.coinsCollected++;
 			game.score.AddCoin();
@@ -66,4 +66,17 @@ public class Coin : MonoBehaviour {
 		follow = true;
 		rigidbody2D.isKinematic = false;
 	}
+
+/*
+    public void OnDrawGizmos()
+    {
+        if (GetComponent<Rigidbody2D>() == null)
+        {
+            Rigidbody2D rig = gameObject.AddComponent<Rigidbody2D>();
+            rig.isKinematic = true;
+            rig.drag = 1.91f;
+            tag = "Coin";
+        }
+    } 
+*/
 }
