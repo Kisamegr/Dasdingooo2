@@ -13,7 +13,7 @@ public class Game_UI : MonoBehaviour {
 	public Text highScore;
 	public Text newHighScore;
 	public Button pauseButton;
-	public Button playAgainButton;
+	public CanvasGroup scoreScreenGroup;
 	public Text coinCountText;
 	public Slider cannonSlider;
 
@@ -42,7 +42,7 @@ public class Game_UI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		scoreText.text =((int)gameScript.score.GetTotalScore()).ToString();
+		scoreText.text =((int)gameScript.score.GetDistanceScore()).ToString();
 		coinCountText.text = gameScript.score.GetCoins().ToString();
 		
 		if(countScore) {
@@ -70,7 +70,7 @@ public class Game_UI : MonoBehaviour {
 				if(s > gameScript.save.GetHighscore()) 
 					ShowNewHighscore();
 				else
-					playAgainButton.interactable = true;
+					scoreScreenGroup.interactable = true;
 			}
 		}
 
@@ -80,7 +80,7 @@ public class Game_UI : MonoBehaviour {
 				audio.Stop();
 				tapHighscore = false;
 			
-				playAgainButton.interactable = true;
+				scoreScreenGroup.interactable = true;
 				highScore.text = ((int)gameScript.score.GetTotalScore()).ToString();
 			}
 
@@ -109,14 +109,14 @@ public class Game_UI : MonoBehaviour {
 		
 		scoreSpeed = gameScript.score.GetTotalScore() / scoreTime;
 
-		playAgainButton.interactable = true;
+		scoreScreenGroup.interactable = true;
 		
 		countScore = true;
 	}
 
 	void ShowNewHighscore() {
 
-		playAgainButton.interactable = false;
+		scoreScreenGroup.interactable = false;
 
 		newHighScore.text = ((int)gameScript.score.GetTotalScore()).ToString();
 
@@ -138,8 +138,18 @@ public class Game_UI : MonoBehaviour {
 			scoreCounter = (int)gameScript.score.GetTotalScore();
 			return;
 		}
-		uiAnimator.SetTrigger("restart");
+		uiAnimator.SetTrigger("exit");
 		StartCoroutine(gameScript.WaitAndRestart(1.2f));
+	}
+
+	public void ButtonMenuEnd() {
+		if(countScore) {
+			scoreCounter = (int)gameScript.score.GetTotalScore();
+			return;
+		}
+
+		uiAnimator.SetTrigger("exit");
+		StartCoroutine(LoadMainMenu(1.2f));
 	}
 
 	public void ButtonPause() {
@@ -177,5 +187,10 @@ public class Game_UI : MonoBehaviour {
 		Time.timeScale = 1;
 		pauseButton.interactable = true;
 
+	}
+
+	IEnumerator LoadMainMenu(float delay) {
+		yield return new WaitForSeconds(delay);
+		Application.LoadLevel(0);
 	}
 }

@@ -16,7 +16,7 @@ public class Platform : MonoBehaviour {
 
 	void Start () {
 		originalPosition = transform.position;
-        playerCollider = GameObject.Find("Player").collider2D;
+        //playerCollider = GameObject.Find("Player").collider2D;
         platformCollider = collider2D;
 	}
 

@@ -8,7 +8,7 @@ AnimatorController:
   m_Name: Menu
   serializedVersion: 2
   m_AnimatorParameters:
-  - m_Name: play
+  - m_Name: exit
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -89,7 +89,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: play
+    m_ConditionEvent: exit
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -109,7 +109,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: play
+    m_ConditionEvent: exit
     m_EventTreshold: 0
     m_ExitTime: .75
   m_Atomic: 1
@@ -149,7 +149,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: play
+    m_ConditionEvent: exit
     m_EventTreshold: 0
     m_ExitTime: .800000012
   m_Atomic: 1
@@ -161,7 +161,7 @@ State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: fade in
+  m_Name: fade to black
   m_Speed: -3
   m_CycleOffset: 0
   m_Motions:
@@ -176,7 +176,7 @@ State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: play
+  m_Name: hide menu
   m_Speed: -1.20000005
   m_CycleOffset: 0
   m_Motions:
