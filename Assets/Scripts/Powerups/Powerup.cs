@@ -28,6 +28,8 @@ public abstract class Powerup : MonoBehaviour {
 		startTime = Time.time;
 		state = PowerState.Started;
 
+
+
 		if(sliderPrefab != null)  {
 			GameObject sl = (GameObject) Instantiate(sliderPrefab);
 			sl.transform.SetParent(GameObject.Find("Canvas").transform.FindChild("PowerSliderPos").transform,false);

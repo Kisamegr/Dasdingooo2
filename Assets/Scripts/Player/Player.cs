@@ -11,8 +11,6 @@ public class Player : MonoBehaviour
 	public bool alive;
     public bool shotHook;
 	public bool hooked;
-	public bool jumped;
-	public bool startJump;
 
 
     public bool inCannon;
@@ -71,7 +69,10 @@ public class Player : MonoBehaviour
 
     private float lastDownwardJumpTime;
     private bool jumpedDownwards;
+	private bool isJumpingDownwards;
     private bool jumpedUpwards;
+
+	private bool finishedFireFromCannon;
 
     // Use this for initialization
     void Start()
@@ -80,7 +81,6 @@ public class Player : MonoBehaviour
 
 		alive = true;
         shotHook = false;
-		jumped = false;
         hookJoint = (DistanceJoint2D)gameObject.GetComponent<DistanceJoint2D>();
         hookJoint.enabled = false;
 		anim = transform.GetChild(0).GetComponent<Animator>();
@@ -97,6 +97,7 @@ public class Player : MonoBehaviour
         maxSpeed = initialMaxSpeed;
 		spriteRenderer =  transform.GetChild(0).GetComponent<SpriteRenderer>();
 
+		finishedFireFromCannon = false;
     }
 
 
@@ -109,7 +110,6 @@ public class Player : MonoBehaviour
             return;
 
 
-        Debug.Log(rigidbody2D.velocity.x);
 
         //Update max speed 
         if (gameScript.NormalizedDiffuclty < 1)
@@ -137,13 +137,14 @@ public class Player : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, 0, 0);
                 firedFromCannon = false;
 				rigidbody2D.fixedAngle = false;
+
+				finishedFireFromCannon = true;
             }
         }
 
 
 
 		running = false;
-		startJump = false;
 		zeta = transform.rotation.eulerAngles.z;
 
 		if(zeta > 180)
@@ -199,18 +200,23 @@ public class Player : MonoBehaviour
 		}
         //reset jumps when hooked
 		else {
-			jumped = false;
+			jumpedUpwards = false;
+			jumpedDownwards = false;
 		}
 
 
         //Stop downward jump
-        if (jumpedDownwards && Time.time > lastDownwardJumpTime + 0.3f )
+        if (isJumpingDownwards && Time.time > lastDownwardJumpTime + 0.3f )
         {
             rigidbody2D.velocity =  new Vector2(rigidbody2D.velocity.x,-6);
-            jumpedDownwards = false;
+            isJumpingDownwards = false;
         }
 
-
+		if(!onAir)
+		{
+			running = true;
+			transform.rigidbody2D.AddForce(Vector2.right * moveForce, ForceMode2D.Force);
+		}
 
         //
 		GetUserInput();
@@ -232,9 +238,10 @@ public class Player : MonoBehaviour
         }
 
 
+
+
         //Set Animation
 		anim.SetBool("running",running);
-		anim.SetBool("jump",startJump);
 		anim.SetFloat("ySpeed",rigidbody2D.velocity.y);
 		anim.SetBool("shotHook",shotHook);
 		anim.SetBool("hooked",hooked);
@@ -246,7 +253,40 @@ public class Player : MonoBehaviour
 
 
 
+	public void JumpUP() {
 
+		Debug.Log("MPIIEPIEPIEPIEPEIE");
+
+		if(!jumpedUpwards && !hooked && finishedFireFromCannon && gameScript.gameRunning) {
+
+			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x,0);
+			rigidbody2D.AddForce(Vector2.up*jumpForce , ForceMode2D.Impulse);
+			
+			jumpedUpwards = true;
+
+			gameScript.save.totalJumps++;
+
+			anim.SetTrigger("jump");
+
+
+		}
+	}
+
+	public void JumpDown() {
+		if(!jumpedDownwards && !hooked && finishedFireFromCannon && gameScript.gameRunning) {
+			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x * 0.8f, 0);
+			rigidbody2D.AddForce(-Vector2.up * jumpForce * 0.8f, ForceMode2D.Impulse);
+
+			lastDownwardJumpTime = Time.time;
+			jumpedDownwards = true;
+			isJumpingDownwards = true;
+			
+			gameScript.save.totalJumps++;
+
+			anim.SetTrigger("jump");
+
+		}
+	}
 
 
 
@@ -290,37 +330,27 @@ public class Player : MonoBehaviour
             }
             
 		    //Upward Jump
-			if((Input.GetKeyDown(KeyCode.UpArrow) || jumpButton || (mouseDown && !swing && upwardJump)) && !jumped && !hooked) {
-				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x,0);
-				rigidbody2D.AddForce(Vector2.up*jumpForce , ForceMode2D.Impulse);
-
-				jumped = true;
-				startJump = true;
-				jumpButton = false;
-                jumpedDownwards = false;
+			//if((Input.GetKeyDown(KeyCode.UpArrow) || jumpButton || (mouseDown && !swing && upwardJump)) && !jumped && !hooked) {
+			if((Input.GetKeyDown(KeyCode.UpArrow))){
+				JumpUP();
 			}
 
             //Downward Jump
-            if ((Input.GetKeyDown(KeyCode.DownArrow)  || jumpButton || (mouseDown && !swing && !upwardJump)) && !jumpedDownwards && !hooked && onAir)
-            {
-                rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x * 0.8f, 0);
-                rigidbody2D.AddForce(-Vector2.up * jumpForce * 0.8f, ForceMode2D.Impulse);
+            //if ((Input.GetKeyDown(KeyCode.DownArrow)  || jumpButton || (mouseDown && !swing && !upwardJump)) && !jumpedDownwards && !hooked && onAir)
+			if ((Input.GetKeyDown(KeyCode.DownArrow) ))
+			{
+				JumpDown() ;
 
-                jumped = true;
-                startJump = true;
-                jumpButton = false;
-                lastDownwardJumpTime = Time.time;
-                jumpedDownwards = true;
             }
 
 		}
 		
 
-
+		/*
 
         //Android Controls
 
-		if (Application.platform == RuntimePlatform.Android) {
+		if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.MetroPlayerX86 ||  Application.platform == RuntimePlatform.MetroPlayerX64) {
 			Touch t = new Touch ();
 			try {
 				t = Input.GetTouch (0);
@@ -355,14 +385,7 @@ public class Player : MonoBehaviour
 		}
 
 		//if (Input.GetAxis("Horizontal") > 0 || !onAir )
-		if(!onAir)
-		{
-			running = true;
-			//if(!facingRight)
-			//	Flip();
-			transform.rigidbody2D.AddForce(Vector2.right * moveForce, ForceMode2D.Force);
-			//transform.position = new Vector3(transform.position.x + 0.2f, transform.position.y,0);
-		}
+
 
 
 		/*if (Input.GetAxis("Horizontal") < 0 )
@@ -439,7 +462,8 @@ public class Player : MonoBehaviour
 			if(other.contacts[0].point.y > other.transform.position.y) {
 				onAir = false;
 				leftGround = false;
-				jumped = false;
+				jumpedUpwards = false;
+				jumpedDownwards = false;
 			}
 			//else
 			//	HitHead();
@@ -483,16 +507,13 @@ public class Player : MonoBehaviour
 		}
 	}
 
-	public void ButtonJump() {
-		if(!jumped)
-			jumpButton = true;
-	}
+
 
 
 
 	public void shootHook()
 	{
-		if (!shotHook && Time.time - lastHookTime > hookDelay && Time.time - ceilingPenaltyStart > ceilingPenaltyDuration)
+		if (!shotHook && (Time.time - lastHookTime > hookDelay) && (Time.time - ceilingPenaltyStart > ceilingPenaltyDuration) && finishedFireFromCannon && gameScript.gameRunning && alive)
 		{
 			shotHook = true;
 			hook = (GameObject)Instantiate(hookPrefab, transform.position, Quaternion.identity);

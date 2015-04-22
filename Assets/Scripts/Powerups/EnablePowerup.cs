@@ -5,6 +5,12 @@ public class EnablePowerup : MonoBehaviour {
 
 	public GameObject powerupObject;
 
+	private Game gameScript;
+
+	void Start() {
+		gameScript = GameObject.Find("_GAME").GetComponent <Game>();
+	}
+
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
@@ -16,9 +22,11 @@ public class EnablePowerup : MonoBehaviour {
 
             if (p.pickupSound != null)
             {
-                if (GameObject.Find("_GAME").GetComponent <Game>().save.isSoundOn())
-                AudioSource.PlayClipAtPoint(p.pickupSound,player.transform.position,0.3f);
+                if (gameScript.save.isSoundOn())
+                	AudioSource.PlayClipAtPoint(p.pickupSound,player.transform.position,0.3f);
             }
+
+			gameScript.save.totalPowerups++;
 
 			if(old==null || old.id != p.id) {
 

@@ -125,7 +125,7 @@ public class Game : MonoBehaviour
         enemiesGenerator = camTrans.FindChild("EnemiesSpawner").GetComponent<EnemiesGenerator>();
         platformsGenerator = camTrans.FindChild("PlatformsSpawner").GetComponent<PlatformsGenerator>();
 
-
+		//gameRunning = true;
 
 
 
@@ -205,7 +205,15 @@ public class Game : MonoBehaviour
 		enemiesGenerator.deactivate();
 		coinsGenerator.deactivate();
 
+		save.totalDistance += score.GetDistanceScore();
+		save.totalCoins += (int)score.GetCoins();
+		save.totalDeaths++;
+
+		StartCoroutine(save.SaveStats());
+
 		StartCoroutine(uiScript.GameOverScreen());
+
+		//gameRunning = false;
 	}
 
 

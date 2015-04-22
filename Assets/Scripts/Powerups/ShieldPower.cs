@@ -4,6 +4,7 @@ using System.Collections;
 public class ShieldPower : Powerup {
 
     public AudioClip shieldBreakSound;
+	public GameObject brokenShield;
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
@@ -14,6 +15,9 @@ public class ShieldPower : Powerup {
             {
                 AudioSource.PlayClipAtPoint(shieldBreakSound, transform.position, 0.7f);
             }
+
+			Instantiate(brokenShield,transform.position,Quaternion.identity);
+
 			Destroy(gameObject);
 		}
 
@@ -23,6 +27,9 @@ public class ShieldPower : Powerup {
             {
                 AudioSource.PlayClipAtPoint(shieldBreakSound, transform.position, 0.7f);
             }
+
+			Instantiate(brokenShield,transform.position,Quaternion.identity);
+
 			Destroy(gameObject);
 		}
 	}

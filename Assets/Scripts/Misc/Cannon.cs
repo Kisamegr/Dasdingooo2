@@ -46,6 +46,9 @@ public class Cannon : MonoBehaviour
 	private Game gameScript;
 	private Game_UI ui;
 
+	private bool tapped;
+
+
     // Use this for initialization
     void Start()
     {
@@ -88,6 +91,7 @@ public class Cannon : MonoBehaviour
 		ui.uiAnimator.SetBool("cannon",true);
     }
 
+
     // Update is called once per frame
     void Update()
     {
@@ -128,9 +132,10 @@ public class Cannon : MonoBehaviour
             transform.RotateAround(rotationCenter, Vector3.forward, rotationSpeed * Time.deltaTime);
             //transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
 
-            if(UserClicked ()){
+            if(UserClicked () || tapped){
                 rotationPhase = false;
                 forcePhase = true;
+				tapped = false;
                 return;
             }
         }
@@ -151,11 +156,12 @@ public class Cannon : MonoBehaviour
                 force = 0;
                 forceSpeed = -forceSpeed;
             }
-			if (UserClicked())
+			if (UserClicked() || tapped)
 			{
                 fire();
                 forcePhase = false;
                 rotationPhase = false;
+				tapped = false;
             }
 
 			ui.cannonSlider.value = ui.cannonSlider.minValue + (ui.cannonSlider.maxValue - ui.cannonSlider.minValue) * force;
@@ -165,7 +171,7 @@ public class Cannon : MonoBehaviour
     }
 
 
-    private void fire()
+    public void fire()
     {
         //Play smoke particles
         smokeParticlesTrans.position = transform.FindChild("SmokePosition").position;
@@ -221,7 +227,13 @@ public class Cannon : MonoBehaviour
     
     }
 
+	public void UserTapped() {
+		if(!playerFired)
+			tapped=true;
+	}
+
 	private bool UserClicked() {
+
 
 		if(Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsWebPlayer) {
   
@@ -234,7 +246,7 @@ public class Cannon : MonoBehaviour
 
 		}
 
-		if(Application.platform == RuntimePlatform.Android) {
+		/*if(Application.platform == RuntimePlatform.Android) {
 			Touch t = new Touch ();
 			try {
 				t = Input.GetTouch (0);
@@ -247,7 +259,7 @@ public class Cannon : MonoBehaviour
 				
 			}
 		
-		}
+		}*/
 		return false;
 	}
 

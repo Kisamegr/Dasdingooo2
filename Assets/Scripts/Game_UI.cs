@@ -6,6 +6,7 @@ public class Game_UI : MonoBehaviour {
 
 	public Game gameScript;
 	public Animator uiAnimator;
+	public CanvasGroup touchControlsGroup;
 	public Text scoreText;
 	public Text coinScore;
 	public Text distanceScore;
@@ -29,14 +30,20 @@ public class Game_UI : MonoBehaviour {
 
 	private float fDelta;
 
+	private bool tapped;
+
 
 	// Use this for initialization
 	void Start () {
+
+		//gameScript.save.SetHighscore(0);
 		if(Application.isEditor)
 			uiAnimator.SetTrigger("start");
 
 		countScore = false;
 		scoreCounter = 0;
+
+		tapped = false;
 	}
 	
 	// Update is called once per frame
@@ -75,7 +82,7 @@ public class Game_UI : MonoBehaviour {
 		}
 
 		if(tapHighscore) {
-			if(Input.GetMouseButton(0)) {
+			if( tapped) {
 				uiAnimator.SetBool("highscore",false);
 				audio.Stop();
 				tapHighscore = false;
@@ -85,6 +92,11 @@ public class Game_UI : MonoBehaviour {
 			}
 
 		}
+
+		/*if(!gameScript.gameRunning) {
+			if(Input.GetButtonDown("Space"))
+				ButtonRestart();
+		}*/
 	}
 
 	public IEnumerator GameOverScreen() {
@@ -130,6 +142,7 @@ public class Game_UI : MonoBehaviour {
 		gameScript.save.SetHighscore((int)gameScript.score.GetTotalScore());
 
 		tapHighscore = true;
+		tapped = false;
 	}
 
 	public void ButtonRestart() {
@@ -158,6 +171,9 @@ public class Game_UI : MonoBehaviour {
 		pauseButton.interactable = false;
 		uiAnimator.SetBool("pause",true);
 
+		touchControlsGroup.interactable = false;
+
+
 	}
 
 	public void ButtonResume() {
@@ -165,6 +181,9 @@ public class Game_UI : MonoBehaviour {
 		//StartCoroutine(Resume());
 		Time.timeScale = 1;
 		pauseButton.interactable = true;
+
+		touchControlsGroup.interactable = true;
+
 	}
 
 	public void ButtonMenu() {
@@ -192,5 +211,9 @@ public class Game_UI : MonoBehaviour {
 	IEnumerator LoadMainMenu(float delay) {
 		yield return new WaitForSeconds(delay);
 		Application.LoadLevel(0);
+	}
+
+	public void UserTapped() {
+		tapped = true;
 	}
 }

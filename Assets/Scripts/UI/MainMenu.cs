@@ -166,7 +166,10 @@ public class MainMenu : MonoBehaviour {
 
 	IEnumerator LoadStats() {
 
-		statsTexts[0].text = save.totalDistance + "m";
+		int distKM =(int) save.totalDistance/1000;
+		int distM = (((int)save.totalDistance)%1000)/10;
+
+		statsTexts[0].text = distKM + "," + distM + "km";
 		statsTexts[1].text = save.totalCoins.ToString();
 		statsTexts[2].text = save.totalPowerups.ToString();
 		statsTexts[3].text = save.totalJumps.ToString();

@@ -118,7 +118,9 @@ MonoBehaviour:
   changeSpeed: 0
   player: {fileID: 0}
   sliderPrefab: {fileID: 0}
-  enemyPenalty: 5
+  pickupSound: {fileID: 8300000, guid: d728f6de3ab914065b77361018c06cc8, type: 3}
+  sound: {fileID: 0}
+  enemyPenalty: 10
 --- !u!212 &21267284
 SpriteRenderer:
   m_ObjectHideFlags: 1

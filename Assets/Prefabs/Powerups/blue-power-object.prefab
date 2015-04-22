@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  duration: 10
+  duration: 7
   changeSpeed: .100000001
   player: {fileID: 0}
   sliderPrefab: {fileID: 163860, guid: b4069bcddb7930e4aa067a3cdea81417, type: 2}
