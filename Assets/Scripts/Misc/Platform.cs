@@ -21,15 +21,8 @@ public class Platform : MonoBehaviour {
 	}
 
     void Update()
-    {/*
-        if (platformCollider.bounds.max.y - 0.01f < playerCollider.bounds.min.y)
-        {
-            platformCollider.enabled = true;
-        }
-        else
-        {
-            platformCollider.enabled = false;
-        }*/
+    {
+        //Physics2D.IgnoreCollision(platformCollider, playerCollider,platformCollider.bounds.center.y + transform.localScale.y*platformCollider.bounds.extents.y - 0.01f < playerCollider.bounds.min.y);
     }
 	
 	// Update is called once per frame

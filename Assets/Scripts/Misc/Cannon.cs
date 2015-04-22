@@ -186,6 +186,7 @@ public class Cannon : MonoBehaviour
 
 		if(gameScript.save.isMusicOn())
 			player.audio.PlayDelayed(1);
+        
     
     }
 
@@ -223,7 +224,7 @@ public class Cannon : MonoBehaviour
 	private bool UserClicked() {
 
 		if(Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsWebPlayer) {
-
+  
 			if(Input.GetKeyDown(KeyCode.Space))
 			   return true;
 

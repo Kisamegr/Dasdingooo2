@@ -32,6 +32,8 @@ public class BatGroup : Enemy {
 
 	private bool running;
 
+    public AudioClip hookCutSound;
+
 	// Use this for initialization
 	void Start () {
 		base.Start();
@@ -86,6 +88,10 @@ public class BatGroup : Enemy {
             RaycastHit2D hit = Physics2D.Raycast(playerScript.transform.position, direction,distance,layerMask);
             if (hit)
             {
+                if (GameObject.Find("_GAME").GetComponent<Game>().save.isSoundOn())
+                {
+                    AudioSource.PlayClipAtPoint(hookCutSound, transform.position, 0.5f);
+                }
                 playerScript.cancelHook();
             }
         }

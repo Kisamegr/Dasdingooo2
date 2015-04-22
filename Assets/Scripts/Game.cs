@@ -11,11 +11,15 @@ public class Game : MonoBehaviour
 
     public float stageTop = 18f;
     public float stageBottom = -21f;
+
+    public float initialStageBottom;
+    public float finalStageBottom;
+
+    public float metersLimitDifficulty;
+    private float normalizedDiffuculty;
+
+
     public float cameraHeight;
-
-
-
-	   
 
     private Vector3 startingPos;
 	private Vector3 lastPosition;
@@ -49,9 +53,13 @@ public class Game : MonoBehaviour
 
 
 
+    public AudioSource[] backgroundMusic;
+
 
     void Start()
     {
+        stageBottom = initialStageBottom;
+
         Time.timeScale = 1f;
         groundQueue = new Queue();
         ceilingQueue = new Queue();
@@ -125,11 +133,22 @@ public class Game : MonoBehaviour
 
 
 
+
     void Update()
     {
         //float yCamera = Mathf.Clamp(player.position.y, yMin + cameraHeight / 2 - 1, yMax - cameraHeight / 2 + 1);
         //camTrans.position = new Vector3(player.position.x + 14, yCamera, camTrans.position.z);
 
+        if (normalizedDiffuculty < 1)
+        {
+            normalizedDiffuculty = player.position.x / metersLimitDifficulty;
+            if (normalizedDiffuculty > 1)
+            {
+                normalizedDiffuculty = 1;
+            }
+
+            stageBottom = initialStageBottom + normalizedDiffuculty * (finalStageBottom - initialStageBottom);
+        }
 
 
 
@@ -149,7 +168,7 @@ public class Game : MonoBehaviour
 
             Transform ground = (Transform)groundQueue.Dequeue();
             groundQueue.Enqueue(ground);
-            ground.position = new Vector3(lastGround.position.x + groundWidth, ground.position.y, 0);
+            ground.position = new Vector3(lastGround.position.x + groundWidth, stageBottom, 0);
 
             lastGround = ground;
 
@@ -168,6 +187,17 @@ public class Game : MonoBehaviour
 
 
 
+    }
+
+
+
+
+    public float NormalizedDiffuclty
+    {
+        get
+        {
+            return normalizedDiffuculty;
+        }
     }
 
 	public void GameOver() {
@@ -226,7 +256,9 @@ public class Game : MonoBehaviour
         Gizmos.DrawLine(new Vector3(-100, stageTop, 0), new Vector3(100, stageTop, 0));
 
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(new Vector3(-100, stageBottom, 0), new Vector3(100, stageBottom, 0));
+        Gizmos.DrawLine(new Vector3(-100, initialStageBottom, 0), new Vector3(100, initialStageBottom, 0));
+
+        Gizmos.DrawLine(new Vector3(-100, finalStageBottom, 0), new Vector3(100, finalStageBottom, 0));
     }
 
 }

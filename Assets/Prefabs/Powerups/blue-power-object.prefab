@@ -74,6 +74,8 @@ MonoBehaviour:
   changeSpeed: .100000001
   player: {fileID: 0}
   sliderPrefab: {fileID: 163860, guid: b4069bcddb7930e4aa067a3cdea81417, type: 2}
+  pickupSound: {fileID: 8300000, guid: d07da7a1e41ad45c79bcaa11ca8109ba, type: 3}
+  sound: {fileID: 0}
   forcePower: 6
   speedColor: {r: .256920427, g: .64574641, b: .970588207, a: .850980401}
 --- !u!198 &19802028

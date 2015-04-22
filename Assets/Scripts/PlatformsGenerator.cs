@@ -8,9 +8,20 @@ public class PlatformsGenerator : MonoBehaviour
 
     public GameObject[] powerUps;
 
-    public float platformFreq;
-    public float platformVar;
-    public float platMinDist;
+    private float platformFreq;
+    private float platformVar;
+    private float platformMinDist;
+
+    public float initialPlatformFreq;
+    public float initialPlatformVar;
+    public float initialPlatformMinDist;
+
+    public float finalPlatformFreq;
+    public float finalPlatformVar;
+    public float finalPlatformMinDist;
+
+
+
     private float lastPlatformTime;
     private float nextPlatformTime;
 
@@ -58,37 +69,37 @@ public class PlatformsGenerator : MonoBehaviour
 	public float powerupDist;
 
 
-    private float stageBottom;
-    private float stageTop;
+
 
 
     private bool activeGenerator;
+
+    private Game game;
 
     // Use this for initialization
     void Start()
     {
         platformQueue = new Queue();
 
-
-        nextPlatformTime = Random.Range(-platformVar, platformVar) + platformFreq;
-        lastPlatformTime = Time.time;
-        lastPlatform = null;
-
-
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
 
         cleaner = transform.parent.FindChild("Cleaner");
 
-
-        Game game = GameObject.FindGameObjectWithTag("GameController").GetComponent<Game>();
-
-        stageBottom = game.stageBottom;
-        stageTop = game.stageTop;
+        game = GameObject.FindGameObjectWithTag("GameController").GetComponent<Game>();
 
         coinsGenerator = transform.parent.FindChild("CoinsSpawner").GetComponent<CoinsGenerator>();
 
         coinsLayermask = 1 << LayerMask.NameToLayer("Coin");
+
+
+        platformFreq = initialPlatformFreq;
+        platformVar = initialPlatformVar;
+        platformMinDist = initialPlatformMinDist;
+
+
+        nextPlatformTime = Random.Range(-platformVar, platformVar) + platformFreq;
+        lastPlatformTime = Time.time;
+        lastPlatform = null;
 
 
         float spawnChancesSum = spawnNothingChance + spawnCoinsChance + spawnPowerupChance + spawnCratesChance;
@@ -108,6 +119,16 @@ public class PlatformsGenerator : MonoBehaviour
     void Update()
     {
         if (!activeGenerator) return;
+
+
+        if (game.NormalizedDiffuclty < 1)
+        {
+            platformFreq = initialPlatformFreq + game.NormalizedDiffuclty * (finalPlatformFreq - initialPlatformFreq);
+            platformVar = initialPlatformVar + game.NormalizedDiffuclty * (finalPlatformVar - initialPlatformVar);
+            platformMinDist = initialPlatformMinDist + game.NormalizedDiffuclty * (finalPlatformMinDist - initialPlatformMinDist);
+        }
+
+
 
         if (Time.time - lastPlatformTime > nextPlatformTime)
         {
@@ -138,11 +159,11 @@ public class PlatformsGenerator : MonoBehaviour
     public bool CreatePlatform()
     {
 
-        if (lastPlatform == null || (transform.position.x - lastPlatform.position.x > platMinDist))
+        if (lastPlatform == null || (transform.position.x - lastPlatform.position.x > platformMinDist))
         {
 
             int index = Random.Range(0, platforms.GetLength(0));
-            Vector3 pos = new Vector3(transform.position.x, Random.Range(stageBottom + 10, stageTop - 20), 2);
+            Vector3 pos = new Vector3(transform.position.x, Random.Range(game.stageBottom + 10, game.stageTop - 20), 2);
 
 
             GameObject platformPrefab = platforms[index];
@@ -150,8 +171,8 @@ public class PlatformsGenerator : MonoBehaviour
 
             //An uparxoun coins stin perioxh dipla, min kaneis spawn kai epestrepse false
 
-            Vector2 pointA = new Vector2(pos.x - platformPrefab.collider2D.bounds.extents.x - coinSpawnMargin, stageBottom);
-            Vector2 pointB = new Vector2(pos.x + platformPrefab.collider2D.bounds.extents.x + coinSpawnMargin, stageTop);
+            Vector2 pointA = new Vector2(pos.x - platformPrefab.collider2D.bounds.extents.x - coinSpawnMargin, game.stageBottom);
+            Vector2 pointB = new Vector2(pos.x + platformPrefab.collider2D.bounds.extents.x + coinSpawnMargin, game.stageTop);
             if (Physics2D.OverlapArea(pointA, pointB, coinsLayermask) != null)
             {
                 Debug.Log("There are coins colliding");
@@ -268,6 +289,7 @@ public class PlatformsGenerator : MonoBehaviour
 
         activeGenerator = true;
         lastPlatformTime = Time.time;
+        nextPlatformTime = Random.Range(-platformVar, platformVar) + platformFreq;
     }
 
 

@@ -64,7 +64,7 @@ public class ParallaxBackground : MonoBehaviour
 	        }
 	        else
 	        {
-	            playerNormalizedSpeed =  player.rigidbody2D.velocity.x / player.maxSpeed;
+	            playerNormalizedSpeed =  player.rigidbody2D.velocity.x / player.finalMaxSpeed;
 				transform.position = new Vector3(player.transform.position.x + 10, transform.position.y, transform.position.z);
 	        }
 

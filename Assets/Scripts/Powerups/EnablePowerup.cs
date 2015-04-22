@@ -14,6 +14,12 @@ public class EnablePowerup : MonoBehaviour {
 			Powerup old = player.GetComponentInChildren<Powerup>();
 			Powerup p = powerupObject.GetComponent<Powerup>();
 
+            if (p.pickupSound != null)
+            {
+                if (GameObject.Find("_GAME").GetComponent <Game>().save.isSoundOn())
+                AudioSource.PlayClipAtPoint(p.pickupSound,player.transform.position,0.3f);
+            }
+
 			if(old==null || old.id != p.id) {
 
 				GameObject power = (GameObject) Instantiate(powerupObject);

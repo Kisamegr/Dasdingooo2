@@ -198,7 +198,8 @@ MonoBehaviour:
   inCannon: 0
   firedFromCannon: 0
   moveForce: 7
-  maxSpeed: 36
+  initialMaxSpeed: 0
+  finalMaxSpeed: 0
   minSpeed: 10
   jumpForce: 8
   hookDelay: .300000012
@@ -221,6 +222,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f3b88e9963341f34f853743fbc457d04, type: 3}
   - {fileID: 8300000, guid: 6af5b7f70746d0641b2f43222209b115, type: 3}
   - {fileID: 8300000, guid: 4bc0cb76f08af654886f3fd6a8326962, type: 3}
+  headHitSound: {fileID: 8300000, guid: 4f188945768c14241907f52b6a08b3c7, type: 3}
 --- !u!212 &21273522
 SpriteRenderer:
   m_ObjectHideFlags: 1
