@@ -102,9 +102,9 @@ public class BatGroup : Enemy {
 		running = false;
 
 		foreach(Bat bat in bats) {
-			bat.rigidbody2D.gravityScale = 1;
-			bat.rigidbody2D.fixedAngle = false;
-			bat.rigidbody2D.AddTorque(Random.Range(-30,30));
+			bat.GetComponent<Rigidbody2D>().gravityScale = 1;
+			bat.GetComponent<Rigidbody2D>().fixedAngle = false;
+			bat.GetComponent<Rigidbody2D>().AddTorque(Random.Range(-30,30));
 		}
 
 		StartCoroutine(Kill(8));

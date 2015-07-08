@@ -10,7 +10,7 @@ public class ShieldPower : Powerup {
 	{
 		if(other.tag == "Ground") {
 			player.GetComponent<Player>().cancelHook();
-			player.rigidbody2D.velocity = new Vector2(player.rigidbody2D.velocity.x, -player.rigidbody2D.velocity.y*1.2f);
+			player.GetComponent<Rigidbody2D>().velocity = new Vector2(player.GetComponent<Rigidbody2D>().velocity.x, -player.GetComponent<Rigidbody2D>().velocity.y*1.2f);
             if (GameObject.Find("_GAME").GetComponent<Game>().save.isSoundOn())
             {
                 AudioSource.PlayClipAtPoint(shieldBreakSound, transform.position, 0.7f);

@@ -19,14 +19,14 @@ public class AirBalloon : Enemy {
 		force = player.position - transform.position;
 
 		if(force.x < 0)
-			rigidbody2D.AddForce(force.normalized * forcePower);
+			GetComponent<Rigidbody2D>().AddForce(force.normalized * forcePower);
 	}
 	
 	public override void Death() {
-		rigidbody2D.gravityScale = 1;
-		rigidbody2D.AddTorque(50);
-		collider2D.enabled = false;
-		transform.FindChild("sting").collider2D.enabled = false;
+		GetComponent<Rigidbody2D>().gravityScale = 1;
+		GetComponent<Rigidbody2D>().AddTorque(50);
+		GetComponent<Collider2D>().enabled = false;
+		transform.FindChild("sting").GetComponent<Collider2D>().enabled = false;
 
 		StartCoroutine(Kill(8));
 	}

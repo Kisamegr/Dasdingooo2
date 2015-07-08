@@ -43,7 +43,7 @@ public class SpeedPower : Powerup {
 
 	protected override void Power ()
 	{
-		player.rigidbody2D.AddForce(Vector2.right *forcePower,ForceMode2D.Impulse);
+		player.GetComponent<Rigidbody2D>().AddForce(Vector2.right *forcePower,ForceMode2D.Impulse);
 	}
 	
 	protected override void PowerEnded ()

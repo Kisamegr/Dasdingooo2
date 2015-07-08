@@ -157,7 +157,7 @@ public class Hook : MonoBehaviour
             hit = true;
             connectedRigidbody = other.gameObject;
 
-            rigidbody2D.velocity = Vector2.zero;
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
             DistanceJoint2D joint = (DistanceJoint2D)player.GetComponent<DistanceJoint2D>();
 
@@ -181,7 +181,7 @@ public class Hook : MonoBehaviour
             //Vector2 anchor = Vector2.zero;
 
             joint.enabled = true;
-            joint.connectedBody = other.rigidbody2D;
+            joint.connectedBody = other.GetComponent<Rigidbody2D>();
             //joint.anchor = anchor;
             joint.connectedAnchor = connectedAnchor;
             //joint.maxDistanceOnly = false;
@@ -191,19 +191,19 @@ public class Hook : MonoBehaviour
 
             hitPoint = new Vector3(other.transform.position.x + xColPoint, other.transform.position.y + yColPoint, 0);
 
-            player.rigidbody2D.AddForce(extraForceDirection * extraForce, ForceMode2D.Impulse);
+            player.GetComponent<Rigidbody2D>().AddForce(extraForceDirection * extraForce, ForceMode2D.Impulse);
             player.GetComponent<Player>().hooked = true;
             player.GetComponent<Player>().shotHook = false;
 
 
             float minSpeed = player.GetComponent<Player>().minSpeed;
-            if (player.rigidbody2D.velocity.x < minSpeed)
+            if (player.GetComponent<Rigidbody2D>().velocity.x < minSpeed)
             {
-                player.rigidbody2D.velocity = new Vector2(minSpeed, player.rigidbody2D.velocity.y);
+                player.GetComponent<Rigidbody2D>().velocity = new Vector2(minSpeed, player.GetComponent<Rigidbody2D>().velocity.y);
             }
 
 
-            player.rigidbody2D.gravityScale = 0;
+            player.GetComponent<Rigidbody2D>().gravityScale = 0;
 
         }
     }

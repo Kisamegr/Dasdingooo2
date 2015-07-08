@@ -55,9 +55,9 @@ public class Crate : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(stumbleSound,transform.position);
         destroyTime = Time.time;
-        rigidbody2D.isKinematic = false;
-        rigidbody2D.AddTorque(-100f);
-        rigidbody2D.gravityScale = 1f;
+        GetComponent<Rigidbody2D>().isKinematic = false;
+        GetComponent<Rigidbody2D>().AddTorque(-100f);
+        GetComponent<Rigidbody2D>().gravityScale = 1f;
         destroyed = true;
     }
 

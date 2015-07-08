@@ -49,11 +49,11 @@ public class ParallaxBackground : MonoBehaviour
     void Update()
     {
 		if(save.isMusicOn()) {
-			if(!audio.isPlaying)
-				audio.Play();
+			if(!GetComponent<AudioSource>().isPlaying)
+				GetComponent<AudioSource>().Play();
 		} else
-			if(audio.isPlaying)
-				audio.Stop();
+			if(GetComponent<AudioSource>().isPlaying)
+				GetComponent<AudioSource>().Stop();
 
         float playerNormalizedSpeed = 0.5f;
 
@@ -64,7 +64,7 @@ public class ParallaxBackground : MonoBehaviour
 	        }
 	        else
 	        {
-	            playerNormalizedSpeed =  player.rigidbody2D.velocity.x / player.finalMaxSpeed;
+	            playerNormalizedSpeed =  player.GetComponent<Rigidbody2D>().velocity.x / player.finalMaxSpeed;
 				transform.position = new Vector3(player.transform.position.x + 10, transform.position.y, transform.position.z);
 	        }
 
@@ -115,7 +115,7 @@ public class ParallaxBackground : MonoBehaviour
 
         for (int i = 0; i < layers.Length; i++)
         {
-            Vector3 layerRendererSize = layers[i].transform.renderer.bounds.size;
+            Vector3 layerRendererSize = layers[i].transform.GetComponent<Renderer>().bounds.size;
 
             float xp = layers[i].transform.localScale.x / layerRendererSize.x;
             if (float.IsNaN(xp)) xp = 0.1f;

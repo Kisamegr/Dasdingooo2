@@ -78,7 +78,7 @@ public class PlatformGenerator : MonoBehaviour {
 
     void FixedUpdate()
     {
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Platform"), player.rigidbody2D.velocity.y > 0.05f);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Platform"), player.GetComponent<Rigidbody2D>().velocity.y > 0.05f);
 
 
         if (platformQueue.Count > 0 && ((Transform)platformQueue.Peek()).position.x < cleaner.position.x)
@@ -107,8 +107,8 @@ public class PlatformGenerator : MonoBehaviour {
 
             //An uparxoun coins stin perioxh dipla, min kaneis spawn kai epestrepse false
 
-            Vector2 pointA = new Vector2(pos.x - platformPrefab.collider2D.bounds.extents.x - coinSpawnMargin, stageBottom);
-            Vector2 pointB = new Vector2(pos.x + platformPrefab.collider2D.bounds.extents.x + coinSpawnMargin, stageTop);
+            Vector2 pointA = new Vector2(pos.x - platformPrefab.GetComponent<Collider2D>().bounds.extents.x - coinSpawnMargin, stageBottom);
+            Vector2 pointB = new Vector2(pos.x + platformPrefab.GetComponent<Collider2D>().bounds.extents.x + coinSpawnMargin, stageTop);
             if (Physics2D.OverlapArea(pointA, pointB, coinsLayermask) != null)
             {
                 Debug.Log("There are coins colliding");

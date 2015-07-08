@@ -15,10 +15,10 @@ public class HeavyPower : Powerup {
 	void Start() {
 		base.Start();
 
-		originalMass = player.rigidbody2D.mass;
+		originalMass = player.GetComponent<Rigidbody2D>().mass;
 		sprite = player.transform.GetChild(0).GetComponent<SpriteRenderer>();
 
-		player.rigidbody2D.mass = originalMass*massMultiplier;
+		player.GetComponent<Rigidbody2D>().mass = originalMass*massMultiplier;
 	}
 	
 	
@@ -51,7 +51,7 @@ public class HeavyPower : Powerup {
 	
 	protected override void PowerEnded ()
 	{
-		player.rigidbody2D.mass = originalMass;
+		player.GetComponent<Rigidbody2D>().mass = originalMass;
 		state = PowerState.Ended;
 	}
 	

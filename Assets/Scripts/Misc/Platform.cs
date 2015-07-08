@@ -17,7 +17,7 @@ public class Platform : MonoBehaviour {
 	void Start () {
 		originalPosition = transform.position;
         //playerCollider = GameObject.Find("Player").collider2D;
-        platformCollider = collider2D;
+        platformCollider = GetComponent<Collider2D>();
 	}
 
     void Update()
@@ -32,7 +32,7 @@ public class Platform : MonoBehaviour {
 		diff = originalPosition.y - pos.y;
 
 
-		rigidbody2D.AddForceAtPosition(-Physics.gravity * rigidbody2D.mass * diff * forcePower , new Vector2(pos.x - halfSize.x, pos.y));
+		GetComponent<Rigidbody2D>().AddForceAtPosition(-Physics.gravity * GetComponent<Rigidbody2D>().mass * diff * forcePower , new Vector2(pos.x - halfSize.x, pos.y));
 
 	}
 }

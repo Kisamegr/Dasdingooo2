@@ -9,7 +9,7 @@ public class Bat : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        rigidbody2D.velocity = speed; 
+        GetComponent<Rigidbody2D>().velocity = speed; 
 	}
 
 }

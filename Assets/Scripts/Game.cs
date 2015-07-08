@@ -80,15 +80,15 @@ public class Game : MonoBehaviour
         //player = GameObject.FindGameObjectWithTag("Player").transform;
         cleaner = camTrans.FindChild("Cleaner");
 
-        Vector3 cameraZero = camTrans.camera.ViewportToWorldPoint(new Vector3(0, 0, 0));
-        Vector3 cameraTop = camTrans.camera.ViewportToWorldPoint(new Vector3(0, 1, 0));
+        Vector3 cameraZero = camTrans.GetComponent<Camera>().ViewportToWorldPoint(new Vector3(0, 0, 0));
+        Vector3 cameraTop = camTrans.GetComponent<Camera>().ViewportToWorldPoint(new Vector3(0, 1, 0));
         cameraHeight = cameraTop.y - cameraZero.y;
 
 
         //Debug.Log(cameraTop);
 
-        groundWidth = groundPrefab.transform.GetChild(0).renderer.bounds.size.x - 2;
-        ceilingWidth = ceilingPrefab.renderer.bounds.size.x;
+        groundWidth = groundPrefab.transform.GetChild(0).GetComponent<Renderer>().bounds.size.x - 2;
+        ceilingWidth = ceilingPrefab.GetComponent<Renderer>().bounds.size.x;
         //groundWidth = 10;
 
 
@@ -102,7 +102,7 @@ public class Game : MonoBehaviour
             ground = (GameObject)GameObject.Instantiate(groundPrefab, pos, Quaternion.identity);
 
             Transform cog = ground.transform.GetChild(1);
-            cog.localScale = new Vector3(groundWidth / cog.renderer.bounds.size.x, cog.localScale.y, cog.localScale.z);
+            cog.localScale = new Vector3(groundWidth / cog.GetComponent<Renderer>().bounds.size.x, cog.localScale.y, cog.localScale.z);
 
             if (reverse)
                 ground.transform.GetChild(0).GetComponent<Cog>().rotationSpeed *= -1;

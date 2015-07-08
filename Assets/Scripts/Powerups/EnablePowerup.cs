@@ -33,8 +33,8 @@ public class EnablePowerup : MonoBehaviour {
 				GameObject power = (GameObject) Instantiate(powerupObject);
 
 				power.transform.parent = player;
-                Vector2 diff = player.position - player.collider2D.bounds.center;
-                power.transform.position = player.collider2D.bounds.center;//new Vector3(player.position.x,player.position.y - 0.5f,0);
+                Vector2 diff = player.position - player.GetComponent<Collider2D>().bounds.center;
+                power.transform.position = player.GetComponent<Collider2D>().bounds.center;//new Vector3(player.position.x,player.position.y - 0.5f,0);
 				power.GetComponent<Powerup>().player = player.gameObject;
 				Destroy(gameObject);
 

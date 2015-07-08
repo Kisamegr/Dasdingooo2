@@ -54,9 +54,9 @@ public class Game_UI : MonoBehaviour {
 		
 		if(countScore) {
 
-			if(gameScript.save.isSoundOn() && !audio.isPlaying) {
-				audio.clip = scoreAudio;
-				audio.Play();
+			if(gameScript.save.isSoundOn() && !GetComponent<AudioSource>().isPlaying) {
+				GetComponent<AudioSource>().clip = scoreAudio;
+				GetComponent<AudioSource>().Play();
 
 			}
 			
@@ -69,7 +69,7 @@ public class Game_UI : MonoBehaviour {
 			totalScore.text = s.ToString();
 			
 			if(s == Mathf.Floor(gameScript.score.GetTotalScore())) {
-				audio.Stop();
+				GetComponent<AudioSource>().Stop();
 				countScore = false;
 
 
@@ -84,7 +84,7 @@ public class Game_UI : MonoBehaviour {
 		if(tapHighscore) {
 			if( tapped) {
 				uiAnimator.SetBool("highscore",false);
-				audio.Stop();
+				GetComponent<AudioSource>().Stop();
 				tapHighscore = false;
 			
 				scoreScreenGroup.interactable = true;
@@ -135,8 +135,8 @@ public class Game_UI : MonoBehaviour {
 		uiAnimator.SetBool("highscore",true);
 
 		if(gameScript.save.isSoundOn()) {
-			audio.clip = hooray;
-			audio.Play();
+			GetComponent<AudioSource>().clip = hooray;
+			GetComponent<AudioSource>().Play();
 		}
 
 		gameScript.save.SetHighscore((int)gameScript.score.GetTotalScore());

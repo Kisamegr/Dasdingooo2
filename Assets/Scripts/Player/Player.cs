@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+
+	public Image theImage;
+
 	public Game gameScript;
     public GameObject hookPrefab;
 	public GameObject brokenPrefab;
@@ -121,13 +125,13 @@ public class Player : MonoBehaviour
         //An exei petaxtei apo to kanoni tote perimene mexri na arxisei na katevainei. Ka8ws anevainei min kaneis tpt
         if (firedFromCannon)
         {
-            if (rigidbody2D.velocity.x > maxSpeed)
+            if (GetComponent<Rigidbody2D>().velocity.x > maxSpeed)
             {
-                rigidbody2D.velocity = new Vector2(maxSpeed, rigidbody2D.velocity.y);
+                GetComponent<Rigidbody2D>().velocity = new Vector2(maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
             }
 
 
-            if (rigidbody2D.velocity.y > -0.1)
+            if (GetComponent<Rigidbody2D>().velocity.y > -0.1)
             {
 			    anim.SetBool("jump",false);
                 return;
@@ -136,7 +140,7 @@ public class Player : MonoBehaviour
             {
                 transform.rotation = Quaternion.Euler(0, 0, 0);
                 firedFromCannon = false;
-				rigidbody2D.fixedAngle = false;
+				GetComponent<Rigidbody2D>().fixedAngle = false;
 
 				finishedFireFromCannon = true;
             }
@@ -156,13 +160,13 @@ public class Player : MonoBehaviour
 
 		//Stabilizer
 		if(!shotHook && !hooked && !onAir) 
-			rigidbody2D.AddTorque(-zeta * stabilizerForce,ForceMode2D.Force);
+			GetComponent<Rigidbody2D>().AddTorque(-zeta * stabilizerForce,ForceMode2D.Force);
 
 		if(onAir)
-			rigidbody2D.AddTorque(-5,ForceMode2D.Force);
+			GetComponent<Rigidbody2D>().AddTorque(-5,ForceMode2D.Force);
 
 		if(shotHook)
-			rigidbody2D.AddTorque(-zeta * stabilizerForce  -20,ForceMode2D.Force);
+			GetComponent<Rigidbody2D>().AddTorque(-zeta * stabilizerForce  -20,ForceMode2D.Force);
 
 		
 		if(hooked) {
@@ -172,7 +176,7 @@ public class Player : MonoBehaviour
 			if(transform.position.x < hook.transform.position.x)
 				angle *= -1;
 
-			rigidbody2D.AddTorque(-zeta * stabilizerForce +  angle*2.5f,ForceMode2D.Force);
+			GetComponent<Rigidbody2D>().AddTorque(-zeta * stabilizerForce +  angle*2.5f,ForceMode2D.Force);
 
             //If the player is above the hook then cancel the hook
             if (transform.position.y > hookJoint.connectedBody.transform.position.y + hookJoint.connectedAnchor.y)
@@ -188,13 +192,13 @@ public class Player : MonoBehaviour
         //Change the gravity when the player is moving upwards
 		if (!hooked)
 		{
-			if (rigidbody2D.velocity.y > 0 && rigidbody2D.gravityScale != 2)
+			if (GetComponent<Rigidbody2D>().velocity.y > 0 && GetComponent<Rigidbody2D>().gravityScale != 2)
 			{
-				rigidbody2D.gravityScale = 2;
+				GetComponent<Rigidbody2D>().gravityScale = 2;
 			}
-			if (rigidbody2D.velocity.y <= 0 && rigidbody2D.gravityScale != 1)
+			if (GetComponent<Rigidbody2D>().velocity.y <= 0 && GetComponent<Rigidbody2D>().gravityScale != 1)
 			{
-				rigidbody2D.gravityScale = 1;
+				GetComponent<Rigidbody2D>().gravityScale = 1;
 			}
 
 		}
@@ -208,14 +212,14 @@ public class Player : MonoBehaviour
         //Stop downward jump
         if (isJumpingDownwards && Time.time > lastDownwardJumpTime + 0.3f )
         {
-            rigidbody2D.velocity =  new Vector2(rigidbody2D.velocity.x,-6);
+            GetComponent<Rigidbody2D>().velocity =  new Vector2(GetComponent<Rigidbody2D>().velocity.x,-6);
             isJumpingDownwards = false;
         }
 
 		if(!onAir)
 		{
 			running = true;
-			transform.rigidbody2D.AddForce(Vector2.right * moveForce, ForceMode2D.Force);
+			transform.GetComponent<Rigidbody2D>().AddForce(Vector2.right * moveForce, ForceMode2D.Force);
 		}
 
         //
@@ -223,16 +227,16 @@ public class Player : MonoBehaviour
 
 
         //Apply speed threshold
-        if (rigidbody2D.velocity.x > maxSpeed)
+        if (GetComponent<Rigidbody2D>().velocity.x > maxSpeed)
         {
-            rigidbody2D.velocity = new Vector2(maxSpeed, rigidbody2D.velocity.y);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
 
 		if(leftGround && Time.time-leftGroundTime > 0.2f)
 			onAir = true;
 
 		//Initialize a ghost (isws mono otan einai hooked)
-        if (rigidbody2D.velocity.x / maxSpeed > ghostsSpeedThreshold && Time.time - ghostsLastInitTime > ghostsInitFrequency)
+        if (GetComponent<Rigidbody2D>().velocity.x / maxSpeed > ghostsSpeedThreshold && Time.time - ghostsLastInitTime > ghostsInitFrequency)
         {
             instantiateGhost();
         }
@@ -242,7 +246,7 @@ public class Player : MonoBehaviour
 
         //Set Animation
 		anim.SetBool("running",running);
-		anim.SetFloat("ySpeed",rigidbody2D.velocity.y);
+		anim.SetFloat("ySpeed",GetComponent<Rigidbody2D>().velocity.y);
 		anim.SetBool("shotHook",shotHook);
 		anim.SetBool("hooked",hooked);
 		anim.SetBool("onAir",onAir);
@@ -259,8 +263,8 @@ public class Player : MonoBehaviour
 
 		if(!jumpedUpwards && !hooked && finishedFireFromCannon && gameScript.gameRunning) {
 
-			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x,0);
-			rigidbody2D.AddForce(Vector2.up*jumpForce , ForceMode2D.Impulse);
+			GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x,0);
+			GetComponent<Rigidbody2D>().AddForce(Vector2.up*jumpForce , ForceMode2D.Impulse);
 			
 			jumpedUpwards = true;
 
@@ -274,8 +278,8 @@ public class Player : MonoBehaviour
 
 	public void JumpDown() {
 		if(!jumpedDownwards && !hooked && finishedFireFromCannon && gameScript.gameRunning) {
-			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x * 0.8f, 0);
-			rigidbody2D.AddForce(-Vector2.up * jumpForce * 0.8f, ForceMode2D.Impulse);
+			GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x * 0.8f, 0);
+			GetComponent<Rigidbody2D>().AddForce(-Vector2.up * jumpForce * 0.8f, ForceMode2D.Impulse);
 
 			lastDownwardJumpTime = Time.time;
 			jumpedDownwards = true;
@@ -292,9 +296,9 @@ public class Player : MonoBehaviour
 
 	void GetUserInput() {
 
-		if(Application.platform == RuntimePlatform.WindowsPlayer 
-            || Application.platform == RuntimePlatform.WindowsEditor 
-            || Application.platform == RuntimePlatform.WindowsWebPlayer) {
+		//if(Application.platform == RuntimePlatform.WindowsPlayer 
+         //   || Application.platform == RuntimePlatform.WindowsEditor 
+        //    || Application.platform == RuntimePlatform.WindowsWebPlayer) {
 
 			bool mouseDown = Input.GetMouseButtonDown(0);
 			bool mouseUp = Input.GetMouseButtonUp(0);
@@ -319,31 +323,51 @@ public class Player : MonoBehaviour
 				cancelHook();
 			}
 
-            bool upwardJump = false;
-
-            if (mouseDown)
-            {
-                if (Input.mousePosition.y > Screen.height / 2)
-                {
-                    upwardJump = true;
-                }
-            }
-            
-		    //Upward Jump
-			//if((Input.GetKeyDown(KeyCode.UpArrow) || jumpButton || (mouseDown && !swing && upwardJump)) && !jumped && !hooked) {
-			if((Input.GetKeyDown(KeyCode.UpArrow))){
-				JumpUP();
-			}
-
-            //Downward Jump
-            //if ((Input.GetKeyDown(KeyCode.DownArrow)  || jumpButton || (mouseDown && !swing && !upwardJump)) && !jumpedDownwards && !hooked && onAir)
-			if ((Input.GetKeyDown(KeyCode.DownArrow) ))
+		bool upwardJump = false;
+		bool downwardJump = false;
+		
+		
+		if (mouseDown)
+		{
+			if (Input.mousePosition.y > Screen.height / 2 && Input.mousePosition.x < Screen.width / 2)
 			{
-				JumpDown() ;
-
-            }
-
+				upwardJump = true;
+			}
+			
+			if (Input.mousePosition.y < Screen.height / 2 && Input.mousePosition.x < Screen.width / 2)
+			{
+				downwardJump = true;
+			}
 		}
+		
+		
+		//Upward Jump
+		//if((Input.GetKeyDown(KeyCode.UpArrow) || jumpButton || (mouseDown && !swing && upwardJump)) && !jumped && !hooked) {
+		if((Input.GetKeyDown(KeyCode.UpArrow))){
+			upwardJump = true;
+		}
+		
+		//Downward Jump
+		//if ((Input.GetKeyDown(KeyCode.DownArrow)  || jumpButton || (mouseDown && !swing && !upwardJump)) && !jumpedDownwards && !hooked && onAir)
+		if ((Input.GetKeyDown(KeyCode.DownArrow) ))
+		{
+			
+			downwardJump = true;
+			
+		}
+		
+		
+		if (upwardJump)
+		{
+			JumpUP();
+		}
+		
+		if (downwardJump)
+		{
+			JumpDown();
+		}
+//
+	//	}
 		
 
 		/*
@@ -410,11 +434,11 @@ public class Player : MonoBehaviour
         if (gameScript.save.isSoundOn())
             AudioSource.PlayClipAtPoint(deathSounds[UnityEngine.Random.Range(0, deathSounds.Length)], transform.position, 0.85f);
 
-        if (audio.isPlaying)
-            audio.Stop();
+        if (GetComponent<AudioSource>().isPlaying)
+            GetComponent<AudioSource>().Stop();
 
-        transform.GetChild(0).renderer.enabled = false;
-        gameObject.collider2D.enabled = false;
+        transform.GetChild(0).GetComponent<Renderer>().enabled = false;
+        gameObject.GetComponent<Collider2D>().enabled = false;
 
         GameObject broken = (GameObject)Instantiate(brokenPrefab, transform.position, Quaternion.identity);
         broken.transform.rotation = transform.rotation;
@@ -423,11 +447,11 @@ public class Player : MonoBehaviour
         {
             Transform child = (Transform)broken.transform.GetChild(i);
 
-            child.rigidbody2D.velocity = rigidbody2D.velocity;
+            child.GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity;
 
         }
-        rigidbody2D.velocity = Vector2.zero;
-        rigidbody2D.isKinematic = true;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        GetComponent<Rigidbody2D>().isKinematic = true;
         //Time.timeScale = 0.25f;
 
         GameObject.Find("_GAME").GetComponent<Game>().GameOver();
@@ -449,8 +473,12 @@ public class Player : MonoBehaviour
         if (other.collider.tag == "Ceiling")
 			HitHead ();
 
-		if(other.collider.tag == "Ground" || other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+		Debug.Log("COLLISION HELL YEAH");
+		if(other.collider.tag == "Ground" || other.gameObject.layer == LayerMask.NameToLayer("Enemy")) {
+			Debug.Log("ME TO ENEMUFADFAF");
+
 			Death();
+		}
         
 
 		if(other.collider.tag == "Platform")
@@ -485,10 +513,10 @@ public class Player : MonoBehaviour
                 return;
             }
 
-            Vector2 velocity = rigidbody2D.velocity;
+            Vector2 velocity = GetComponent<Rigidbody2D>().velocity;
             velocity.x = (1 - crate.slowdownPercent) * velocity.x;
 
-            rigidbody2D.velocity = velocity;
+            GetComponent<Rigidbody2D>().velocity = velocity;
 
             //Maybe change animation;
 
@@ -513,6 +541,7 @@ public class Player : MonoBehaviour
 
 	public void shootHook()
 	{
+		Debug.Log("SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT");
 		if (!shotHook && (Time.time - lastHookTime > hookDelay) && (Time.time - ceilingPenaltyStart > ceilingPenaltyDuration) && finishedFireFromCannon && gameScript.gameRunning && alive)
 		{
 			shotHook = true;
@@ -532,7 +561,7 @@ public class Player : MonoBehaviour
 		{
 			shotHook = false;
 			hooked = false;
-			rigidbody2D.gravityScale = 1;
+			GetComponent<Rigidbody2D>().gravityScale = 1;
 			Destroy(hook);
 			hookJoint.enabled = false;
 		}
@@ -563,10 +592,10 @@ public class Player : MonoBehaviour
     {
         transform.parent = null;
         anim.SetBool("jump", true);
-        rigidbody2D.AddForce(cannonForce, ForceMode2D.Impulse);
-        if (rigidbody2D.velocity.y > 0)
+        GetComponent<Rigidbody2D>().AddForce(cannonForce, ForceMode2D.Impulse);
+        if (GetComponent<Rigidbody2D>().velocity.y > 0)
         {
-            rigidbody2D.gravityScale = 2;
+            GetComponent<Rigidbody2D>().gravityScale = 2;
         }
         inCannon = false;
         firedFromCannon = true;
@@ -585,5 +614,17 @@ public class Player : MonoBehaviour
         ghostsLastInitTime = Time.time;
 
     }
+
+	public void JustDoIt() {
+		Color c = theImage.color;
+		c.a = 0.4f;
+		theImage.color = c;
+	}
+
+	public void DontDoIt() {
+		Color c = theImage.color;
+		c.a = 0;
+		theImage.color = c;
+	}
 
 }

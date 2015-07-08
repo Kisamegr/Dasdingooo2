@@ -27,7 +27,7 @@ public class SwingCog : Enemy {
 		cog.position = new Vector3(transform.position.x + radius * Mathf.Sin(angle * Mathf.Deg2Rad), gameScript.stageTop -  Mathf.Cos(angle*Mathf.Deg2Rad)*radius,0);
 
 
-		joint.connectedBody = stat.rigidbody2D;
+		joint.connectedBody = stat.GetComponent<Rigidbody2D>();
 		joint.connectedAnchor = Vector3.zero;
 		joint.distance = radius;
 
@@ -48,7 +48,7 @@ public class SwingCog : Enemy {
 	{
 		line.enabled = false;
 		joint.enabled = false;
-		collider2D.enabled = false;
+		GetComponent<Collider2D>().enabled = false;
 
 		StartCoroutine(Kill(8));
 	} 

@@ -28,8 +28,8 @@ public class ScalePower : Powerup {
 	}
 
 	protected override void BeforePower() {
-		player.rigidbody2D.mass *= 1.5f;
-		player.rigidbody2D.angularDrag *= 5;
+		player.GetComponent<Rigidbody2D>().mass *= 1.5f;
+		player.GetComponent<Rigidbody2D>().angularDrag *= 5;
 		state = PowerState.Running;
 		
 	}
@@ -55,8 +55,8 @@ public class ScalePower : Powerup {
 
 	protected override void PowerEnded ()
 	{
-		player.rigidbody2D.mass /= 1.5f;
-		player.rigidbody2D.angularDrag /= 5;
+		player.GetComponent<Rigidbody2D>().mass /= 1.5f;
+		player.GetComponent<Rigidbody2D>().angularDrag /= 5;
 		state = PowerState.Ended;
 	}
 

@@ -59,8 +59,8 @@ public class Cannon : MonoBehaviour
         
         
         player.transform.Rotate(0, 0, -90);
-        player.rigidbody2D.gravityScale = 0;
-        player.rigidbody2D.fixedAngle = true;
+        player.GetComponent<Rigidbody2D>().gravityScale = 0;
+        player.GetComponent<Rigidbody2D>().fixedAngle = true;
         player.GetComponent<Player>().inCannon = true;
 
 
@@ -180,7 +180,7 @@ public class Cannon : MonoBehaviour
 
         //play sound
 		if(gameScript.save.isSoundOn())
-        	audio.Play();
+        	GetComponent<AudioSource>().Play();
 
         shootTime = Time.time;
         //fire player after delay
@@ -191,7 +191,7 @@ public class Cannon : MonoBehaviour
 		ui.uiAnimator.SetBool("cannon", false);
 
 		if(gameScript.save.isMusicOn())
-			player.audio.PlayDelayed(1);
+			player.GetComponent<AudioSource>().PlayDelayed(1);
         
     
     }
@@ -211,7 +211,7 @@ public class Cannon : MonoBehaviour
 
     public void OnDrawGizmosSelected()
     {
-        float length = transform.FindChild("Cannon1").renderer.bounds.size.x;
+        float length = transform.FindChild("Cannon1").GetComponent<Renderer>().bounds.size.x;
 
 
         Vector3 point1 = transform.position + new Vector3(Mathf.Cos(startAngle * Mathf.Deg2Rad),Mathf.Sin(startAngle * Mathf.Deg2Rad),0)*length;

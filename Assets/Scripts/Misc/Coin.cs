@@ -38,7 +38,7 @@ public class Coin : MonoBehaviour {
 	
 		if(follow) {
 			followForce = player.transform.position - transform.position;
-			rigidbody2D.AddForce(followForce.normalized * followSpeed);
+			GetComponent<Rigidbody2D>().AddForce(followForce.normalized * followSpeed);
 		}
 	}
 
@@ -48,7 +48,7 @@ public class Coin : MonoBehaviour {
         if (other.tag == "Player")
         {
 
-            float points = minPoints + (maxPoints - minPoints) * player.rigidbody2D.velocity.x/player.finalMaxSpeed;
+            float points = minPoints + (maxPoints - minPoints) * player.GetComponent<Rigidbody2D>().velocity.x/player.finalMaxSpeed;
 
             game.coinsCollected++;
 			game.score.AddCoin();
@@ -57,6 +57,7 @@ public class Coin : MonoBehaviour {
 			if(game.save.isSoundOn())
             	AudioSource.PlayClipAtPoint(pickupSound, transform.position);
 
+
             Destroy(gameObject);
         }
 
@@ -64,7 +65,7 @@ public class Coin : MonoBehaviour {
 
 	public void FollowPlayer() {
 		follow = true;
-		rigidbody2D.isKinematic = false;
+		GetComponent<Rigidbody2D>().isKinematic = false;
 	}
 
 /*

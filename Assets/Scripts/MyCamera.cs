@@ -42,13 +42,13 @@ public class MyCamera : MonoBehaviour
 
         //Handle camera size
         float temp;
-        if (playerGO.rigidbody2D.velocity.x < playerScript.minSpeed)
+        if (playerGO.GetComponent<Rigidbody2D>().velocity.x < playerScript.minSpeed)
         {
             temp = 0;
         }
         else
         {
-            temp = (playerGO.rigidbody2D.velocity.x ) / (playerScript.finalMaxSpeed );
+            temp = (playerGO.GetComponent<Rigidbody2D>().velocity.x ) / (playerScript.finalMaxSpeed );
 
         }
         float targetSize = minSize + temp * (maxSize - minSize);
@@ -73,8 +73,8 @@ public class MyCamera : MonoBehaviour
         //float cameraWidth =  cameraTopRight.x - cameraBottomLeft.x;
 
 
-        float cameraHeight = 2f * camera.orthographicSize;
-        float cameraWidth = cameraHeight * camera.aspect;
+        float cameraHeight = 2f * GetComponent<Camera>().orthographicSize;
+        float cameraWidth = cameraHeight * GetComponent<Camera>().aspect;
 
       
         float yCamera = Mathf.Clamp(playerGO.transform.position.y, game.stageBottom + cameraHeight / 2 + 2f, game.stageTop - cameraHeight / 2 + 1);
@@ -84,6 +84,6 @@ public class MyCamera : MonoBehaviour
 
 
 
-        camera.transform.position = new Vector3(xCamera, yCamera, camera.transform.position.z);
+        GetComponent<Camera>().transform.position = new Vector3(xCamera, yCamera, GetComponent<Camera>().transform.position.z);
     }
 }

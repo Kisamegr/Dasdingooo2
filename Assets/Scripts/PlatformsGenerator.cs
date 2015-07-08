@@ -142,7 +142,7 @@ public class PlatformsGenerator : MonoBehaviour
 
     void FixedUpdate()
     {
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Platform"), player.rigidbody2D.velocity.y > 0.05f);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Platform"), player.GetComponent<Rigidbody2D>().velocity.y > 0.05f);
 
 
         if (platformQueue.Count > 0 && ((Transform)platformQueue.Peek()).position.x < cleaner.position.x)
@@ -171,8 +171,8 @@ public class PlatformsGenerator : MonoBehaviour
 
             //An uparxoun coins stin perioxh dipla, min kaneis spawn kai epestrepse false
 
-            Vector2 pointA = new Vector2(pos.x - platformPrefab.collider2D.bounds.extents.x - coinSpawnMargin, game.stageBottom);
-            Vector2 pointB = new Vector2(pos.x + platformPrefab.collider2D.bounds.extents.x + coinSpawnMargin, game.stageTop);
+            Vector2 pointA = new Vector2(pos.x - platformPrefab.GetComponent<Collider2D>().bounds.extents.x - coinSpawnMargin, game.stageBottom);
+            Vector2 pointB = new Vector2(pos.x + platformPrefab.GetComponent<Collider2D>().bounds.extents.x + coinSpawnMargin, game.stageTop);
             if (Physics2D.OverlapArea(pointA, pointB, coinsLayermask) != null)
             {
                 Debug.Log("There are coins colliding");
@@ -236,15 +236,15 @@ public class PlatformsGenerator : MonoBehaviour
 
         int noCrates = Random.Range(minCrates, maxCrates);
 
-        float crateWidth = cratePrefab.renderer.bounds.size.x;
+        float crateWidth = cratePrefab.GetComponent<Renderer>().bounds.size.x;
 
-        float crateHeight = cratePrefab.renderer.bounds.size.y;
+        float crateHeight = cratePrefab.GetComponent<Renderer>().bounds.size.y;
 
 
         float gap = Random.Range(0, crateWidth * 2);
 
 
-        Vector2 platformCenterTop = new Vector2(platform.collider2D.bounds.center.x, platform.collider2D.bounds.max.y);
+        Vector2 platformCenterTop = new Vector2(platform.GetComponent<Collider2D>().bounds.center.x, platform.GetComponent<Collider2D>().bounds.max.y);
 
 
         float totalWidth = noCrates * crateWidth + (noCrates - 1) * crateWidth;
