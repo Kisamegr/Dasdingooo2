@@ -9,7 +9,10 @@ public class Bat : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        GetComponent<Rigidbody2D>().velocity = speed; 
+        gameObject.GetComponent<Rigidbody2D>().velocity = speed; 
+
+		Debug.Log("RUNNERED");
 	}
+
 
 }

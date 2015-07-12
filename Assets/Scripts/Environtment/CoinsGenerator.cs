@@ -208,7 +208,7 @@ public class CoinsGenerator : MonoBehaviour
 
     public void generateCoinsOnAir(int noCoins)
     {
-        Vector2 coinSize = new Vector2(coinPrefab.GetComponent<Renderer>().bounds.size.x, coinPrefab.GetComponent<Renderer>().bounds.size.y);
+		Vector2 coinSize = new Vector2(coinPrefab.transform.FindChild("CoinGraphics").GetComponent<Renderer>().bounds.size.x, coinPrefab.transform.FindChild("CoinGraphics").GetComponent<Renderer>().bounds.size.y);
 
         float gapWidth = Random.Range(coinSize.x / 2, coinSize.x);
         float gapHeight = Random.Range(coinSize.y / 4, coinSize.y / 2);
@@ -259,7 +259,7 @@ public class CoinsGenerator : MonoBehaviour
     {
         Player player = playerTrans.GetComponent<Player>();
 
-        Vector2 coinSize = new Vector2(coinPrefab.GetComponent<Renderer>().bounds.size.x, coinPrefab.GetComponent<Renderer>().bounds.size.y);
+		Vector2 coinSize = new Vector2(coinPrefab.transform.FindChild("CoinGraphics").GetComponent<Renderer>().bounds.size.x, coinPrefab.transform.FindChild("CoinGraphics").GetComponent<Renderer>().bounds.size.y);
 
         float gapWidth = Random.Range(coinSize.x / 2, coinSize.x);
         float gapHeight = Random.Range(coinSize.y / 4, coinSize.y / 2);
@@ -311,7 +311,7 @@ public class CoinsGenerator : MonoBehaviour
 
 
 
-        Vector2 coinSize = new Vector2(coinPrefab.GetComponent<Renderer>().bounds.size.x, coinPrefab.GetComponent<Renderer>().bounds.size.y);
+		Vector2 coinSize = new Vector2(coinPrefab.transform.FindChild("CoinGraphics").GetComponent<Renderer>().bounds.size.x, coinPrefab.transform.FindChild("CoinGraphics").GetComponent<Renderer>().bounds.size.y);
 
         float gapWidth = Random.Range(coinSize.x / 2, coinSize.x);
         float gapHeight = Random.Range(coinSize.y / 4, coinSize.y / 2);
@@ -391,7 +391,7 @@ public class CoinsGenerator : MonoBehaviour
         int noCoins = Random.Range(minCoins, maxCoins);
         noCoins = (int)(0.75f * noCoins);
 
-        Vector2 coinSize = new Vector2(coinPrefab.GetComponent<Renderer>().bounds.size.x, coinPrefab.GetComponent<Renderer>().bounds.size.y);
+		Vector2 coinSize = new Vector2(coinPrefab.transform.FindChild("CoinGraphics").GetComponent<Renderer>().bounds.size.x, coinPrefab.transform.FindChild("CoinGraphics").GetComponent<Renderer>().bounds.size.y);
 
         float gapWidth = Random.Range(coinSize.x / 2, coinSize.x);
         float gapHeight = Random.Range(coinSize.y / 4, coinSize.y / 2);

@@ -48,14 +48,15 @@ public class Cannon : MonoBehaviour
 
 	private bool tapped;
 
+	private Transform playerPosition;
 
     // Use this for initialization
     void Start()
     {
-        
+		playerPosition =  transform.FindChild("PlayerPosition") ;
         //player = GameObject.FindGameObjectWithTag("Player");
         player.transform.parent = transform;
-        player.transform.localPosition = transform.FindChild("PlayerPosition").localPosition;
+        player.transform.localPosition = playerPosition.localPosition;
         
         
         player.transform.Rotate(0, 0, -90);
@@ -131,6 +132,9 @@ public class Cannon : MonoBehaviour
 
             transform.RotateAround(rotationCenter, Vector3.forward, rotationSpeed * Time.deltaTime);
             //transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
+			player.transform.localPosition = playerPosition.localPosition;
+			player.transform.rotation = playerPosition.rotation;
+			player.transform.Rotate(0, 0, -90);
 
             if(UserClicked () || tapped){
                 rotationPhase = false;

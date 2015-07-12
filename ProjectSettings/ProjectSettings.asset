@@ -37,7 +37,7 @@ PlayerSettings:
   disableDepthAndStencilBuffers: 0
   defaultIsFullScreen: 1
   defaultIsNativeResolution: 1
-  runInBackground: 0
+  runInBackground: 1
   captureSingleScreen: 0
   Override IPod Music: 0
   Prepare IOS For Recording: 0
@@ -406,7 +406,7 @@ PlayerSettings:
   WebGL::emscriptenArgs: 
   WebGL::template: APPLICATION:Default
   firstStreamedSceneWithResources: 0
-  cloudProjectId: 
+  cloudProjectId: 0f1dd1d6-c66e-421b-9231-b282699c9760
   projectId: 
   projectName: 
   organizationId: 

@@ -19,6 +19,7 @@ public class Coin : MonoBehaviour {
 
 	private Vector3 followForce;
 
+
 	// Use this for initialization
 	void Start () {
         if (game == null)
@@ -55,7 +56,7 @@ public class Coin : MonoBehaviour {
 			game.score.AddCoinScore(points);
 
 			if(game.save.isSoundOn())
-            	AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+            	AudioSource.PlayClipAtPoint(pickupSound, transform.position,0.1f);
 
 
             Destroy(gameObject);

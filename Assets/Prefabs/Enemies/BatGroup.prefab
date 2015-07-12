@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningPrefab: {fileID: 147034, guid: 756d0d5509a7a57449228781cc05d697, type: 2}
-  batPrefab: {fileID: 103724, guid: e68955ea8141948479eb5965e0d2c8b5, type: 2}
+  batPrefab: {fileID: 168328, guid: 0787e8f5e4f223441940fc1681c7fbb8, type: 2}
   batsMin: 8
   batsMax: 15
   heightVariance: 7
@@ -55,9 +55,16 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: batsSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: batPrefab
+      value: 
+      objectReference: {fileID: 168328, guid: 0787e8f5e4f223441940fc1681c7fbb8, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 121174}
   m_IsPrefabParent: 1
-  m_IsExploded: 1
