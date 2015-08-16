@@ -69,16 +69,21 @@ public class Coin : MonoBehaviour {
 		GetComponent<Rigidbody2D>().isKinematic = false;
 	}
 
-/*
+
+
+
     public void OnDrawGizmos()
     {
-        if (GetComponent<Rigidbody2D>() == null)
+       /* if (GetComponent<Rigidbody2D>() == null)
         {
             Rigidbody2D rig = gameObject.AddComponent<Rigidbody2D>();
             rig.isKinematic = true;
             rig.drag = 1.91f;
             tag = "Coin";
-        }
+        }*/
+
+		//minPoints = 5;
+		//maxPoints = 10;
     } 
-*/
+
 }

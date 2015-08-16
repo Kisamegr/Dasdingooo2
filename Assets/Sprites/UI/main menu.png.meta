@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 3d2d42b8b406b1142bd00649dfae2eda
+timeCreated: 1439662785
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: main menu_0
@@ -21,6 +23,7 @@ TextureImporter:
     21300032: main menu_16
     21300034: main menu_17
     21300036: main menu_18
+    21300038: main menu_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -39,6 +42,9 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 1024
@@ -49,6 +55,7 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
@@ -252,5 +259,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
+    - name: main menu_19
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 579
+        width: 217
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

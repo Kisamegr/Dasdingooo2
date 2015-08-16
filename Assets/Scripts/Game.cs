@@ -58,6 +58,10 @@ public class Game : MonoBehaviour
 
     void Start()
     {
+
+		QualitySettings.vSyncCount = 2;  // VSync must be disabled
+		Application.targetFrameRate = 45;
+
         stageBottom = initialStageBottom;
 
         Time.timeScale = 1f;

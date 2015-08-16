@@ -9,8 +9,8 @@ PlayerSettings:
   targetDevice: 2
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: Swingoff
+  companyName: Dynobyte Games
+  productName: SwingOff
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
@@ -22,10 +22,10 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   m_ActiveColorSpace: 0
   m_MTRendering: 1
-  m_MobileMTRendering: 0
+  m_MobileMTRendering: 1
   m_Stereoscopic3D: 0
   iosShowActivityIndicatorOnLoading: -1
-  androidShowActivityIndicatorOnLoading: -1
+  androidShowActivityIndicatorOnLoading: 2
   iosAppInBackgroundBehavior: 0
   displayResolutionDialog: 1
   allowedAutorotateToPortrait: 0
@@ -71,16 +71,21 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: com.dasdingoo.swingoff
+  bundleIdentifier: com.dynobyte.swingoff
   bundleVersion: 1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 165948, guid: 49108210771f5964593e0d50a472623c, type: 2}
+  - {fileID: 120896, guid: a9f683b0fd49e8e47ba9e18725f70dc9, type: 2}
+  - {fileID: 100000, guid: 18e92d657041a5842919075ea1c03128, type: 2}
+  - {fileID: 162340, guid: 80827eff060922344a04002bacb6f49d, type: 2}
+  - {fileID: 100000, guid: bae8e3cd81e7ef144a78a9f38f6e8122, type: 2}
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
   virtualRealitySupported: 0
   productGUID: a0cec84c3e8ebbc42b2e4a6d698086a6
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 9
+  AndroidMinSdkVersion: 14
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   apiCompatibilityLevel: 2
@@ -90,8 +95,8 @@ PlayerSettings:
   ForceSDCardPermission: 0
   CreateWallpaper: 0
   APKExpansionFiles: 0
-  preloadShaders: 0
-  StripUnusedMeshComponents: 0
+  preloadShaders: 1
+  StripUnusedMeshComponents: 1
   iPhoneSdkVersion: 988
   iPhoneTargetOSVersion: 22
   uIPrerenderedIcon: 0
@@ -121,22 +126,37 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/dynobyte.keystore
+  AndroidKeyaliasName: dynobyte games
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   androidEnableBanner: 1
   m_AndroidBanners:
   - width: 320
     height: 180
-    banner: {fileID: 0}
+    banner: {fileID: 2800000, guid: 604bbc21a2d0dcd4ca4219d2a00e078b, type: 3}
   androidGamepadSupportLevel: 0
-  resolutionDialogBanner: {fileID: 0}
+  resolutionDialogBanner: {fileID: 2800000, guid: 12278542f1c225c45ad7ea91cdae57fc,
+    type: 3}
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 10462d1bf5ea9db41b4b25014d5b7762, type: 3}
       m_Size: 128
+  - m_BuildTarget: Android
+    m_Icons:
+    - m_Icon: {fileID: 2800000, guid: 10462d1bf5ea9db41b4b25014d5b7762, type: 3}
+      m_Size: 192
+    - m_Icon: {fileID: 0}
+      m_Size: 144
+    - m_Icon: {fileID: 0}
+      m_Size: 96
+    - m_Icon: {fileID: 0}
+      m_Size: 72
+    - m_Icon: {fileID: 0}
+      m_Size: 48
+    - m_Icon: {fileID: 0}
+      m_Size: 36
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
     m_StaticBatching: 1

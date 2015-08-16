@@ -111,6 +111,8 @@ public class Save : MonoBehaviour {
 
 
 
+
+
 	public void SetMusic(bool on) {
 		if(on) 
 			PlayerPrefs.SetInt("music",1);

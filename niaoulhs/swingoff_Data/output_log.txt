@@ -1,0 +1,3466 @@
+Mono path[0] = 'C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/niaoulhs/swingoff_Data/Managed'
+Mono path[1] = 'C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/niaoulhs/swingoff_Data/Mono'
+Mono config path = 'C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/niaoulhs/swingoff_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/niaoulhs/swingoff_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55457
+Multi-casting "[IP] 192.168.1.5 [Port] 55457 [Flags] 2 [Guid] 3348854910 [EditorId] 1598741714 [Version] 1048832 [Id] WindowsPlayer(Desktop) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.1.5:55457]
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R7 200 Series (ID=0x683d)
+    Vendor:   ATI
+    VRAM:     1006 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.054 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\niaoulhs\swingoff_Data\Managed\System.dll (this message is harmless)
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Camera/Camera.cpp Line: 2716)
+
+MUSCIO: True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MainMenu:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\UI\MainMenu.cs:39)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/UI/MainMenu.cs Line: 39)
+
+SUONDO: True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MainMenu:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\UI\MainMenu.cs:40)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/UI/MainMenu.cs Line: 40)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.494203 ms
+System memory in use before: 27.1 MB.
+System memory in use after: 27.3 MB.
+
+Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 2977.
+Total: 2.018762 ms (FindLiveObjects: 0.092749 ms CreateObjectMapping: 0.545739 ms MarkObjects: 1.241987 ms  DeleteObjects: 0.134095 ms)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+ME TO ENEMUFADFAF
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:478)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 478)
+
+TOTAL: 985.6392
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GameOverScreen>c__Iterator2:MoveNext() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game_UI.cs:111)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+Game:GameOver() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game.cs:214)
+Player:Death() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:457)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:480)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Game_UI.cs Line: 111)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.834413 ms
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Camera/Camera.cpp Line: 2716)
+
+System memory in use before: 38.6 MB.
+System memory in use after: 38.3 MB.
+
+Unloading 2465 unused Assets to reduce memory usage. Loaded Objects now: 611.
+Total: 1.721517 ms (FindLiveObjects: 0.123409 ms CreateObjectMapping: 0.149320 ms MarkObjects: 0.509911 ms  DeleteObjects: 0.934546 ms)
+
+MUSCIO: True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MainMenu:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\UI\MainMenu.cs:39)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/UI/MainMenu.cs Line: 39)
+
+SUONDO: True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MainMenu:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\UI\MainMenu.cs:40)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/UI/MainMenu.cs Line: 40)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.209720 ms
+System memory in use before: 27.4 MB.
+System memory in use after: 27.5 MB.
+
+Unloading 87 unused Assets to reduce memory usage. Loaded Objects now: 2977.
+Total: 1.513739 ms (FindLiveObjects: 0.101200 ms CreateObjectMapping: 0.150787 ms MarkObjects: 1.115644 ms  DeleteObjects: 0.141987 ms)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+ME TO ENEMUFADFAF
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:478)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 478)
+
+TOTAL: 29.2731
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GameOverScreen>c__Iterator2:MoveNext() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game_UI.cs:111)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+Game:GameOver() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game.cs:214)
+Player:Death() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:457)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:480)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Game_UI.cs Line: 111)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.508292 ms
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Camera/Camera.cpp Line: 2716)
+
+System memory in use before: 38.7 MB.
+System memory in use after: 38.5 MB.
+
+Unloading 2467 unused Assets to reduce memory usage. Loaded Objects now: 609.
+Total: 1.608863 ms (FindLiveObjects: 0.163079 ms CreateObjectMapping: 0.167828 ms MarkObjects: 0.364431 ms  DeleteObjects: 0.908914 ms)
+
+MUSCIO: True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MainMenu:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\UI\MainMenu.cs:39)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/UI/MainMenu.cs Line: 39)
+
+SUONDO: True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MainMenu:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\UI\MainMenu.cs:40)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/UI/MainMenu.cs Line: 40)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.426438 ms
+System memory in use before: 27.4 MB.
+System memory in use after: 27.5 MB.
+
+Unloading 87 unused Assets to reduce memory usage. Loaded Objects now: 2977.
+Total: 1.768730 ms (FindLiveObjects: 0.157771 ms CreateObjectMapping: 0.154768 ms MarkObjects: 1.279352 ms  DeleteObjects: 0.172088 ms)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+ME TO ENEMUFADFAF
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:478)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 478)
+
+TOTAL: 101.6694
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GameOverScreen>c__Iterator2:MoveNext() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game_UI.cs:111)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+Game:GameOver() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game.cs:214)
+Player:Death() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:457)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:480)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Game_UI.cs Line: 111)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.831028 ms
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Camera/Camera.cpp Line: 2716)
+
+System memory in use before: 38.6 MB.
+System memory in use after: 38.3 MB.
+
+Unloading 2465 unused Assets to reduce memory usage. Loaded Objects now: 611.
+Total: 1.641339 ms (FindLiveObjects: 0.162520 ms CreateObjectMapping: 0.169085 ms MarkObjects: 0.363244 ms  DeleteObjects: 0.941879 ms)
+
+MUSCIO: True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MainMenu:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\UI\MainMenu.cs:39)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/UI/MainMenu.cs Line: 39)
+
+SUONDO: True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MainMenu:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\UI\MainMenu.cs:40)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/UI/MainMenu.cs Line: 40)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.465270 ms
+System memory in use before: 27.4 MB.
+System memory in use after: 27.5 MB.
+
+Unloading 87 unused Assets to reduce memory usage. Loaded Objects now: 2977.
+Total: 1.856730 ms (FindLiveObjects: 0.162730 ms CreateObjectMapping: 0.172647 ms MarkObjects: 1.340603 ms  DeleteObjects: 0.175650 ms)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+ME TO ENEMUFADFAF
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:478)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 478)
+
+TOTAL: 175.9101
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GameOverScreen>c__Iterator2:MoveNext() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game_UI.cs:111)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+Game:GameOver() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game.cs:214)
+Player:Death() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:457)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:480)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Game_UI.cs Line: 111)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.350717 ms
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Camera/Camera.cpp Line: 2716)
+
+System memory in use before: 38.6 MB.
+System memory in use after: 38.3 MB.
+
+Unloading 2465 unused Assets to reduce memory usage. Loaded Objects now: 611.
+Total: 1.592241 ms (FindLiveObjects: 0.124526 ms CreateObjectMapping: 0.150158 ms MarkObjects: 0.334400 ms  DeleteObjects: 0.978895 ms)
+
+MUSCIO: True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MainMenu:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\UI\MainMenu.cs:39)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/UI/MainMenu.cs Line: 39)
+
+SUONDO: True
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MainMenu:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\UI\MainMenu.cs:40)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/UI/MainMenu.cs Line: 40)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.222781 ms
+System memory in use before: 27.4 MB.
+System memory in use after: 27.5 MB.
+
+Unloading 87 unused Assets to reduce memory usage. Loaded Objects now: 2977.
+Total: 1.780393 ms (FindLiveObjects: 0.157073 ms CreateObjectMapping: 0.169853 ms MarkObjects: 1.280539 ms  DeleteObjects: 0.167479 ms)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+ME TO ENEMUFADFAF
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:478)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 478)
+
+TOTAL: 65.63358
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GameOverScreen>c__Iterator2:MoveNext() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game_UI.cs:111)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+Game:GameOver() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game.cs:214)
+Player:Death() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:457)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:480)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Game_UI.cs Line: 111)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.409943 ms
+System memory in use before: 26.1 MB.
+System memory in use after: 26.2 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2977.
+Total: 1.666133 ms (FindLiveObjects: 0.166012 ms CreateObjectMapping: 0.166361 ms MarkObjects: 1.319441 ms  DeleteObjects: 0.009568 ms)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+ME TO ENEMUFADFAF
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:478)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 478)
+
+TOTAL: 108.0441
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GameOverScreen>c__Iterator2:MoveNext() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game_UI.cs:111)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+Game:GameOver() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game.cs:214)
+Player:Death() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:457)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:480)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Game_UI.cs Line: 111)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.496558 ms
+System memory in use before: 26.1 MB.
+System memory in use after: 26.2 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2977.
+Total: 1.610609 ms (FindLiveObjects: 0.157561 ms CreateObjectMapping: 0.171530 ms MarkObjects: 1.268038 ms  DeleteObjects: 0.008939 ms)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+ME TO ENEMUFADFAF
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:478)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 478)
+
+TOTAL: 654.0086
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GameOverScreen>c__Iterator2:MoveNext() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game_UI.cs:111)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+Game:GameOver() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game.cs:214)
+Player:Death() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:457)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:480)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Game_UI.cs Line: 111)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.462393 ms
+System memory in use before: 26.1 MB.
+System memory in use after: 26.2 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2977.
+Total: 1.598876 ms (FindLiveObjects: 0.150577 ms CreateObjectMapping: 0.164685 ms MarkObjects: 1.270063 ms  DeleteObjects: 0.008939 ms)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+ME TO ENEMUFADFAF
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:478)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 478)
+
+TOTAL: 87.11567
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GameOverScreen>c__Iterator2:MoveNext() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game_UI.cs:111)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+Game:GameOver() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game.cs:214)
+Player:Death() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:457)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:480)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Game_UI.cs Line: 111)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.659752 ms
+System memory in use before: 26.1 MB.
+System memory in use after: 26.2 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2977.
+Total: 1.612704 ms (FindLiveObjects: 0.147993 ms CreateObjectMapping: 0.165523 ms MarkObjects: 1.285428 ms  DeleteObjects: 0.009079 ms)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+ME TO ENEMUFADFAF
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:478)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 478)
+
+TOTAL: 50.6708
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GameOverScreen>c__Iterator2:MoveNext() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game_UI.cs:111)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+Game:GameOver() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game.cs:214)
+Player:Death() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:457)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:480)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Game_UI.cs Line: 111)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.774527 ms
+System memory in use before: 26.1 MB.
+System memory in use after: 26.2 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2977.
+Total: 1.643365 ms (FindLiveObjects: 0.161961 ms CreateObjectMapping: 0.166431 ms MarkObjects: 1.301073 ms  DeleteObjects: 0.009219 ms)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+ME TO ENEMUFADFAF
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:478)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 478)
+
+TOTAL: 486.8693
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GameOverScreen>c__Iterator2:MoveNext() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game_UI.cs:111)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+Game:GameOver() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game.cs:214)
+Player:Death() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:457)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:480)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Game_UI.cs Line: 111)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.389257 ms
+System memory in use before: 26.1 MB.
+System memory in use after: 26.2 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2977.
+Total: 1.430908 ms (FindLiveObjects: 0.111536 ms CreateObjectMapping: 0.168876 ms MarkObjects: 1.138831 ms  DeleteObjects: 0.007333 ms)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+ME TO ENEMUFADFAF
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:478)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 478)
+
+TOTAL: 56.01343
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GameOverScreen>c__Iterator2:MoveNext() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game_UI.cs:111)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+Game:GameOver() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game.cs:214)
+Player:Death() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:457)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:480)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Game_UI.cs Line: 111)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.729968 ms
+System memory in use before: 26.1 MB.
+System memory in use after: 26.2 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2977.
+Total: 1.712089 ms (FindLiveObjects: 0.146457 ms CreateObjectMapping: 0.166222 ms MarkObjects: 1.384743 ms  DeleteObjects: 0.010126 ms)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+ME TO ENEMUFADFAF
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:478)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 478)
+
+TOTAL: 55.08894
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GameOverScreen>c__Iterator2:MoveNext() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game_UI.cs:111)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+Game:GameOver() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game.cs:214)
+Player:Death() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:457)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:480)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Game_UI.cs Line: 111)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.243803 ms
+System memory in use before: 26.1 MB.
+System memory in use after: 26.2 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2977.
+Total: 1.586793 ms (FindLiveObjects: 0.149111 ms CreateObjectMapping: 0.163707 ms MarkObjects: 1.260704 ms  DeleteObjects: 0.008730 ms)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+RUNNERED
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Bat:Start() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Enemies\Bat.cs:14)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Enemies/Bat.cs Line: 14)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+SHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOT
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:shootHook() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:544)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:319)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 544)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+MPIIEPIEPIEPIEPEIE
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:JumpUP() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:262)
+Player:GetUserInput() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:362)
+Player:Update() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:226)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 262)
+
+COLLISION HELL YEAH
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:476)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 476)
+
+ME TO ENEMUFADFAF
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:478)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Player/Player.cs Line: 478)
+
+TOTAL: 546.7731
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GameOverScreen>c__Iterator2:MoveNext() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game_UI.cs:111)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+Game:GameOver() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Game.cs:214)
+Player:Death() (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:457)
+Player:OnCollisionEnter2D(Collision2D) (at C:\Users\Stratos\Documents\Swingoff\Dasdingooo2\Assets\Scripts\Player\Player.cs:480)
+ 
+(Filename: C:/Users/Stratos/Documents/Swingoff/Dasdingooo2/Assets/Scripts/Game_UI.cs Line: 111)
+

@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
-  duration: 100
+  duration: 10
   changeSpeed: 0
   player: {fileID: 0}
   sliderPrefab: {fileID: 106956, guid: c9e9724fc4383fb42b682af613694df3, type: 2}
@@ -142,7 +142,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: duration
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

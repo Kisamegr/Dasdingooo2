@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: -3, y: 0}
+  rigidbody2d: {fileID: 5030274}
 --- !u!212 &21218610
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -150,7 +151,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: rigidbody2d
+      value: 
+      objectReference: {fileID: 5030274}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 168328}

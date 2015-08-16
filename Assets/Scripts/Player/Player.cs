@@ -431,6 +431,8 @@ public class Player : MonoBehaviour
         alive = false;
         cancelHook();
 
+		gameScript.score.heightLost = transform.position.y;
+
         if (gameScript.save.isSoundOn())
             AudioSource.PlayClipAtPoint(deathSounds[UnityEngine.Random.Range(0, deathSounds.Length)], transform.position, 0.85f);
 
@@ -616,15 +618,15 @@ public class Player : MonoBehaviour
     }
 
 	public void JustDoIt() {
-		Color c = theImage.color;
-		c.a = 0.4f;
-		theImage.color = c;
+		//Color c = theImage.color;
+		//c.a = 0.4f;
+		//theImage.color = c;
 	}
 
 	public void DontDoIt() {
-		Color c = theImage.color;
-		c.a = 0;
-		theImage.color = c;
+		//Color c = theImage.color;
+		//c.a = 0;
+		//theImage.color = c;
 	}
 
 }

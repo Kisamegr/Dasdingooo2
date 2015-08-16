@@ -84,6 +84,8 @@ public class MyCamera : MonoBehaviour
 
 
 
-        GetComponent<Camera>().transform.position = new Vector3(xCamera, yCamera, GetComponent<Camera>().transform.position.z);
+        transform.position = new Vector3(xCamera, yCamera, transform.position.z);
     }
+
+
 }

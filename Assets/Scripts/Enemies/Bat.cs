@@ -5,13 +5,13 @@ public class Bat : MonoBehaviour {
 
 
     public Vector2 speed;
-
+	public Rigidbody2D rigidbody2d;
 
 	// Use this for initialization
 	void Start () {
-        gameObject.GetComponent<Rigidbody2D>().velocity = speed; 
+		rigidbody2d.velocity = speed; 
 
-		Debug.Log("RUNNERED");
+
 	}
 
 

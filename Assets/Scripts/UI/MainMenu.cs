@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.Analytics;
 using System;
 
 public class MainMenu : MonoBehaviour {
@@ -15,6 +16,7 @@ public class MainMenu : MonoBehaviour {
 	public Image howToImage;
 	public Sprite[] howToSprites;
 	public Collider2D menuCollider;
+	public Slider qualitySlider;
 
 	public Toggle musicToggle;
 	public Toggle soundsToggle;
@@ -53,6 +55,26 @@ public class MainMenu : MonoBehaviour {
 			PlayerPrefs.SetString("launch_date",DateTime.Now.ToString());
 
 	
+		if(!PlayerPrefs.HasKey("userQuality")) {
+			PlayerPrefs.SetInt("userQuality",5);
+		}
+		int quality = PlayerPrefs.GetInt("userQuality");
+		QualitySettings.SetQualityLevel(quality,true);
+
+		switch(quality) {
+
+		case 0:
+			qualitySlider.value = 0;
+			break;
+		case 2:
+			qualitySlider.value = 1;
+			break;
+		case 5:
+			qualitySlider.value = 2;
+			break;
+		}
+
+
 	}
 	
 	// Update is called once per frame
@@ -189,6 +211,28 @@ public class MainMenu : MonoBehaviour {
 
 	}
 
+	public void QualityChange(float value) {
+
+
+		switch((int)value) {
+
+		case 0:
+			QualitySettings.SetQualityLevel(0,true);
+			PlayerPrefs.SetInt("userQuality",0);
+			break;
+		case 1:
+			QualitySettings.SetQualityLevel(2,true);
+			PlayerPrefs.SetInt("userQuality",2);
+			break;
+		case 2:
+			QualitySettings.SetQualityLevel(5,true);
+			PlayerPrefs.SetInt("userQuality",5);
+			break;
+		}
+
+
+	}
+
 
 	IEnumerator LoadGameLevel(float delay) {
 		yield return new WaitForSeconds(delay);
@@ -231,5 +275,20 @@ public class MainMenu : MonoBehaviour {
 			
 		}
 		return false;
+	}
+
+	void OnApplicationQuit() {
+
+		Debug.Log("QUITTUITIUTIUTIUT");
+		if(Time.realtimeSinceStartup > 30) {
+			System.Collections.Generic.Dictionary<string,object> time = new System.Collections.Generic.Dictionary<string,object>();
+			
+			time.Add("timePlayed", Time.realtimeSinceStartup);
+			
+			Analytics.CustomEvent("userSession",time);
+			
+		}
+		
+		
 	}
 }

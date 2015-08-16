@@ -30,6 +30,7 @@ public class Cannon : MonoBehaviour
     //
 
     public GameObject player;
+	public GameObject lifePlatformPrefab;
 
 
     private Vector3 rotationCenter;
@@ -53,6 +54,24 @@ public class Cannon : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
+		gameScript =  GameObject.Find("_GAME").GetComponent<Game>();
+		gameScript.deactivateSpawners();
+
+		if(PlayerPrefs.HasKey("hasLife") && PlayerPrefs.GetInt("hasLife") == 1) {
+			gameScript.score.LoadScore();
+			
+			Destroy(transform.parent.FindChild("StartingPlatform").gameObject);
+			
+			Vector3 pos = transform.position;
+			pos.y = Mathf.Clamp(gameScript.score.heightLost,-9,11);
+			GameObject lp = (GameObject) Instantiate(lifePlatformPrefab,pos,Quaternion.identity);
+			
+			transform.parent.parent = lp.transform;
+			transform.parent.localPosition = Vector3.zero;
+
+			Camera.main.transform.position = new Vector3(transform.position.x + 5,transform.position.y,Camera.main.transform.position.z);
+		}
 		playerPosition =  transform.FindChild("PlayerPosition") ;
         //player = GameObject.FindGameObjectWithTag("Player");
         player.transform.parent = transform;
@@ -86,10 +105,11 @@ public class Cannon : MonoBehaviour
         playerFired = false;
 
 		ui = GameObject.Find("_GAME").GetComponent<Game_UI>();
-        gameScript =  GameObject.Find("_GAME").GetComponent<Game>();
-		gameScript.deactivateSpawners();
+        
 
 		ui.uiAnimator.SetBool("cannon",true);
+
+
     }
 
 
@@ -239,7 +259,7 @@ public class Cannon : MonoBehaviour
 	private bool UserClicked() {
 
 
-		if(Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsWebPlayer) {
+		//if(Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsWebPlayer) {
   
 			if(Input.GetKeyDown(KeyCode.Space))
 			   return true;
@@ -248,7 +268,7 @@ public class Cannon : MonoBehaviour
 			if(Input.GetMouseButtonDown(0))
 				return true;
 
-		}
+		//}
 
 		/*if(Application.platform == RuntimePlatform.Android) {
 			Touch t = new Touch ();
